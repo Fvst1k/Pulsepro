@@ -1,0 +1,73 @@
+.footer {
+  background: #000000;
+  padding: 60px 0 50px;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: auto;
+}
+
+.block__content_footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.b-line {
+  width: 100%;
+  border-bottom: 1px solid rgba(143, 143, 143, 0.49);
+  padding-bottom: 30px;
+}
+
+.footer__column {
+  display: flex;
+  flex-flow: column;
+  max-width: 500px;
+  width: 100%;
+
+}
+
+.footer__column_left {
+  margin-top: 30px;
+}
+
+.footer__btn-wrapper {
+  margin-top: 26px;
+}
+
+.footer__company-info {
+  margin-top: 30px;
+  p {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+}
+.footer__subtitle {
+  max-width: 340px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+}
+.footer__menu {
+  margin-left: 0;
+  margin-top: 30px;
+}
+.footer__contacts-politic {
+  font-size: 14px;
+  font-family: "JetBrains Mono", sans-serif;
+  max-width: 250px;
+
+
+}
+.footer__contact-group_phone {
+  max-width: 240px;
+}
+.footer__contact-group_email {
+  max-width: 340px;
+}
+.footer__contact-group_vk {
+  max-width: 230px;
+}
+.footer__contact-group_tg {
+  max-width: 135px;
+}

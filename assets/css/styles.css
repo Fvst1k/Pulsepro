@@ -4,11 +4,10 @@
   margin: 0;
   border: 0;
   box-sizing: border-box;
-  transition: all ease-in-out 0.3s;
 }
 
 * {
-  font: 24px/1.1 "Inter", sans-serif;
+  font: 20px/1.3 "Montserrat", sans-serif;
 }
 
 /* Указываем box sizing */
@@ -93,7 +92,6 @@ html, body {
   height: 100%;
   background: #ffffff;
   scroll-behavior: smooth;
-  font: 24px/1.1 "Inter", sans-serif;
 }
 
 img {
@@ -148,7 +146,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .block__content {
-    max-width: 1140px;
+    max-width: 1200px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -160,6 +158,60 @@ a {
 .block__anchor {
   position: absolute;
   top: 0;
+}
+
+.tl__btn {
+  padding: 14px 20px 14px 31px;
+  border-radius: 30px;
+  border: 2.5px solid #000000;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  transition: ease-in-out all 0.3s;
+}
+.tl__btn .tl__btn-arrow {
+  margin-left: 17px;
+  margin-top: 2px;
+}
+.tl__btn p {
+  font-family: "JetBrains Mono", sans-serif;
+  line-height: 1;
+  font-weight: 600;
+}
+.tl__btn svg path {
+  transition: ease-in-out all 0.3s;
+}
+.tl__btn:hover {
+  background: #000000;
+  color: #ffffff;
+}
+.tl__btn:hover svg path {
+  fill: #ffffff;
+}
+
+.tl__btn_footer {
+  border: 2.5px solid #ffffff;
+  color: #ffffff;
+  background: transparent;
+}
+.tl__btn_footer svg path {
+  fill: #ffffff;
+}
+.tl__btn_footer:hover {
+  background: #ffffff;
+  color: #000000;
+}
+.tl__btn_footer:hover svg path {
+  fill: #000000;
+}
+
+.hover__tY {
+  cursor: pointer;
+  transition: ease-in-out all 0.3s;
+}
+.hover__tY:hover {
+  transform: translateY(-2px);
 }
 
 .responsive-block {
@@ -178,6 +230,162 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.header__main-row {
+  width: 100%;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header__menu {
+  display: flex;
+  max-width: 340px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10px 0 105px;
+}
+.header__menu div {
+  font-size: 18px;
+  font-family: "JetBrains Mono", sans-serif;
+}
+
+.header__btn {
+  margin-left: auto;
+  background: #000000;
+  color: #FFFFFF;
+  border-radius: 30px;
+  padding: 12px 45px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid #000000;
+  font-family: "JetBrains Mono", sans-serif;
+}
+.header__btn:hover {
+  background: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+.footer__contacts-wrapper {
+  width: 100%;
+}
+
+.footer__contacts {
+  margin-top: 30px;
+  display: flex;
+  flex-flow: column;
+}
+
+.footer__contacts-subtitle {
+  font-family: "JetBrains Mono", sans-serif;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.footer__contact-group {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+}
+.footer__contact-group p {
+  font-size: 18px;
+  font-family: "JetBrains Mono", sans-serif;
+  font-weight: 300;
+}
+
+.footer__contact-icon {
+  margin-right: 11px;
+}
+
+.footer__politic {
+  font-family: "JetBrains Mono", sans-serif;
+  font-size: 14px;
+}
+
+.footer__contacts-wrapper_mt {
+  margin-top: 30px;
+}
+
+.footer {
+  background: #000000;
+  padding: 60px 0 50px;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: auto;
+}
+
+.block__content_footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.b-line {
+  width: 100%;
+  border-bottom: 1px solid rgba(143, 143, 143, 0.49);
+  padding-bottom: 30px;
+}
+
+.footer__column {
+  display: flex;
+  flex-flow: column;
+  max-width: 500px;
+  width: 100%;
+}
+
+.footer__column_left {
+  margin-top: 30px;
+}
+
+.footer__btn-wrapper {
+  margin-top: 26px;
+}
+
+.footer__company-info {
+  margin-top: 30px;
+}
+.footer__company-info p {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.footer__subtitle {
+  max-width: 340px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.footer__menu {
+  margin-left: 0;
+  margin-top: 30px;
+}
+
+.footer__contacts-politic {
+  font-size: 14px;
+  font-family: "JetBrains Mono", sans-serif;
+  max-width: 250px;
+}
+
+.footer__contact-group_phone {
+  max-width: 240px;
+}
+
+.footer__contact-group_email {
+  max-width: 340px;
+}
+
+.footer__contact-group_vk {
+  max-width: 230px;
+}
+
+.footer__contact-group_tg {
+  max-width: 135px;
 }
 
 /* Slider */

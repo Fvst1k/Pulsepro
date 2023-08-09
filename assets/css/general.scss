@@ -4,7 +4,7 @@ html, body {
   height: 100%;
   background: #ffffff;
   scroll-behavior: smooth;
-  font: 24px/1.1 'Inter', sans-serif;
+
 
 }
 
@@ -17,6 +17,7 @@ button {
   border: none;
   background: transparent;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -58,17 +59,81 @@ a {
 
 }
 
-.block__content {
-
-}
-
-.title{ // Может standard-title, standard-btn и т.д.?
+.title { // Может standard-title, standard-btn и т.д.?
 
 }
 
 
+//Templates
+.tl__btn {
+  padding: 14px 20px 14px 31px;
+  border-radius: 30px;
+  border: 2.5px solid #000000;
+  color: $text-btn;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  transition: ease-in-out all 0.3s;
+
+  .tl__btn-arrow {
+    margin-left: 17px;
+    margin-top: 2px;
+  }
+
+  p {
+    font-family: 'JetBrains Mono', sans-serif;
+    line-height: 1;
+    font-weight: 600;
+  }
+
+  svg {
+    path {
+      transition: ease-in-out all 0.3s;
+    }
+  }
+
+  &:hover {
+    background: #000000;
+    color: #ffffff;
+
+    svg {
+      path {
+        fill: #ffffff;
+      }
+    }
+  }
+}
+
+.tl__btn_footer {
+  border: 2.5px solid #ffffff;
+  color: #ffffff;
+  background: transparent;
 
 
+  svg {
+    path {
+      fill: #ffffff;
+    }
+  }
+  &:hover {
+    background: #ffffff;
+    color: #000000;
+    svg {
+      path {
+        fill: #000000;
+      }
+    }
+
+  }
+}
+.hover__tY {
+  cursor: pointer;
+  transition: ease-in-out all 0.3s;
+  &:hover {
+    transform: translateY(-2px);
+
+  }
+}
 
 
 //Special classes
@@ -92,8 +157,6 @@ a {
   right: 0;
   bottom: 0;
 }
-.conentn {
 
-}
 
 
