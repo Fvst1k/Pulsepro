@@ -42,7 +42,7 @@
         </div>
         <div class="footer__column footer__column_right">
             <div class="footer__contacts-wrapper b-line">
-                <h4 class="footer__subtitle ">Современная домашняя IT-технологиядля удобного управления своим
+                <h4 class="footer__subtitle ">Современная домашняя IT-технология для удобного управления своим
                     здоровьем</h4>
             </div>
             <div class="footer__contacts-wrapper b-line">
