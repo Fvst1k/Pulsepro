@@ -507,6 +507,13 @@ F .demonstration-plus__title {
   text-align: center;
 }
 
+.demonstration-plus__title {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 700;
+  max-width: 860px;
+}
+
 .demonstration-plus__table {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
