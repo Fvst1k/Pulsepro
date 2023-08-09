@@ -377,22 +377,13 @@ a {
   height: 100%;
 }
 
-.pulse-pro {
-  position: relative;
-}
-.pulse-pro__img {
-  width: 1300px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: calc((100% - 1480px) / 2);
+.pulse-pro__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .pulse-pro__content {
-  margin-left: auto;
-  position: relative;
   margin-bottom: 80px;
-  max-width: 578px;
-  width: 100%;
 }
 .pulse-pro__title {
   margin-bottom: 40px;
@@ -433,54 +424,9 @@ a {
   max-width: 408px;
 }
 
-.examples {
-  margin-bottom: 100px;
-}
-.examples__title {
-  margin-left: 30px;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.36;
-  letter-spacing: 1.68px;
-}
-.examples__row {
-  margin-top: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.examples__row-item {
-  position: relative;
-}
-.examples__item-text {
-  position: absolute;
-  bottom: 7px;
-  right: 0;
-  left: 0;
-  color: #FFFFFF;
-  text-shadow: 0 -1px 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000, 0 1px 0 #000000, -1px 0 0 #000000, 1px 0 0 #000000, -1px 0 0 #000000, 1px 0 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.36; /* 21.808px */
-  letter-spacing: 1.12px;
-  text-align: center;
-}
-
-.block__content_examples {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-}
-
 .about-us {
   padding-bottom: 225px;
+  color: #000;
 }
 .about-us__item {
   display: -webkit-box;
@@ -513,7 +459,6 @@ a {
 .about-us__item-content_vr {
   padding-top: 80px;
   max-width: 697px;
-  width: 100%;
 }
 .about-us__item-title {
   margin-bottom: 35px;
@@ -531,11 +476,13 @@ a {
   margin-right: 30px;
 }
 
-.block__content_about-us {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+.pulse-pro__title {
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.36;
+  letter-spacing: 1.96px;
+  color: blue;
 }
 
 .footer {
