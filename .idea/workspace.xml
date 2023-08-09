@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f312fed2-d453-47d1-859c-a580912ec28a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ProjectId" id="2TiwMo1zO9kyDU91qNNAnQZrHEN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f312fed2-d453-47d1-859c-a580912ec28a" name="Default Changelist" comment="" />
+      <created>1691539167534</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691539167534</updated>
+      <workItem from="1691539193689" duration="122000" />
+      <workItem from="1691539407034" duration="315000" />
+      <workItem from="1691539746911" duration="658000" />
+      <workItem from="1691540442121" duration="27000" />
+      <workItem from="1691540469701" duration="835000" />
+      <workItem from="1691541621112" duration="403000" />
+      <workItem from="1691542039872" duration="38000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1691540976307">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1691540976307" />
+    <state x="788" y="234" key="#com.intellij.ide.ui.customization.CustomizableActionsPanel.FindAvailableActionsDialog" timestamp="1691540860160">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="788" y="234" key="#com.intellij.ide.ui.customization.CustomizableActionsPanel.FindAvailableActionsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1691540860160" />
+    <state x="629" y="297" key="EditFileWatcherDialog" timestamp="1691540349391">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="629" y="297" key="EditFileWatcherDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1691540349391" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1691541150420">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1691541150420" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1691541856732">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1691541856732" />
+    <state x="42" y="74" width="1736" height="856" key="git4idea.log.GitShowExternalLogAction" timestamp="1691541311332">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="42" y="74" width="1736" height="856" key="git4idea.log.GitShowExternalLogAction/0.0.1920.1040@0.0.1920.1040" timestamp="1691541311332" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1691541270203">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1691541270203" />
+  </component>
+</project>
