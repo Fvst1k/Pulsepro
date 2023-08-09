@@ -105,6 +105,80 @@
 
 // ----------- /trust -----------
 
+// ----------- cards -------------
+.block__content_cards {
+  margin-top: 40px;
+  justify-content: center;
+}
+.cards__tablet {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 25px;
+
+
+}
+.cards__tablet-item-wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  &:nth-child(2){
+    .cards__tablet-icon-text {
+      color: #FF5151;
+    }
+
+  }
+}
+.cards__tablet-icon-text {
+  font-size: 22px;
+  color: #21AA56;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-top: 16px;
+}
+.cards__tablet-item {
+  max-width: 560px;
+  width: 100%;
+  box-shadow: 11px 8px 50px 0px #B7BCD1;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-top: 10px;
+
+}
+.cards__item-img {
+  width: 100%;
+  max-height: 520px;
+  border-radius: 30px;
+
+}
+.cards__item-text-group {
+  padding: 18px 37px 23px;
+  display: flex;
+  flex-flow: column;
+
+  align-items: center;
+  text-align: center;
+  min-height: 400px;
+  span {
+    font-weight: 600;
+  }
+}
+.cards__item-title {
+  font-size: 24px;
+  font-weight: 600;
+
+}
+.cards__item-subtitle{
+  margin-top: 25px;
+}
+.cards__item-text {
+  margin-top: 25px;
+  font-style: italic;
+}
+
+// ----------- /cards -------------
+
 // ----------- about-us -----------
 .block__content_about-us {
   flex-flow: column;
