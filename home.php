@@ -577,7 +577,7 @@ Template Name: home
                                   stroke-linecap="round"/>
                         </svg>
                     </div>
-                    <p class="cards__tablet-icon-text">Не работает на другом!</p>
+                    <p class="cards__tablet-icon-text cards__tablet-icon-text_red">Не работает на другом!</p>
                 </div>
             </div>
             <div class="cards__tablet">
