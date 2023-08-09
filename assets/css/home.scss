@@ -71,6 +71,40 @@
 }
 // ----------- /first-on-page -----------
 
+// ----------- trust -----------
+.block__content_trust {
+  padding: 80px 0px;
+}
+.trust__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+}
+.trust__text {
+  line-height: 1.5;
+  font-weight: 300;
+  margin-right: 15px;
+  letter-spacing: 1.4px;
+}
+.trust__table {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  max-width: 980px;
+  width: 100%;
+}
+.trust__table-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// ----------- /trust -----------
+
 // ----------- about-us -----------
 .block__content_about-us {
   flex-flow: column;
