@@ -34,13 +34,13 @@ Template Name: header
                     </svg>
                 </div>
                 <div class="header__menu">
-                    <div class="header__menu-item">Услуги</div>
-                    <div class="header__menu-item">Продукция</div>
-                    <div class="header__menu-item">Блог</div>
+                    <div class="header__menu-item hover__tY">Услуги</div>
+                    <div class="header__menu-item hover__tY">Продукция</div>
+                    <div class="header__menu-item hover__tY">Блог</div>
                 </div>
-                <div class="header__btn">
+                <button class="header__btn">
                     Записатсья
-                </div>
+                </button>
             </div>
         </div>
     </header>

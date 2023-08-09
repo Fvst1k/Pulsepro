@@ -264,6 +264,7 @@ a {
   cursor: pointer;
   border: 2px solid #000000;
   font-family: "JetBrains Mono", sans-serif;
+  transition: ease-in-out all 0.3s;
 }
 .header__btn:hover {
   background: #ffffff;
@@ -316,12 +317,28 @@ a {
   padding: 60px 0 50px;
   color: rgba(255, 255, 255, 0.85);
   margin-top: auto;
+  overflow: hidden;
 }
 
 .block__content_footer {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+
+.footer__ellipse {
+  position: absolute;
+}
+
+.footer__ellipse_small {
+  left: -15%;
+  top: -35%;
+}
+
+.footer__ellipse_big {
+  right: -32%;
+  bottom: -30%;
 }
 
 .b-line {
@@ -335,6 +352,7 @@ a {
   flex-flow: column;
   max-width: 500px;
   width: 100%;
+  position: relative;
 }
 
 .footer__column_left {
