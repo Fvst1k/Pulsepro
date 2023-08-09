@@ -7,7 +7,6 @@
 .block__content_first-on-page {
   padding: 100px 150px;
   position: relative;
-
 }
 .first-on-page__bg {
   position: absolute;
@@ -18,7 +17,6 @@
   img {
     width: 100%;
     height: 100%;
-
   }
 }
 .first-on-page__group {
@@ -136,6 +134,8 @@
 .cards__tablet-icon-text_red {
   color: #FF5151;
 }
+
+
 
 .cards__tablet-icon-text {
   font-size: 22px;
@@ -263,20 +263,27 @@
 }
 // ----------- /demonstration-plus-------------
 
+
 // ----------- about-us -----------
 .block__content_about-us {
   flex-flow: column;
 }
 .pulse-pro {
-  &__inner {
-    display: flex;
-  }
-
+  position: relative;
   &__img {
+    width: 1300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: calc((100% - 1480px) / 2);
   }
 
   &__content {
+    margin-left: auto;
+    position: relative;
     margin-bottom: 80px;
+    max-width: 578px;
+    width: 100%;
   }
 
   &__title {
@@ -329,10 +336,57 @@
   }
 }
 
+// ============EXAMPLES============//
+.examples {
+  margin-bottom: 100px;
+  &__title {
+    margin-left: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.36;
+    letter-spacing: 1.68px;
+  }
+
+  &__row {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__row-item {
+    position: relative;
+  }
+
+  &__item-img {
+  }
+
+  &__item-text {
+    position: absolute;
+    bottom: 7px;
+    right: 0;
+    left: 0;
+    color: $text-color;
+    text-shadow: -0 -1px 0 #000000, 0 -1px 0 #000000, -0 1px 0 #000000,
+      0 1px 0 #000000, -1px -0 0 #000000, 1px -0 0 #000000, -1px 0 0 #000000,
+      1px 0 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000,
+      -1px 1px 0 #000000, 1px 1px 0 #000000, -1px -1px 0 #000000,
+      1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.36; /* 21.808px */
+    letter-spacing: 1.12px;
+    text-align: center;
+  }
+}
+.block__content_examples {
+  flex-flow: column;
+}
+
+// ============/EXAMPLES============//
 
 .about-us {
   padding-bottom: 225px;
-  color: #000;
   &__item {
     display: flex;
     justify-content: space-between;
@@ -353,9 +407,11 @@
     max-width: 590px;
     width: 100%;
   }
+
   &__item-content_vr {
     padding-top: 80px;
     max-width: 697px;
+    width: 100%;
   }
 
   &__item-title {
@@ -379,10 +435,14 @@
     margin-right: 30px;
   }
 }
+
 .block {
   &__content {
     &_about-us {
     }
   }
+}
+.block__content_about-us {
+  flex-flow: column;
 }
 // ----------- /about-us -----------
