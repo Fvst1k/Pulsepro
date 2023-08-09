@@ -544,6 +544,7 @@ Template Name: home
                         </svg>
 
                     </div>
+
                 </div>
             </div>
 
@@ -553,8 +554,8 @@ Template Name: home
 
     <section class="cards">
         <div class="block__content block__content_cards">
-            <div class="cards__tablet">
-                <div class="cards__tablet-item-wrapper">
+            <div class="card__row-color">
+                <div class="card__row-color-item">
                     <div class="cards__tablet-icon">
                         <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M64.5 34C64.5 50.8447 50.8447 64.5 34 64.5C17.1553 64.5 3.5 50.8447 3.5 34C3.5 17.1553 17.1553 3.5 34 3.5C50.8447 3.5 64.5 17.1553 64.5 34Z"
@@ -564,22 +565,8 @@ Template Name: home
                     </div>
                     <p class="cards__tablet-icon-text">То, что работает для одного человека...
                     </p>
-                    <div class="cards__tablet-item">
-                        <div class="cards__item-img">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/card-1.png" alt="">
-                        </div>
-                        <div class="cards__item-text-group">
-                            <h5 class="cards__item-title">Предприниматель,топ менеджер,брокер</h5>
-                            <p class="cards__item-subtitle"><span>Что беспокоит:</span> Проблемы со сном,стресс и
-                                усталость.</p>
-                            <p class="cards__item-text"><span>Интересующие нас показатели:</span> Напряжение сердечной
-                                мышцы,
-                                гармония
-                                биоритмов, уровень энергии, уровень стресса.</p>
-                        </div>
-                    </div>
                 </div>
-                <div class="cards__tablet-item-wrapper">
+                <div class="card__row-color-item">
                     <div class="cards__tablet-icon">
                         <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M64.5 34C64.5 50.8447 50.8447 64.5 34 64.5C17.1553 64.5 3.5 50.8447 3.5 34C3.5 17.1553 17.1553 3.5 34 3.5C50.8447 3.5 64.5 17.1553 64.5 34Z"
@@ -590,19 +577,34 @@ Template Name: home
                                   stroke-linecap="round"/>
                         </svg>
                     </div>
-                    <p class="cards__tablet-icon-text">Не работает на другом!
-                    </p>
-                    <div class="cards__tablet-item">
-                        <div class="cards__item-img">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/card-2.png" alt="">
-                        </div>
-                        <div class="cards__item-text-group">
-                            <h5 class="cards__item-title">Спортсмен,бодибилдер, профессиональный марафонец </h5>
-                            <p class="cards__item-subtitle"><span>Что беспокоит:</span> Пульс, работа сердца,адаптация
-                                организма к тренировкам,данные о перетренированности, выносливость,уровень энергии.</p>
-                            <p class="cards__item-text"><span>Интересующие нас показатели:</span> Пульс,напряжение
-                                миокарда,циркадные ритмы,комплекстный показатель здоровья,состояние иммунитета.</p>
-                        </div>
+                    <p class="cards__tablet-icon-text">Не работает на другом!</p>
+                </div>
+            </div>
+            <div class="cards__tablet">
+                <div class="cards__tablet-item">
+                    <div class="cards__item-img">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/card-1.png" alt="">
+                    </div>
+                    <div class="cards__item-text-group">
+                        <h5 class="cards__item-title">Предприниматель,топ менеджер,брокер</h5>
+                        <p class="cards__item-subtitle"><span>Что беспокоит:</span> Проблемы со сном,стресс и
+                            усталость.</p>
+                        <p class="cards__item-text"><span>Интересующие нас показатели:</span> Напряжение сердечной
+                            мышцы,
+                            гармония
+                            биоритмов, уровень энергии, уровень стресса.</p>
+                    </div>
+                </div>
+                <div class="cards__tablet-item">
+                    <div class="cards__item-img">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/card-2.png" alt="">
+                    </div>
+                    <div class="cards__item-text-group">
+                        <h5 class="cards__item-title">Спортсмен,бодибилдер, профессиональный марафонец </h5>
+                        <p class="cards__item-subtitle"><span>Что беспокоит:</span> Пульс, работа сердца,адаптация
+                            организма к тренировкам,данные о перетренированности, выносливость,уровень энергии.</p>
+                        <p class="cards__item-text"><span>Интересующие нас показатели:</span> Пульс,напряжение
+                            миокарда,циркадные ритмы,комплекстный показатель здоровья,состояние иммунитета.</p>
                     </div>
                 </div>
                 <div class="cards__tablet-item">
@@ -633,6 +635,71 @@ Template Name: home
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="demonstration-plus">
+        <div class="block__content block__content_demonstration-plus">
+            <h2 class="demonstration-plus__title">После демонстрации работы прибора,вы узнаете, как с помощью
+                PulsePro:</h2>
+            <div class="demonstration-plus__table">
+                <div class="demonstration-plus__table-item">
+                    <div class="demonstration-plus__table-img">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/plus-1.png" alt="">
+                    </div>
+                    <h6 class="demonstration-plus__table-title"> Производить мониторинг организма</h6>
+                    <div class="demonstration-plus__table-text">Многие серьезные заболевания развиваются бессимптомно и
+                        незаметно для человека. Если раз в год проходить диагностику, это поможет обнаружить, или
+                        предотвратить нарушения и вылечить их с минимальными затратами.
+                    </div>
+                </div>
+                <div class="demonstration-plus__table-item">
+                    <div class="demonstration-plus__table-img">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/plus-2.png" alt="">
+                    </div>
+                    <h6 class="demonstration-plus__table-title">Проводить диагностику после болезни
+                    </h6>
+                    <div class="demonstration-plus__table-text">Помогает вовремя заметить осложнения после перенесенной
+                        коронавирусной инфекции.
+                    </div>
+                </div>
+                <div class="demonstration-plus__table-item">
+                    <div class="demonstration-plus__table-img">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/plus-3.png" alt="">
+                    </div>
+                    <h6 class="demonstration-plus__table-title">Следить за сердцем
+                    </h6>
+                    <div class="demonstration-plus__table-text">Проверка напряжения сердечной мышцы и вегетативной
+                        системы. 31% смертей во всём мире — от сердечно-сосудистых заболеваний. 28,9% смертей в России —
+                        от ишемической болезни сердца.
+                    </div>
+                </div>
+                <div class="demonstration-plus__table-item">
+                    <div class="demonstration-plus__table-img">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/plus-4.png" alt="">
+                    </div>
+                    <h6 class="demonstration-plus__table-title">Узнать свой биологический возраст
+                    </h6>
+                    <div class="demonstration-plus__table-text">Узнаете на сколько вы отстаете или опережаете свой
+                        возраст по биологическим характеристикам организма.
+                    </div>
+                </div>
+            </div>
+            <h3 class="demonstration-plus__subtitle">
+                PULSEPRO представляет собой прибор для ежедневного чек апа организма.С профессиональными математическими алгоритмами.
+<br><br>
+                Для испытания прибора проведено 500000 измерений:грудных детей,людей среднего и преклонного возраста,подростков,людей с легкими и тяжелыми заболеваниями.
+
+            </h3>
+            <button class="tl__btn tl__btn_demonstration-plus">
+                <p>Записаться на демонстрацию</p>
+                <span class="tl__btn-arrow">
+                    <svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M26.7211 8.70711C27.1117 8.31658 27.1117 7.68342 26.7211 7.29289L20.3572 0.928932C19.9667 0.538408 19.3335 0.538408 18.943 0.928932C18.5524 1.31946 18.5524 1.95262 18.943 2.34315L24.5998 8L18.943 13.6569C18.5524 14.0474 18.5524 14.6805 18.943 15.0711C19.3335 15.4616 19.9667 15.4616 20.3572 15.0711L26.7211 8.70711ZM0 9L26.014 9V7L0 7L0 9Z"
+      fill="black"/>
+</svg>
+</span>
+            </button>
         </div>
     </section>
 
