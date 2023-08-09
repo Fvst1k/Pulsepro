@@ -108,7 +108,10 @@
 // ----------- cards -------------
 .block__content_cards {
   margin-top: 40px;
+  display: flex;
   justify-content: center;
+  flex-flow: column;
+
 }
 .cards__tablet {
   display: grid;
@@ -119,17 +122,21 @@
 
 
 }
-.cards__tablet-item-wrapper {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  &:nth-child(2){
-    .cards__tablet-icon-text {
-      color: #FF5151;
-    }
-
-  }
+.card__row-color {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 25px;
 }
+.card__row-color-item {
+
+}
+
+.cards__tablet-icon-text_red {
+  color: #FF5151;
+}
+
 .cards__tablet-icon-text {
   font-size: 22px;
   color: #21AA56;
@@ -169,6 +176,11 @@
   font-weight: 600;
 
 }
+.cards__tablet-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .cards__item-subtitle{
   margin-top: 25px;
 }
@@ -178,6 +190,78 @@
 }
 
 // ----------- /cards -------------
+
+// ----------- demonstration-plus-------------
+
+.block__content_demonstration-plus {
+  padding: 60px 0 70px;
+  flex-flow: column;
+  align-items: center;
+}
+.demonstration-plus__title {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 2.3px;
+  text-align: center;
+}
+.demonstration-plus__table {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin-top: 60px;
+
+}
+
+.demonstration-plus__table-item {
+  padding: 13px 8px 16px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 11px 8px 30px 0px #B7BCD1;
+  border-radius: 30px;
+  overflow: hidden;
+  max-height: 450px;
+  min-height: 420px;
+  &:nth-child(2n) {
+    margin-top: 120px;
+
+  }
+}
+.demonstration-plus__table-img {
+  max-width: 260px;
+  width: 100%;
+  max-height: 200px;
+  height: 100%;
+
+}
+.demonstration-plus__table-title {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+
+}
+.demonstration-plus__table-text {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0 10px;
+}
+.demonstration-plus__subtitle {
+  margin-top: 60px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  text-align: center;
+
+}
+.tl__btn_demonstration-plus {
+  margin-top: 30px;
+}
+// ----------- /demonstration-plus-------------
 
 // ----------- about-us -----------
 .block__content_about-us {
