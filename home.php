@@ -15,5 +15,11 @@ Template Name: home
 
             </div>
         </section>
+		<section class="sponsors">
+            <div class="block__content block__content_sponsors">
+
+            </div>
+        </section>
+
 
 <?php get_footer(); ?>
