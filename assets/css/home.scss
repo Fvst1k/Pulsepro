@@ -1,8 +1,11 @@
+// ----------- first-on-page -----------
 .first-on-page {
   background: #000000;
+  clip-path: polygon(0 0, 55% 0, 100% 0, 100% 96%, 50% 100%, 0 96%);
+  overflow: hidden;
 }
 .block__content_first-on-page {
-  padding: 80px 150px;
+  padding: 100px 150px;
   position: relative;
 
 }
@@ -18,9 +21,60 @@
 
   }
 }
+.first-on-page__group {
+  max-width: 640px;
+  width: 100%;
+  position: relative;
 
+
+}
+.first-on-page__title {
+  font-size: 36px;
+  line-height: 1.5;
+  color: $text-color;
+  letter-spacing: 2.52px;
+  font-weight: 600;
+  margin-top: 15px;
+
+
+}
+.first-on-page__text {
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 1.68px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-top: 50px;
+
+}
+.tl__btn_first-on-page {
+  margin-top: 36px;
+  border: rgba(224, 75, 75, 1);
+  color: $text-color;
+  background: rgba(224, 75, 75, 1);
+  svg {
+    path {
+      fill:#ffffff;
+    }
+  }
+  &:hover {
+    background: #ffffff;
+    border: #000000;
+    color: #000000;
+    svg {
+      path {
+        fill: #000000;
+      }
+    }
+  }
+
+}
+// ----------- /first-on-page -----------
 
 // ----------- about-us -----------
+.block__content_about-us {
+  flex-flow: column;
+}
 .pulse-pro {
   &__inner {
     display: flex;
