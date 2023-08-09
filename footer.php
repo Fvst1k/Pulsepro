@@ -1,6 +1,17 @@
 <!-- Footer -->
 <footer class="footer">
+
     <div class="block__content block__content_footer">
+        <div class="footer__ellipse footer__ellipse_small">
+            <svg width="338" height="338" viewBox="0 0 338 338" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="169" cy="169" r="144" stroke="#181818" stroke-width="50"/>
+            </svg>
+        </div>
+        <div class="footer__ellipse footer__ellipse_big">
+            <svg width="628" height="628" viewBox="0 0 628 628" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="314" cy="314" r="249" stroke="#181818" stroke-width="130"/>
+            </svg>
+        </div>
         <div class="footer__column footer__column_left">
             <div class="footer__logo b-line">
                 <svg width="147" height="28" viewBox="0 0 147 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,9 +47,9 @@
             </div>
             <div class="footer__contacts-wrapper b-line">
                 <div class="header__menu footer__menu ">
-                    <div class="header__menu-item">Услуги</div>
-                    <div class="header__menu-item">Продукция</div>
-                    <div class="header__menu-item">Блог</div>
+                    <div class="header__menu-item hover__tY">Услуги</div>
+                    <div class="header__menu-item hover__tY">Продукция</div>
+                    <div class="header__menu-item hover__tY">Блог</div>
                 </div>
             </div>
             <div class="footer__contacts-wrapper b-line">
@@ -93,7 +104,6 @@
                 <div class="footer__contacts-politic hover__tY" href="">Политика конфиденциальности</div>
             </div>
         </div>
-
 
     </div>
 </footer>
