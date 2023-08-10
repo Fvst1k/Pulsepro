@@ -555,6 +555,10 @@
     margin-bottom: 70px;
     font-size: 36px;
     font-weight: 600;
+	@include before-sm() {
+		margin-top: 60px;
+	
+	  }
   }
 
   &__catalog {
@@ -564,6 +568,9 @@
     grid-template-rows: 1fr;
     grid-column-gap: 40px;
     grid-row-gap: 40px;
+	@include before-lg() {
+		grid-template-columns: repeat(1, 1fr);
+	  }
   }
 
   &__card {
@@ -574,6 +581,12 @@
     &:hover {
       transform: scale(1.05);
     }
+	@include before-sm() {
+		max-width: 300px;
+		width: 100%;
+		margin: 0 auto;
+		transform: scale(1.0);
+	  }
   }
 
   &__card-img {
@@ -581,6 +594,10 @@
 
   &__card-description {
     padding: 50px 40px 55px;
+	@include before-sm() {
+		padding: 20px 20px 28px;
+	
+	  }
   }
 
   &__description-title {
@@ -589,6 +606,11 @@
     font-weight: 600;
     line-height: 1.36;
     letter-spacing: 2.24px;
+	@include before-sm() {
+		font-size: 26px;
+		margin-bottom: 25px;
+	
+	  }
   }
 
   &__description-list {
@@ -618,6 +640,10 @@
       line-height: 1.5;
       letter-spacing: 1.4px;
     }
+	@include before-sm() {
+		margin-top: 40px;
+	
+	  }
   }
 }
 .block {
@@ -640,11 +666,16 @@
 // =============Blog-page=======//
 .blog {
   &__title {
-
     margin-top: 150px;
     margin-bottom: 70px;
     font-size: 36px;
     font-weight: 600;
+	@include before-lg() {
+		margin-top: 60px;
+	  }
+	@include before-sm() {
+		margin-top: 40px;
+	  }
   }
 
   &__table {
@@ -654,6 +685,14 @@
     grid-template-rows: 1fr;
     grid-column-gap: 40px;
     grid-row-gap: 40px;
+	@include before-lg() {
+		grid-template-columns: repeat(2, 1fr);
+	  }
+	  @include before-sm() {
+		grid-template-columns: repeat(1, 1fr);
+		margin: 0 auto;
+		margin-bottom: 60px;
+	  }
   }
 
   &__card {
@@ -681,6 +720,9 @@
     margin-bottom: 20px;
     font-weight: 700;
     letter-spacing: -0.5px;
+	@include before-md() {
+		font-size: 17px;
+	  }
   }
 
   &__card-subtitle {
@@ -688,6 +730,9 @@
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 1.12px;
+	@include before-md() {
+		font-size: 14px;
+	  }
   }
 }
 .block {
