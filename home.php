@@ -937,4 +937,28 @@ Template Name: home
         </div>
     </section>
 
+	 
+		
+				<div class="block__content">
+					<div class="pop-up">
+						<div class="pop-up__bg"><img src="<?php echo get_template_directory_uri() ?>/assets/images/background-wave.jpg" alt="wave"></div>
+						<div class="pop-up__cross"><svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.17275 3.17278L26.3271 26.3271" stroke="white" stroke-width="5" stroke-linecap="round"/>
+<path d="M26.3271 3.17274L3.17278 26.3271" stroke="white" stroke-width="5" stroke-linecap="round"/>
+</svg>
+</div>
+						<h2 class="pop-up__title">Запишитесь на демонстрацию нашего продукта</h2>
+						<p class="pop-up__subtitle">Оставьте заявку и наши менеджеры вам перезвонят</p>
+						<form class="pop-up__form">
+							<input type="text" class="pop-up__form-name" name="name" placeholder="Имя"  required>
+							<input type="tel" class="pop-up__form-phone" name="phone" placeholder="Телефон" required>
+							<button class="tl__btn tl__btn_first-on-page tl__btn_first-on-page_form">
+										<p>Оставить заявку</p>
+									</button>
+						</form>
+					</div>
+				</div>
+		
+	 
+
 <?php get_footer(); ?>
