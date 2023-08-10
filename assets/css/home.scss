@@ -625,11 +625,17 @@
 .analize {
   margin-bottom: 125px;
 
+
   &__img-box {
     width: 40%;
     margin-right: 40px;
     @include  before-xl(){
       margin-right: 15px;
+    }
+    @include before-md(){
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
     }
   }
 
@@ -639,6 +645,10 @@
 
     &:nth-child(1) {
       margin-bottom: 21px;
+    }
+    @include before-md(){
+      margin: 0 5px;
+
     }
   }
 
@@ -650,6 +660,9 @@
     line-height: 1.36;
     letter-spacing: 1.26px;
     position: relative;
+    @include  before-xl(){
+      width: 50%;
+    }
 
   }
 
@@ -675,16 +688,25 @@
   }
 
   &__principles-list {
+    @include  before-xl(){
+      font-size: 18px;
+    }
   }
 
   &__list-title {
     display: block;
     margin-bottom: 35px;
+    @include  before-xl(){
+      font-size: 18px;
+    }
   }
 
   &__list-item {
     margin-left: 35px;
     list-style-type: disc;
+    @include  before-xl(){
+      font-size: 18px;
+    }
   }
 }
 
@@ -698,8 +720,9 @@
   &__content {
     &_analize {
       align-items: center;
-
-
+      @include before-md{
+        flex-flow: column;
+      }
     }
   }
 }
