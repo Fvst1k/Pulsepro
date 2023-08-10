@@ -636,3 +636,69 @@
 }
 
 // =============/Products-page=======//
+
+// =============Blog-page=======//
+.blog {
+  &title {
+    margin-top: 150px;
+    margin-bottom: 70px;
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  &table {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+  }
+
+  &card {
+    max-width: 361px;
+    width: 100%;
+    transition: all 0.3s;
+    &:hover{
+      transform: scale(1.05);
+    }
+  }
+
+  &img {
+  }
+
+  &date {
+    margin-bottom: 8px;
+    color: #878787;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.84px;
+  }
+
+  &card-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+
+  &card-subtitle {
+    color: #878787;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.12px;
+  }
+}
+.block {
+  &content {
+    &_blog {
+      flex-flow: column;
+    }
+  }
+}
+.b-line {
+  &_title {
+  }
+}
+
+// =============/Blog-page=======//
