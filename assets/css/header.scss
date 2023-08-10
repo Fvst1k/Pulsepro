@@ -135,6 +135,13 @@
     font-size: 18px;
     font-family: 'JetBrains Mono', sans-serif;
     font-weight: 300;
+
+  }
+  @include before-md(){
+    p {
+      font-size: 14px;
+    }
+
   }
 }
 
