@@ -7,14 +7,17 @@
 
 /* Слайдер */
 .slick-slider {
+
 }
 
 /* Ограничевающая оболочка */
 .slick-list {
+
 }
 
 /* Лента слайдов */
 .slick-track {
+  height: 315px;
 }
 
 
@@ -89,12 +92,32 @@
 
 /* Точки*/
 .slick-dots {
+
 }
 
+
+.slick-dots li{
+  &.slick-active {
+    background: rgba(255, 92, 92, 1);
+
+  }
+}
+.slick-dots {
+  margin-top: 40px;
+  position: relative;
+
+}
 .slick-dots li {
+  background: rgba(183, 188, 209, 1);
+  border-radius: 50%;
+  transition: ease-in-out all 0.3s;
+  margin: 0 10px;
 }
 
 .slick-dots button {
+  &:before {
+    display: none;
+  }
 }
 
 /* Ограничевающая оболочка */
