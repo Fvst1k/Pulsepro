@@ -43,6 +43,17 @@
   position: relative;
 
 }
+.footer__logo {
+  svg {
+    transition: ease-in-out all 0.3s;
+  }
+
+  &:hover {
+    svg {
+      transform: scale(1.05);
+    }
+  }
+}
 
 .footer__column_left {
   margin-top: 30px;

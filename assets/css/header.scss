@@ -1,13 +1,46 @@
 .block__content_header {
 
 }
+
 .header__main-row {
   width: 100%;
   min-height: 120px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  @include before-lg() {
+    justify-content: space-between;
+    min-height: 90px;
+
+  }
+  @include before-sm() {
+    justify-content: space-evenly;
+    position: relative;
+    min-height: 130px;
+
+  }
 }
+
+.header__logo {
+  svg {
+    transition: ease-in-out all 0.3s;
+  }
+
+  &:hover {
+    svg {
+      transform: scale(1.05);
+    }
+  }
+
+  @include before-lg() {
+    width: 100px;
+    svg {
+      width: 100%;
+    }
+
+  }
+}
+
 .header__menu {
   display: flex;
   max-width: 340px;
@@ -15,12 +48,36 @@
   align-items: center;
   justify-content: space-between;
   margin: 0 10px 0 105px;
+
   div {
     font-size: 18px;
     font-family: 'JetBrains Mono', sans-serif;
   }
 
+  @include before-lg() {
+    margin: 0 10px;
+    max-width: 200px;
+
+    div {
+      font-size: 14px;
+    }
+
+  }
+  @include before-sm() {
+    position: absolute;
+    bottom: 10px;
+    left: calc((100% - 240px) /2);
+    margin: 0;
+    max-width: 240px;
+    div {
+      font-weight: 600;
+    }
+
+
+  }
+
 }
+
 .header__btn {
   margin-left: auto;
   background: #000000;
@@ -34,6 +91,7 @@
   border: 2px solid #000000;
   font-family: 'JetBrains Mono', sans-serif;
   transition: ease-in-out all 0.3s;
+
   &:hover {
     background: #ffffff;
     color: #000000;
@@ -41,20 +99,33 @@
 
   }
 
+  @include before-lg() {
+    margin-left: 10px;
+    padding: 8px 30px;
+    font-size: 16px;
+    font-weight: 500;
+
+
+  }
+
 }
+
 .footer__contacts-wrapper {
   width: 100%;
 }
+
 .footer__contacts {
   margin-top: 30px;
   display: flex;
   flex-flow: column;
 }
+
 .footer__contacts-subtitle {
   font-family: 'JetBrains Mono', sans-serif;
   font-size: 18px;
   margin-bottom: 4px;
 }
+
 .footer__contact-group {
   margin-top: 12px;
   display: flex;
@@ -66,14 +137,17 @@
     font-weight: 300;
   }
 }
+
 .footer__contact-icon {
   margin-right: 11px;
 }
+
 .footer__politic {
 
   font-family: 'JetBrains Mono', sans-serif;
   font-size: 14px;
 }
+
 .footer__contacts-wrapper_mt {
   margin-top: 30px;
 }

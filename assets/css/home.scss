@@ -6,8 +6,9 @@
 }
 
 .block__content_first-on-page {
-  padding: 100px 150px;
+  padding: 100px 20px 150px;
   position: relative;
+
 }
 
 .first-on-page__bg {
@@ -20,6 +21,18 @@
   img {
     width: 100%;
     height: 100%;
+  }
+  @include before-lg(){
+    top: unset;
+    bottom: 30%;
+
+  }
+  @include before-sm(){
+    top: unset;
+    width: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+
   }
 }
 
@@ -36,6 +49,10 @@
   letter-spacing: 2.52px;
   font-weight: 600;
   margin-top: 15px;
+  @include before-md(){
+    font-size: 28px;
+
+  }
 }
 
 .first-on-page__text {
@@ -45,6 +62,10 @@
   font-weight: 300;
   line-height: 1.5;
   margin-top: 50px;
+  @include before-md(){
+    font-size: 16px;
+
+  }
 }
 .tl__btn_first-on-page {
   margin-top: 36px;
