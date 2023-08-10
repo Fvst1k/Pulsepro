@@ -13,6 +13,11 @@
   display: flex;
   justify-content: space-between;
   position: relative;
+  @include before-sm(){
+    flex-flow: column;
+    align-items: center;
+
+  }
 
 }
 .footer__ellipse {
@@ -41,6 +46,10 @@
   max-width: 500px;
   width: 100%;
   position: relative;
+  @include before-sm(){
+    max-width: 400px;
+
+  }
 
 }
 .footer__logo {
@@ -57,6 +66,10 @@
 
 .footer__column_left {
   margin-top: 30px;
+  margin-right: 20px;
+  @include before-sm(){
+    margin-right: 0;
+  }
 }
 
 .footer__btn-wrapper {
@@ -70,16 +83,27 @@
     font-size: 12px;
     line-height: 1.6;
   }
+
+}
+.mobile-dn {
+  @include before-sm(){
+    display: none;
+  }
 }
 .footer__subtitle {
   max-width: 340px;
   width: 100%;
   font-size: 16px;
   font-weight: 300;
+
 }
 .footer__menu {
   margin-left: 0;
   margin-top: 30px;
+  @include before-sm(){
+    position: relative;
+    bottom: 0;
+  }
 }
 .footer__contacts-politic {
   font-size: 14px;

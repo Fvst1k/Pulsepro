@@ -31,7 +31,7 @@
                 </button>
             </div>
 
-            <div class="footer__company-info b-line">
+            <div class="footer__company-info b-line mobile-dn">
                 <p>ИП Скорнякова Любовь Владимировна</p>
                 <p>Дата регистрации 09.06.2023О</p>
                 <p>ГРН 323784700188084 ИНН 471911241791</p>
@@ -41,7 +41,7 @@
             </div>
         </a>
         <div class="footer__column footer__column_right">
-            <div class="footer__contacts-wrapper b-line">
+            <div class="footer__contacts-wrapper b-line mobile-dn">
                 <h4 class="footer__subtitle ">Современная домашняя IT-технология для удобного управления своим
                     здоровьем</h4>
             </div>
