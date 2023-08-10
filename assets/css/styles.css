@@ -505,6 +505,9 @@ a {
   width: 100%;
   overflow: scroll;
 }
+.trust__table::-webkit-scrollbar {
+  width: 0;
+}
 
 .trust__table-item {
   display: flex;

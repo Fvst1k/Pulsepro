@@ -123,6 +123,9 @@
   max-width: 980px;
   width: 100%;
   overflow: scroll;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 }
 
 .trust__table-item {
