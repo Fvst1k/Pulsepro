@@ -297,6 +297,7 @@
   @include before-md() {
     font-size: 26px;
   }
+ 
 }
 
 .demonstration-plus__title {
@@ -306,6 +307,9 @@
   max-width: 860px;
   @include before-md() {
     font-size: 24px;
+  }
+  @include before-sm() {
+    font-size: 18px;
   }
 }
 
@@ -660,7 +664,7 @@
       margin-bottom: 20px;
     }
     @include  before-md(){
-      font-size: 22px;
+      font-size: 18px;
     }
   }
 

@@ -814,6 +814,11 @@ a {
     font-size: 24px;
   }
 }
+@media screen and (max-width: 575px) {
+  .demonstration-plus__title {
+    font-size: 18px;
+  }
+}
 
 .demonstration-plus__table {
   display: grid;
@@ -1218,7 +1223,7 @@ a {
 }
 @media screen and (max-width: 767px) {
   .analize__principles-title {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1273,9 +1278,15 @@ a {
 }
 @media screen and (max-width: 767px) {
   .tl__btn_analize {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -1854,8 +1865,13 @@ a {
 }
 @media screen and (max-width: 575px) {
   .block__content_footer {
-    flex-flow: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
