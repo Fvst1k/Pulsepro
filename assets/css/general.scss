@@ -102,6 +102,14 @@ a {
       }
     }
   }
+  @include before-md(){
+
+    padding: 10px 10px 10px 21px;
+    p {
+      font-size: 16px;
+    }
+
+  }
 }
 
 .tl__btn_footer {
