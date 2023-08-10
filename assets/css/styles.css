@@ -284,7 +284,7 @@ a {
   justify-content: space-between;
   margin: 0 10px 0 105px;
 }
-.header__menu div {
+.header__menu a {
   font-size: 18px;
   font-family: "JetBrains Mono", sans-serif;
 }
@@ -293,7 +293,7 @@ a {
     margin: 0 10px;
     max-width: 200px;
   }
-  .header__menu div {
+  .header__menu a {
     font-size: 14px;
   }
 }
@@ -305,7 +305,7 @@ a {
     margin: 0;
     max-width: 240px;
   }
-  .header__menu div {
+  .header__menu a {
     font-weight: 600;
   }
 }
