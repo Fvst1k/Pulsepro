@@ -4,26 +4,31 @@
   clip-path: polygon(0 0, 55% 0, 100% 0, 100% 96%, 50% 100%, 0 96%);
   overflow: hidden;
 }
+
 .block__content_first-on-page {
   padding: 100px 150px;
   position: relative;
 }
+
 .first-on-page__bg {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+
   img {
     width: 100%;
     height: 100%;
   }
 }
+
 .first-on-page__group {
   max-width: 640px;
   width: 100%;
   position: relative;
 }
+
 .first-on-page__title {
   font-size: 36px;
   line-height: 1.5;
@@ -32,6 +37,7 @@
   font-weight: 600;
   margin-top: 15px;
 }
+
 .first-on-page__text {
   color: #ffffff;
   font-size: 24px;
@@ -40,20 +46,24 @@
   line-height: 1.5;
   margin-top: 50px;
 }
+
 .tl__btn_first-on-page {
   margin-top: 36px;
   border: rgba(224, 75, 75, 1);
   color: $text-color;
   background: rgba(224, 75, 75, 1);
+
   svg {
     path {
       fill: #ffffff;
     }
   }
+
   &:hover {
     background: #ffffff;
     border: #000000;
     color: #000000;
+
     svg {
       path {
         fill: #000000;
@@ -61,24 +71,28 @@
     }
   }
 }
+
 // ----------- /first-on-page -----------
 
 // ----------- trust -----------
 .block__content_trust {
   padding: 80px 0px;
 }
+
 .trust__row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
+
 .trust__text {
   line-height: 1.5;
   font-weight: 300;
   margin-right: 15px;
   letter-spacing: 1.4px;
 }
+
 .trust__table {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -88,6 +102,7 @@
   max-width: 980px;
   width: 100%;
 }
+
 .trust__table-item {
   display: flex;
   justify-content: center;
@@ -103,6 +118,7 @@
   justify-content: center;
   flex-flow: column;
 }
+
 .cards__tablet {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -110,6 +126,7 @@
   grid-column-gap: 30px;
   grid-row-gap: 25px;
 }
+
 .card__row-color {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -117,6 +134,7 @@
   grid-column-gap: 30px;
   grid-row-gap: 25px;
 }
+
 .card__row-color-item {
 }
 
@@ -128,9 +146,11 @@
   margin-top: 16px;
   text-align: center;
 }
+
 .cards__tablet-icon-text_red {
   color: #ff5151;
 }
+
 .cards__tablet-item {
   max-width: 560px;
   width: 100%;
@@ -139,11 +159,13 @@
   overflow: hidden;
   margin-top: 10px;
 }
+
 .cards__item-img {
   width: 100%;
   max-height: 520px;
   border-radius: 30px;
 }
+
 .cards__item-text-group {
   padding: 18px 37px 23px;
   display: flex;
@@ -152,22 +174,27 @@
   align-items: center;
   text-align: center;
   min-height: 400px;
+
   span {
     font-weight: 600;
   }
 }
+
 .cards__item-title {
   font-size: 24px;
   font-weight: 600;
 }
+
 .cards__tablet-icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .cards__item-subtitle {
   margin-top: 25px;
 }
+
 .cards__item-text {
   margin-top: 25px;
   font-style: italic;
@@ -182,18 +209,21 @@
   flex-flow: column;
   align-items: center;
 }
-F .demonstration-plus__title {
+
+.demonstration-plus__title {
   font-size: 32px;
   font-weight: 600;
   letter-spacing: 2.3px;
   text-align: center;
 }
+
 .demonstration-plus__title {
   font-size: 32px;
   text-align: center;
   font-weight: 700;
   max-width: 860px;
 }
+
 .demonstration-plus__table {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -214,22 +244,26 @@ F .demonstration-plus__title {
   overflow: hidden;
   max-height: 470px;
   min-height: 420px;
+
   &:nth-child(2n) {
     margin-top: 120px;
   }
 }
+
 .demonstration-plus__table-img {
   max-width: 260px;
   width: 100%;
   max-height: 200px;
   height: 100%;
 }
+
 .demonstration-plus__table-title {
   margin-top: 30px;
   font-size: 16px;
   font-weight: 600;
   text-align: center;
 }
+
 .demonstration-plus__table-text {
   margin-top: 20px;
   font-size: 14px;
@@ -238,23 +272,28 @@ F .demonstration-plus__title {
   line-height: 1.2;
   padding: 0 6px;
 }
+
 .demonstration-plus__subtitle {
   margin-top: 60px;
   font-weight: 600;
   letter-spacing: 1.4px;
   text-align: center;
 }
+
 .tl__btn_demonstration-plus {
   margin-top: 30px;
 }
+
 // ----------- /demonstration-plus-------------
 
 // ----------- about-us -----------
 .block__content_about-us {
   flex-flow: column;
 }
+
 .pulse-pro {
   position: relative;
+
   &__img {
     width: 1300px;
     height: 100%;
@@ -286,6 +325,7 @@ F .demonstration-plus__title {
     line-height: 1.36;
     letter-spacing: 1.4px;
   }
+
   &__description {
     margin-bottom: 40px;
     row-gap: 20px;
@@ -297,6 +337,7 @@ F .demonstration-plus__title {
     font-weight: 500;
     line-height: 1.36;
     letter-spacing: 1.4px;
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -310,10 +351,12 @@ F .demonstration-plus__title {
     margin-left: 35px;
     list-style: disc;
   }
+
   &__btn {
     max-width: 408px;
   }
 }
+
 .block {
   &__content {
     &_pulse-pro {
@@ -324,6 +367,7 @@ F .demonstration-plus__title {
 // ============EXAMPLES============//
 .examples {
   margin-bottom: 100px;
+
   &__title {
     margin-left: 30px;
     font-size: 24px;
@@ -353,10 +397,10 @@ F .demonstration-plus__title {
     left: 0;
     color: $text-color;
     text-shadow: -0 -1px 0 #000000, 0 -1px 0 #000000, -0 1px 0 #000000,
-      0 1px 0 #000000, -1px -0 0 #000000, 1px -0 0 #000000, -1px 0 0 #000000,
-      1px 0 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000,
-      -1px 1px 0 #000000, 1px 1px 0 #000000, -1px -1px 0 #000000,
-      1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+    0 1px 0 #000000, -1px -0 0 #000000, 1px -0 0 #000000, -1px 0 0 #000000,
+    1px 0 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000,
+    -1px 1px 0 #000000, 1px 1px 0 #000000, -1px -1px 0 #000000,
+    1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.36; /* 21.808px */
@@ -364,6 +408,7 @@ F .demonstration-plus__title {
     text-align: center;
   }
 }
+
 .block__content_examples {
   flex-flow: column;
 }
@@ -373,32 +418,33 @@ F .demonstration-plus__title {
 // ============Analize=============//
 .analize {
   margin-bottom: 125px;
-  
+
   &__img-box {
     width: 40%;
-	margin-right: 40px;
+    margin-right: 40px;
   }
 
   &__img {
-		
-		
-	img{
-		
-	}
+
+
+    img {
+
+    }
+
     &:nth-child(1) {
       margin-bottom: 21px;
     }
   }
 
   &__principles {
-	width: 60%;
+    width: 60%;
     margin-top: 100px;
     font-size: 18px;
     font-weight: 500;
     line-height: 1.36;
     letter-spacing: 1.26px;
     position: relative;
-    
+
   }
 
   &__principles-title {
@@ -425,35 +471,76 @@ F .demonstration-plus__title {
     list-style-type: disc;
   }
 }
-.tl__btn_analize{
-	max-width: 420px;
-	width: 100%;
-	margin: 50px auto;
+
+.tl__btn_analize {
+  max-width: 420px;
+  width: 100%;
+  margin: 50px auto;
 }
+
 .block {
   &__content {
     &_analize {
-		align-items: center;
-      
-      
+      align-items: center;
+
+
     }
   }
 }
 
 // ============/Analize=============//
 
+// ----------- reviews -----------
+
+.block__content_reviews {
+  flex-flow: column;
+  margin-bottom: 140px;
+}
+
+.reviews__title {
+  font-size: 36px;
+  font-weight: 500;
+
+}
+
+.reviews__slider {
+  margin: 36px 0 180px;
+
+}
+
+.reviews__slider-item {
+  background: #717171;
+  border-radius: 30px;
+  width: 560px;
+  height: 315px;
+  overflow: hidden;
+  margin-right: 40px;
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+
+}
+
+// ----------- /reviews -----------
+
 .about-us {
   padding-bottom: 225px;
+
   &__item {
     display: flex;
     justify-content: space-between;
+
     &:nth-child(1) {
       margin-bottom: 60px;
     }
+
     &:nth-child(2) {
       margin-bottom: 100px;
     }
   }
+
   &__item_reverse {
     flex-direction: row-reverse;
     align-items: center;
@@ -499,7 +586,9 @@ F .demonstration-plus__title {
     }
   }
 }
+
 .block__content_about-us {
   flex-flow: column;
 }
+
 // ----------- /about-us -----------

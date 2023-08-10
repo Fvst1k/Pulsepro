@@ -5,7 +5,7 @@ Template Name: home
 ?>
 
 <?php get_header() ?>
-      
+
     <section class="first-on-page">
         <div class="block__content block__content_first-on-page">
             <div class="first-on-page__bg">
@@ -787,24 +787,31 @@ Template Name: home
         </div>
     </section>
 
-	<section class="analize">
-		<div class="block__content block__content_analize">
-			<div class="analize__img-box">
-				<div class="analize__img"><img src="<?php echo get_template_directory_uri() ?>/assets/images/analize1.png" alt="pulsprophoto"></div>
-				<div class="analize__img"><img src="<?php echo get_template_directory_uri() ?>/assets/images/analize2.png" alt="pulsprophoto"></div>
-			</div>
-			<div class="analize__principles">
-				<h2 class="analize__principles-title">Комплексный анализ 4-х главных<br> систем организма за 5 минут.<br>
-Принцип действия состоит в <br> измерении электрокардиограммы <br> и анализе вариабельности <br> сердечного ритма.</h2>
-<p class="analize__principles-subtitle">Исследования в этой области на протяжении уже более двадцати лет позволяют нам с высокой точностью определять отклонения в функциональном состоянии организма.</p>
-			<ul class="analize__principles-list">
-				<span class="analize__list-title">Точность и многообразие показателей решают сразу несколько диагностических задач:</span>
-				<li class="analize__list-item">На какой возраст чувствует себя человек?</li>
-				<li class="analize__list-item">Перенапряжение ди его сердце?</li>
-				<li class="analize__list-item">Имеет ли место переутомление и стресс?</li>
-				<li class="analize__list-item">Насколько в порядке гормональная система?</li>
-			</ul>
-			<button class="tl__btn tl__btn_analize">
+    <section class="analize">
+        <div class="block__content block__content_analize">
+            <div class="analize__img-box">
+                <div class="analize__img"><img
+                            src="<?php echo get_template_directory_uri() ?>/assets/images/analize1.png"
+                            alt="pulsprophoto"></div>
+                <div class="analize__img"><img
+                            src="<?php echo get_template_directory_uri() ?>/assets/images/analize2.png"
+                            alt="pulsprophoto"></div>
+            </div>
+            <div class="analize__principles">
+                <h2 class="analize__principles-title">Комплексный анализ 4-х главных<br> систем организма за 5
+                    минут.<br>
+                    Принцип действия состоит в <br> измерении электрокардиограммы <br> и анализе вариабельности <br>
+                    сердечного ритма.</h2>
+                <p class="analize__principles-subtitle">Исследования в этой области на протяжении уже более двадцати лет
+                    позволяют нам с высокой точностью определять отклонения в функциональном состоянии организма.</p>
+                <ul class="analize__principles-list">
+                    <span class="analize__list-title">Точность и многообразие показателей решают сразу несколько диагностических задач:</span>
+                    <li class="analize__list-item">На какой возраст чувствует себя человек?</li>
+                    <li class="analize__list-item">Перенапряжение ди его сердце?</li>
+                    <li class="analize__list-item">Имеет ли место переутомление и стресс?</li>
+                    <li class="analize__list-item">Насколько в порядке гормональная система?</li>
+                </ul>
+                <button class="tl__btn tl__btn_analize">
                     <p>Записаться на демонстрацию</p>
                     <span class="tl__btn-arrow">
                     <svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -813,10 +820,36 @@ Template Name: home
 </svg>
 </span>
                 </button>
-			</div>
-			
-		</div>
-	</section>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="block__content block__content_reviews">
+            <h3 class="reviews__title">Видео-отзывы пользователей прибора</h3>
+            <div class="reviews__slider">
+                <div class="reviews__slider-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4xDzrJKXOOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="reviews__slider-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4xDzrJKXOOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="reviews__slider-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4xDzrJKXOOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="reviews__slider-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4xDzrJKXOOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="reviews__slider-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4xDzrJKXOOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="reviews__slider-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4xDzrJKXOOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="about-us">
         <div class="block__content block__content_about-us">
