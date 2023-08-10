@@ -639,14 +639,15 @@
 
 // =============Blog-page=======//
 .blog {
-  &title {
+  &__title {
+
     margin-top: 150px;
     margin-bottom: 70px;
     font-size: 36px;
     font-weight: 600;
   }
 
-  &table {
+  &__table {
     margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -655,7 +656,7 @@
     grid-row-gap: 40px;
   }
 
-  &card {
+  &__card {
     max-width: 361px;
     width: 100%;
     transition: all 0.3s;
@@ -664,10 +665,10 @@
     }
   }
 
-  &img {
+  &__img {
   }
 
-  &date {
+  &__date {
     margin-bottom: 8px;
     color: #878787;
     font-size: 12px;
@@ -676,13 +677,13 @@
     letter-spacing: 0.84px;
   }
 
-  &card-title {
+  &__card-title {
     margin-bottom: 20px;
     font-weight: 700;
     letter-spacing: -0.5px;
   }
 
-  &card-subtitle {
+  &__card-subtitle {
     color: #878787;
     font-size: 16px;
     font-weight: 400;
@@ -690,7 +691,7 @@
   }
 }
 .block {
-  &content {
+  &__content {
     &_blog {
       flex-flow: column;
     }
