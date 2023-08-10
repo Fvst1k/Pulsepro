@@ -34,9 +34,9 @@ Template Name: header
                     </svg>
                 </a>
                 <div class="header__menu">
-                    <div class="header__menu-item hover__tY">Услуги</div>
-                    <div class="header__menu-item hover__tY">Продукция</div>
-                    <div class="header__menu-item hover__tY">Блог</div>
+                    <a href="/#" class="header__menu-item hover__tY">Услуги</a>
+                    <a href="/product" class="header__menu-item hover__tY">Продукция</a>
+                    <a href="/blog" class="header__menu-item hover__tY">Блог</a>
                 </div>
                 <button class="header__btn">
                     Записаться
