@@ -4,26 +4,31 @@
   clip-path: polygon(0 0, 55% 0, 100% 0, 100% 96%, 50% 100%, 0 96%);
   overflow: hidden;
 }
+
 .block__content_first-on-page {
   padding: 100px 150px;
   position: relative;
 }
+
 .first-on-page__bg {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+
   img {
     width: 100%;
     height: 100%;
   }
 }
+
 .first-on-page__group {
   max-width: 640px;
   width: 100%;
   position: relative;
 }
+
 .first-on-page__title {
   font-size: 36px;
   line-height: 1.5;
@@ -32,6 +37,7 @@
   font-weight: 600;
   margin-top: 15px;
 }
+
 .first-on-page__text {
   color: #ffffff;
   font-size: 24px;
@@ -182,7 +188,8 @@
   flex-flow: column;
   align-items: center;
 }
-F .demonstration-plus__title {
+
+.demonstration-plus__title {
   font-size: 32px;
   font-weight: 600;
   letter-spacing: 2.3px;
@@ -353,10 +360,10 @@ F .demonstration-plus__title {
     left: 0;
     color: $text-color;
     text-shadow: -0 -1px 0 #000000, 0 -1px 0 #000000, -0 1px 0 #000000,
-      0 1px 0 #000000, -1px -0 0 #000000, 1px -0 0 #000000, -1px 0 0 #000000,
-      1px 0 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000,
-      -1px 1px 0 #000000, 1px 1px 0 #000000, -1px -1px 0 #000000,
-      1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+    0 1px 0 #000000, -1px -0 0 #000000, 1px -0 0 #000000, -1px 0 0 #000000,
+    1px 0 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000,
+    -1px 1px 0 #000000, 1px 1px 0 #000000, -1px -1px 0 #000000,
+    1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.36; /* 21.808px */
@@ -395,6 +402,7 @@ F .demonstration-plus__title {
     line-height: 1.36;
     letter-spacing: 1.26px;
     position: relative;
+    
   }
 
   &__principles-title {
@@ -421,6 +429,7 @@ F .demonstration-plus__title {
     list-style-type: disc;
   }
 }
+
 .tl__btn_analize {
   max-width: 420px;
   width: 100%;
@@ -430,9 +439,48 @@ F .demonstration-plus__title {
   &__content {
     &_analize {
       align-items: center;
+
+
     }
   }
 }
+
+
+
+// ----------- reviews -----------
+
+.block__content_reviews {
+  flex-flow: column;
+  margin-bottom: 140px;
+}
+
+.reviews__title {
+  font-size: 36px;
+  font-weight: 500;
+
+}
+
+.reviews__slider {
+  margin: 36px 0 180px;
+
+}
+
+.reviews__slider-item {
+  background: #717171;
+  border-radius: 30px;
+  width: 560px;
+  height: 315px;
+  overflow: hidden;
+  margin-right: 40px;
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+
+}
+
+// ----------- /reviews -----------
 
 // ============/Analize=============//
 
@@ -493,9 +541,11 @@ F .demonstration-plus__title {
     }
   }
 }
+
 .block__content_about-us {
   flex-flow: column;
 }
+
 // ----------- /about-us -----------
 
 // =============Products-page=======//
@@ -586,3 +636,69 @@ F .demonstration-plus__title {
 }
 
 // =============/Products-page=======//
+
+// =============Blog-page=======//
+.blog {
+  &title {
+    margin-top: 150px;
+    margin-bottom: 70px;
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  &table {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+  }
+
+  &card {
+    max-width: 361px;
+    width: 100%;
+    transition: all 0.3s;
+    &:hover{
+      transform: scale(1.05);
+    }
+  }
+
+  &img {
+  }
+
+  &date {
+    margin-bottom: 8px;
+    color: #878787;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.84px;
+  }
+
+  &card-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+
+  &card-subtitle {
+    color: #878787;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.12px;
+  }
+}
+.block {
+  &content {
+    &_blog {
+      flex-flow: column;
+    }
+  }
+}
+.b-line {
+  &_title {
+  }
+}
+
+// =============/Blog-page=======//
