@@ -46,24 +46,20 @@
   line-height: 1.5;
   margin-top: 50px;
 }
-
 .tl__btn_first-on-page {
   margin-top: 36px;
   border: rgba(224, 75, 75, 1);
   color: $text-color;
   background: rgba(224, 75, 75, 1);
-
   svg {
     path {
       fill: #ffffff;
     }
   }
-
   &:hover {
     background: #ffffff;
     border: #000000;
     color: #000000;
-
     svg {
       path {
         fill: #000000;
@@ -71,28 +67,24 @@
     }
   }
 }
-
 // ----------- /first-on-page -----------
 
 // ----------- trust -----------
 .block__content_trust {
   padding: 80px 0px;
 }
-
 .trust__row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-
 .trust__text {
   line-height: 1.5;
   font-weight: 300;
   margin-right: 15px;
   letter-spacing: 1.4px;
 }
-
 .trust__table {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -102,7 +94,6 @@
   max-width: 980px;
   width: 100%;
 }
-
 .trust__table-item {
   display: flex;
   justify-content: center;
@@ -118,7 +109,6 @@
   justify-content: center;
   flex-flow: column;
 }
-
 .cards__tablet {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -126,7 +116,6 @@
   grid-column-gap: 30px;
   grid-row-gap: 25px;
 }
-
 .card__row-color {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -134,7 +123,6 @@
   grid-column-gap: 30px;
   grid-row-gap: 25px;
 }
-
 .card__row-color-item {
 }
 
@@ -146,11 +134,9 @@
   margin-top: 16px;
   text-align: center;
 }
-
 .cards__tablet-icon-text_red {
   color: #ff5151;
 }
-
 .cards__tablet-item {
   max-width: 560px;
   width: 100%;
@@ -159,13 +145,11 @@
   overflow: hidden;
   margin-top: 10px;
 }
-
 .cards__item-img {
   width: 100%;
   max-height: 520px;
   border-radius: 30px;
 }
-
 .cards__item-text-group {
   padding: 18px 37px 23px;
   display: flex;
@@ -174,27 +158,22 @@
   align-items: center;
   text-align: center;
   min-height: 400px;
-
   span {
     font-weight: 600;
   }
 }
-
 .cards__item-title {
   font-size: 24px;
   font-weight: 600;
 }
-
 .cards__tablet-icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .cards__item-subtitle {
   margin-top: 25px;
 }
-
 .cards__item-text {
   margin-top: 25px;
   font-style: italic;
@@ -216,14 +195,12 @@
   letter-spacing: 2.3px;
   text-align: center;
 }
-
 .demonstration-plus__title {
   font-size: 32px;
   text-align: center;
   font-weight: 700;
   max-width: 860px;
 }
-
 .demonstration-plus__table {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -244,26 +221,22 @@
   overflow: hidden;
   max-height: 470px;
   min-height: 420px;
-
   &:nth-child(2n) {
     margin-top: 120px;
   }
 }
-
 .demonstration-plus__table-img {
   max-width: 260px;
   width: 100%;
   max-height: 200px;
   height: 100%;
 }
-
 .demonstration-plus__table-title {
   margin-top: 30px;
   font-size: 16px;
   font-weight: 600;
   text-align: center;
 }
-
 .demonstration-plus__table-text {
   margin-top: 20px;
   font-size: 14px;
@@ -272,28 +245,23 @@
   line-height: 1.2;
   padding: 0 6px;
 }
-
 .demonstration-plus__subtitle {
   margin-top: 60px;
   font-weight: 600;
   letter-spacing: 1.4px;
   text-align: center;
 }
-
 .tl__btn_demonstration-plus {
   margin-top: 30px;
 }
-
 // ----------- /demonstration-plus-------------
 
 // ----------- about-us -----------
 .block__content_about-us {
   flex-flow: column;
 }
-
 .pulse-pro {
   position: relative;
-
   &__img {
     width: 1300px;
     height: 100%;
@@ -325,7 +293,6 @@
     line-height: 1.36;
     letter-spacing: 1.4px;
   }
-
   &__description {
     margin-bottom: 40px;
     row-gap: 20px;
@@ -337,7 +304,6 @@
     font-weight: 500;
     line-height: 1.36;
     letter-spacing: 1.4px;
-
     &:last-child {
       margin-bottom: 0;
     }
@@ -351,12 +317,10 @@
     margin-left: 35px;
     list-style: disc;
   }
-
   &__btn {
     max-width: 408px;
   }
 }
-
 .block {
   &__content {
     &_pulse-pro {
@@ -367,7 +331,6 @@
 // ============EXAMPLES============//
 .examples {
   margin-bottom: 100px;
-
   &__title {
     margin-left: 30px;
     font-size: 24px;
@@ -408,7 +371,6 @@
     text-align: center;
   }
 }
-
 .block__content_examples {
   flex-flow: column;
 }
@@ -425,12 +387,8 @@
   }
 
   &__img {
-
-
     img {
-
     }
-
     &:nth-child(1) {
       margin-bottom: 21px;
     }
@@ -444,7 +402,7 @@
     line-height: 1.36;
     letter-spacing: 1.26px;
     position: relative;
-
+    
   }
 
   &__principles-title {
@@ -477,7 +435,6 @@
   width: 100%;
   margin: 50px auto;
 }
-
 .block {
   &__content {
     &_analize {
@@ -488,7 +445,7 @@
   }
 }
 
-// ============/Analize=============//
+
 
 // ----------- reviews -----------
 
@@ -525,22 +482,20 @@
 
 // ----------- /reviews -----------
 
+// ============/Analize=============//
+
 .about-us {
   padding-bottom: 225px;
-
   &__item {
     display: flex;
     justify-content: space-between;
-
     &:nth-child(1) {
       margin-bottom: 60px;
     }
-
     &:nth-child(2) {
       margin-bottom: 100px;
     }
   }
-
   &__item_reverse {
     flex-direction: row-reverse;
     align-items: center;
@@ -592,3 +547,92 @@
 }
 
 // ----------- /about-us -----------
+
+// =============Products-page=======//
+.products {
+  &__title {
+    margin-top: 150px;
+    margin-bottom: 70px;
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  &__catalog {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+  }
+
+  &__card {
+    box-shadow: 11px 8px 50px 0px #b7bcd1;
+    overflow: hidden;
+    border-radius: 30px;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__card-img {
+  }
+
+  &__card-description {
+    padding: 50px 40px 55px;
+  }
+
+  &__description-title {
+    margin-bottom: 35px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.36;
+    letter-spacing: 2.24px;
+  }
+
+  &__description-list {
+  }
+
+  &__description-list-name {
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 1.4px;
+  }
+
+  &__list-item {
+    margin-left: 30px;
+    list-style-type: disc;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 1.4px;
+  }
+
+  &__description-price {
+    margin-top: 70px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 1.4px;
+    span {
+      font-weight: 600;
+      line-height: 1.5;
+      letter-spacing: 1.4px;
+    }
+  }
+}
+.block {
+  &__content {
+    &_products {
+      flex-flow: column;
+    }
+  }
+}
+.b-line {
+  &_title {
+    width: 100%;
+    border-bottom: 1px solid rgba(143, 143, 143, 0.49);
+    padding-bottom: 10px;
+  }
+}
+
+// =============/Products-page=======//
