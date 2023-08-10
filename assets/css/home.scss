@@ -360,10 +360,10 @@
     left: 0;
     color: $text-color;
     text-shadow: -0 -1px 0 #000000, 0 -1px 0 #000000, -0 1px 0 #000000,
-    0 1px 0 #000000, -1px -0 0 #000000, 1px -0 0 #000000, -1px 0 0 #000000,
-    1px 0 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000,
-    -1px 1px 0 #000000, 1px 1px 0 #000000, -1px -1px 0 #000000,
-    1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+      0 1px 0 #000000, -1px -0 0 #000000, 1px -0 0 #000000, -1px 0 0 #000000,
+      1px 0 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000,
+      -1px 1px 0 #000000, 1px 1px 0 #000000, -1px -1px 0 #000000,
+      1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.36; /* 21.808px */
@@ -402,7 +402,6 @@
     line-height: 1.36;
     letter-spacing: 1.26px;
     position: relative;
-    
   }
 
   &__principles-title {
@@ -439,13 +438,9 @@
   &__content {
     &_analize {
       align-items: center;
-
-
     }
   }
 }
-
-
 
 // ----------- reviews -----------
 
@@ -457,12 +452,10 @@
 .reviews__title {
   font-size: 36px;
   font-weight: 500;
-
 }
 
 .reviews__slider {
   margin: 36px 0 180px;
-
 }
 
 .reviews__slider-item {
@@ -476,8 +469,6 @@
     width: 100%;
     height: 100%;
   }
-
-
 }
 
 // ----------- /reviews -----------
@@ -555,10 +546,9 @@
     margin-bottom: 70px;
     font-size: 36px;
     font-weight: 600;
-	@include before-sm() {
-		margin-top: 60px;
-	
-	  }
+    @include before-sm() {
+      margin-top: 60px;
+    }
   }
 
   &__catalog {
@@ -568,9 +558,9 @@
     grid-template-rows: 1fr;
     grid-column-gap: 40px;
     grid-row-gap: 40px;
-	@include before-lg() {
-		grid-template-columns: repeat(1, 1fr);
-	  }
+    @include before-lg() {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &__card {
@@ -581,12 +571,12 @@
     &:hover {
       transform: scale(1.05);
     }
-	@include before-sm() {
-		max-width: 300px;
-		width: 100%;
-		margin: 0 auto;
-		transform: scale(1.0);
-	  }
+    @include before-sm() {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      transform: scale(1);
+    }
   }
 
   &__card-img {
@@ -594,10 +584,9 @@
 
   &__card-description {
     padding: 50px 40px 55px;
-	@include before-sm() {
-		padding: 20px 20px 28px;
-	
-	  }
+    @include before-sm() {
+      padding: 20px 20px 28px;
+    }
   }
 
   &__description-title {
@@ -606,11 +595,10 @@
     font-weight: 600;
     line-height: 1.36;
     letter-spacing: 2.24px;
-	@include before-sm() {
-		font-size: 26px;
-		margin-bottom: 25px;
-	
-	  }
+    @include before-sm() {
+      font-size: 26px;
+      margin-bottom: 25px;
+    }
   }
 
   &__description-list {
@@ -640,10 +628,9 @@
       line-height: 1.5;
       letter-spacing: 1.4px;
     }
-	@include before-sm() {
-		margin-top: 40px;
-	
-	  }
+    @include before-sm() {
+      margin-top: 40px;
+    }
   }
 }
 .block {
@@ -670,12 +657,12 @@
     margin-bottom: 70px;
     font-size: 36px;
     font-weight: 600;
-	@include before-lg() {
-		margin-top: 60px;
-	  }
-	@include before-sm() {
-		margin-top: 40px;
-	  }
+    @include before-lg() {
+      margin-top: 60px;
+    }
+    @include before-sm() {
+      margin-top: 40px;
+    }
   }
 
   &__table {
@@ -685,21 +672,21 @@
     grid-template-rows: 1fr;
     grid-column-gap: 40px;
     grid-row-gap: 40px;
-	@include before-lg() {
-		grid-template-columns: repeat(2, 1fr);
-	  }
-	  @include before-sm() {
-		grid-template-columns: repeat(1, 1fr);
-		margin: 0 auto;
-		margin-bottom: 60px;
-	  }
+    @include before-lg() {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include before-sm() {
+      grid-template-columns: repeat(1, 1fr);
+      margin: 0 auto;
+      margin-bottom: 60px;
+    }
   }
 
   &__card {
     max-width: 361px;
     width: 100%;
     transition: all 0.3s;
-    &:hover{
+    &:hover {
       transform: scale(1.05);
     }
   }
@@ -720,9 +707,9 @@
     margin-bottom: 20px;
     font-weight: 700;
     letter-spacing: -0.5px;
-	@include before-md() {
-		font-size: 17px;
-	  }
+    @include before-md() {
+      font-size: 17px;
+    }
   }
 
   &__card-subtitle {
@@ -730,9 +717,9 @@
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 1.12px;
-	@include before-md() {
-		font-size: 14px;
-	  }
+    @include before-md() {
+      font-size: 14px;
+    }
   }
 }
 .block {
@@ -748,3 +735,106 @@
 }
 
 // =============/Blog-page=======//
+
+// =========POP-UP=========//
+.pop-up {
+  padding: 140px 70px 60px 70px;
+  border-radius: 30px;
+  border: 2px solid #ffffff;
+  background-color: #717171;
+  position: relative;
+  overflow: hidden;
+  &__bg{
+	position: absolute;
+	top: -100px;
+	left: 0;
+	right: 0;
+	filter:blur(2.5px);
+	
+  }
+  &__cross{
+	position: absolute;
+	right: 0;
+	top: -10%;
+  }
+  &__title {
+    max-width: 820px;
+    width: 100%;
+    margin-bottom: 20px;
+	position: relative;
+    color: #fff;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    text-shadow: -0 -1px 0 #000000, 0 -1px 0 #000000, -0 1px 0 #000000,
+      0 1px 0 #000000, -1px -0 0 #000000, 1px -0 0 #000000, -1px 0 0 #000000,
+      1px 0 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000,
+      -1px 1px 0 #000000, 1px 1px 0 #000000, -1px -1px 0 #000000,
+      1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+  }
+
+  &__subtitle {
+    margin-bottom: 40px;
+	position: relative;
+    color: #fff;
+    font-family: JetBrains Mono;
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  &__form {
+	position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 35px;
+	input{
+		padding-left: 8px;
+	}
+  }
+
+  &__form-name {
+    border-radius: 30px;
+	background: rgba(255, 255, 255, 0.69);
+	&:focus{
+		background-color: #fff;
+	}
+    &::placeholder {
+      padding-left: 8px;
+      color: #113146;
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 1.9;
+    }
+  }
+
+  &__form-phone {
+    border-radius: 30px;
+	background: rgba(255, 255, 255, 0.69);
+	&:focus{
+		background-color: #fff;
+	}
+	&::placeholder {
+		padding-left: 8px;
+		color: #113146;
+		font-size: 22px;
+		font-weight: 300;
+		line-height: 1.9;
+	  }
+  }
+
+  &__form-btn {
+    border-radius: 30px;
+  }
+}
+.tl__btn_first-on-page_form {
+	margin: 0;
+	padding: 14px 30px;
+	p{
+		font-weight: 500 ;
+		font-family: "Montserrat", sans-serif ;
+	}
+ 
+}
+
+// =========/POP-UP=========//
