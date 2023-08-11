@@ -534,7 +534,7 @@ body.active {
 .cards__tablet {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   grid-column-gap: 30px;
   grid-row-gap: 25px;
 }
@@ -942,17 +942,17 @@ body.active {
     font-size: 16px;
   }
 }
-.pulse-pro__list-item {
+.pulse-pro li {
   margin-left: 35px;
   list-style: disc;
 }
 @media screen and (max-width: 1199px) {
-  .pulse-pro__list-item {
+  .pulse-pro li {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 991px) {
-  .pulse-pro__list-item {
+  .pulse-pro li {
     font-size: 16px;
   }
 }
