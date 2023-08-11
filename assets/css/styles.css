@@ -1769,15 +1769,14 @@ body.active {
     font-size: 14px;
     border-color: #FFFFFF;
   }
+  .wpcf7-response-output .popup__rebase {
+    position: absolute;
+    z-index: -200;
+  }
 }
 
 .wpcf7 form.failed .wpcf7-response-output, .wpcf7 form.aborted {
   border-color: red;
-}
-
-.popup__rebase {
-  position: absolute;
-  z-index: -200;
 }
 
 .footer {

@@ -950,24 +950,24 @@ Template Name: home
             </div>
         </div>
     </div>
-    <div class="popup__rebase">
-        <div class="popup__bg"><img
-                    src="<?php echo get_template_directory_uri() ?>/assets/images/background-wave.jpg" alt="wave">
-        </div>
-
-        <h2 class="popup__title">Запишитесь на демонстрацию нашего продукта</h2>
-        <p class="popup__subtitle">Оставьте заявку и наши менеджеры вам перезвонят</p>
-        <div class="popup__form">
-            <!--                            <input type="text" class="pop-up__form-name" name="name" placeholder="Имя" required>-->
-            <!--                            <input type="tel" class="pop-up__form-phone" name="phone" placeholder="Телефон" required>-->
-            <!--                            <button class="tl__btn tl__btn_first-on-page tl__btn_first-on-page_form">-->
-            <!--                                <p>Оставить заявку</p>-->
-            <!--                            </button>-->
-            <!--                           -->
-            <?php echo do_shortcode('[contact-form-7 id="4036518" title="Контактная форма 1"]') ?>
-        </div>
-
-    </div>
+<!--    <div class="popup__rebase">-->
+<!--        <div class="popup__bg"><img-->
+<!--                    src="--><?php //echo get_template_directory_uri() ?><!--/assets/images/background-wave.jpg" alt="wave">-->
+<!--        </div>-->
+<!---->
+<!--        <h2 class="popup__title">Запишитесь на демонстрацию нашего продукта</h2>-->
+<!--        <p class="popup__subtitle">Оставьте заявку и наши менеджеры вам перезвонят</p>-->
+<!--        <div class="popup__form">-->
+<!--            <!--                            <input type="text" class="pop-up__form-name" name="name" placeholder="Имя" required>-->-->
+<!--            <!--                            <input type="tel" class="pop-up__form-phone" name="phone" placeholder="Телефон" required>-->-->
+<!--            <!--                            <button class="tl__btn tl__btn_first-on-page tl__btn_first-on-page_form">-->-->
+<!--            <!--                                <p>Оставить заявку</p>-->-->
+<!--            <!--                            </button>-->-->
+<!--            <!--                           -->-->
+<!--            --><?php //echo do_shortcode('[contact-form-7 id="4036518" title="Контактная форма 1"]') ?>
+<!--        </div>-->
+<!---->
+<!--    </div>-->
 
 
 <?php get_footer(); ?>
