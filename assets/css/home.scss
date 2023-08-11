@@ -1376,6 +1376,7 @@
   }
 
 }
+
 .wpcf7-response-output{
   color: white;
   text-align: center;
@@ -1383,6 +1384,12 @@
   @include before-sm() {
     font-size: 14px;
     border-color: #FFFFFF;
+=======
+.popup__rebase {
+  position: absolute;
+  z-index: -200;
+}
+
 
   }
 }

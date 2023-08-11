@@ -1775,6 +1775,11 @@ body.active {
   border-color: red;
 }
 
+.popup__rebase {
+  position: absolute;
+  z-index: -200;
+}
+
 .footer {
   background: #000000;
   padding: 60px 0 50px;
