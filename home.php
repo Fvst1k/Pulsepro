@@ -9,13 +9,17 @@ Template Name: home
     <section class="first-on-page">
         <div class="block__content block__content_first-on-page">
             <div class="first-on-page__bg">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/background-wave.jpg" alt="">
+                <?php
+                $image = get_field('main_image');
+                if( !empty($image) ): ?>
+                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                <?php endif; ?>
             </div>
             <div class="first-on-page__group">
-                <h1 class="first-on-page__title">Современная домашняя IT-технологиядля удобного управления своим
-                    здоровьем</h1>
-                <div class="first-on-page__text">Проводите ежедневный чекап организма
-                    за 5 минут в день,дома у компьютерабез посещения больниц и клиникc помощью прибора PulsePro
+                <h1 class="first-on-page__title">
+                    <?php the_field('main_title');?></h1>
+                <div class="first-on-page__text">
+                    <?php the_field('main_subtitle');?>
                 </div>
                 <button class="tl__btn tl__btn_first-on-page popup__selector">
                     <p>Партнерство с нами</p>
@@ -581,59 +585,37 @@ Template Name: home
                 </div>
             </div>
             <div class="cards__tablet">
-                <div class="cards__tablet-item">
-                    <div class="cards__item-img">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/card-1.png" alt="">
+                <?php
+
+                // проверяем есть ли в повторителе данные
+                if( have_rows('create_cards') ):
+
+                    // перебираем данные
+                    while ( have_rows('create_cards') ) : the_row(); ?>
+                        <div class="cards__tablet-item">
+                        <div class="cards__item-img">
+
+
+                                <img src="<?php the_sub_field('card_image'); ?>"/>
+
+
+
                     </div>
                     <div class="cards__item-text-group">
-                        <h5 class="cards__item-title">Предприниматель,топ менеджер,брокер</h5>
-                        <p class="cards__item-subtitle"><span>Что беспокоит:</span> Проблемы со сном,стресс и
-                            усталость.</p>
-                        <p class="cards__item-text"><span>Интересующие нас показатели:</span> Напряжение сердечной
-                            мышцы,
-                            гармония
-                            биоритмов, уровень энергии, уровень стресса.</p>
+                        <h5 class="cards__item-title"><?php the_sub_field('card_title');?></h5>
+                        <p class="cards__item-subtitle"><?php the_sub_field('card_text_1');?></p>
+                        <p class="cards__item-text"><?php the_sub_field('card_text_2');?></p>
                     </div>
                 </div>
-                <div class="cards__tablet-item">
-                    <div class="cards__item-img">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/card-2.png" alt="">
-                    </div>
-                    <div class="cards__item-text-group">
-                        <h5 class="cards__item-title">Спортсмен,бодибилдер, профессиональный марафонец </h5>
-                        <p class="cards__item-subtitle"><span>Что беспокоит:</span> Пульс, работа сердца,адаптация
-                            организма к тренировкам,данные о перетренированности, выносливость,уровень энергии.</p>
-                        <p class="cards__item-text"><span>Интересующие нас показатели:</span> Пульс,напряжение
-                            миокарда,циркадные ритмы,комплекстный показатель здоровья,состояние иммунитета.</p>
-                    </div>
-                </div>
-                <div class="cards__tablet-item">
-                    <div class="cards__item-img">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/card-3.png" alt="">
-                    </div>
-                    <div class="cards__item-text-group">
-                        <h5 class="cards__item-title">Производитель БАД </h5>
-                        <p class="cards__item-subtitle"><span>Что необходимо:</span> Проверка эффективности
-                            препаратов,доказательная база, выпуск на рынок качественных продуктов.</p>
-                        <p class="cards__item-text"><span>Интересующие нас показатели:</span>Вегетативная
-                            регуляция,психоэмоциональное состояние,нейрогуморальная регуляция,биологический возраст
-                            срез комплексных показателей здоровья на каждом этапе испытания.
-                        </p>
-                    </div>
-                </div>
-                <div class="cards__tablet-item">
-                    <div class="cards__item-img">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/card-4.png" alt="">
-                    </div>
-                    <div class="cards__item-text-group">
-                        <h5 class="cards__item-title">Компании разработчики решений для здоровья</h5>
-                        <p class="cards__item-subtitle"><span>Что необходимо:</span> научно обоснованный ресурс для
-                            подтверждения заявления о продуктах превентивной медицины.</p>
-                        <p class="cards__item-text"><span>Интересующие нас показатели:</span> показатели ритмов сердца,
-                            степень напряженности организма,свойства нервной системы,показатели стресса,энергетическую
-                            емкость организма,биоритмы,биологический возраст.</p>
-                    </div>
-                </div>
+
+                  <?php  endwhile;
+
+                else :
+
+                endif;
+
+                ?>
+
             </div>
         </div>
     </section>
@@ -713,15 +695,7 @@ Template Name: home
             <div class="pulse-pro__content">
                 <h2 class="pulse-pro__title">PULSEPRO</h2>
                 <p class="pulse-pro__subtitle">
-                    ИТ- Программный комплекс для диагностики здоровья и повышения эффективности организма.
-                    <br>
-                    <br>
-                    Представляет возможность  в режиме реального времени отследить изменения организма от любых
-                    воздействий.
-                    Наша технология позволяет определять эффективность БАД, упражнений, продуктов питания, психотерапии
-                    и подбирать подходящие для каждого.Алгоритм основан на технологии ВСР, которая является важным
-                    индикатором состояния тела.
-                    Мы сделали возможным проведение точной диагностики организма за 5 минут в любом месте.
+                    <?php the_field('text');?>
                 </p>
                 <div class="pulse-pro__description">
                     <ul class="pulse-pro__list">
