@@ -1671,6 +1671,11 @@ body.active {
   width: 100%;
 }
 
+.popup__rebase {
+  position: absolute;
+  z-index: -200;
+}
+
 .footer {
   background: #000000;
   padding: 60px 0 50px;
