@@ -3,6 +3,7 @@
 }
 
 .header__main-row {
+
   width: 100%;
   min-height: 120px;
   display: flex;
@@ -66,7 +67,7 @@
   @include before-sm() {
     position: absolute;
     bottom: 10px;
-    left: calc((100% - 240px) /2);
+    left: calc((100% - 240px) / 2);
     margin: 0;
     max-width: 240px;
     a {
@@ -137,7 +138,8 @@
     font-weight: 300;
 
   }
-  @include before-md(){
+
+  @include before-md() {
     p {
       font-size: 14px;
     }
