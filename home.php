@@ -17,7 +17,7 @@ Template Name: home
                 <div class="first-on-page__text">Проводите ежедневный чекап организма
                     за 5 минут в день,дома у компьютерабез посещения больниц и клиникc помощью прибора PulsePro
                 </div>
-                <button class="tl__btn tl__btn_first-on-page">
+                <button class="tl__btn tl__btn_first-on-page popup__selector">
                     <p>Партнерство с нами</p>
                     <span class="tl__btn-arrow">
                     <svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -693,7 +693,7 @@ Template Name: home
                 возраста,подростков,людей с легкими и тяжелыми заболеваниями.
 
             </h3>
-            <button class="tl__btn tl__btn_demonstration-plus">
+            <button class="tl__btn popup__selector tl__btn_demonstration-plus">
                 <p>Записаться на демонстрацию</p>
                 <span class="tl__btn-arrow">
                     <svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -751,7 +751,7 @@ Template Name: home
                         </li>
                     </ul>
                 </div>
-                <button class="tl__btn">
+                <button class="tl__btn popup__selector">
                     <p>Записаться на демонстрацию</p>
                     <span class="tl__btn-arrow">
                     <svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -811,7 +811,7 @@ Template Name: home
                     <li class="analize__list-item">Имеет ли место переутомление и стресс?</li>
                     <li class="analize__list-item">Насколько в порядке гормональная система?</li>
                 </ul>
-                <button class="tl__btn tl__btn_analize">
+                <button class="tl__btn popup__selector tl__btn_analize">
                     <p>Записаться на демонстрацию</p>
                     <span class="tl__btn-arrow">
                     <svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -875,11 +875,13 @@ Template Name: home
                 <div class="about-us__item-content">
                     <h2 class="about-us__item-title">Исследования</h2>
                     <p class="about-us__item-text">
-					PULSEPRO предоставляет исследователям и исследовательским организациям наши инструменты для преобразования и сбора точных данных о состоянии здоровья и клинических исследований.
-PULSEPRO обеспечивает полную поддержку,включая разработку индивидуальных решений,брендировани приборов под каждого клиента.
-В настоящее время устройства PULSEPRO используют по всему миру.
+                        PULSEPRO предоставляет исследователям и исследовательским организациям наши инструменты для
+                        преобразования и сбора точных данных о состоянии здоровья и клинических исследований.
+                        PULSEPRO обеспечивает полную поддержку,включая разработку индивидуальных решений,брендировани
+                        приборов под каждого клиента.
+                        В настоящее время устройства PULSEPRO используют по всему миру.
                     </p>
-                    <button class="tl__btn">
+                    <button class="tl__btn popup__selector">
                         <p>Узнать больше</p>
                         <span class="tl__btn-arrow">
                     <svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -897,12 +899,13 @@ PULSEPRO обеспечивает полную поддержку,включая
                 <div class="about-us__item-content">
                     <h2 class="about-us__item-title">PulsePro</h2>
                     <p class="about-us__item-text">
-					PULSEPRO предоставлят данные,чтобы пользователи могли обеспечить себе здоровое и полноценное старение.
+                        PULSEPRO предоставлят данные,чтобы пользователи могли обеспечить себе здоровое и полноценное
+                        старение.
                     </p>
                     <p class="about-us__item-text">
-					Мы за превентивный подход к долголетию.
+                        Мы за превентивный подход к долголетию.
                     </p>
-                    <button class="tl__btn">
+                    <button class="tl__btn popup__selector">
                         <p>Узнать больше</p>
                         <span class="tl__btn-arrow">
                     <svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -920,9 +923,12 @@ PULSEPRO обеспечивает полную поддержку,включая
                 <div class="about-us__item-content about-us__item-content_vr">
                     <h2 class="about-us__item-title">PulsePro Labs</h2>
                     <p class="about-us__item-text">
-                        PULSEPRO предоставляет научно обоснованный ресурс компаниям, занимающимся вопросами здоровья и хорошего самочувствия, которые хотят легко и недорого подтверждать заявления о продуктах с привлеченной пользовательской базой. PULSEPRO помогает  исследованиям от разработки протокола до публикации.
+                        PULSEPRO предоставляет научно обоснованный ресурс компаниям, занимающимся вопросами здоровья и
+                        хорошего самочувствия, которые хотят легко и недорого подтверждать заявления о продуктах с
+                        привлеченной пользовательской базой. PULSEPRO помогает  исследованиям от разработки протокола до
+                        публикации.
                     </p>
-                    <button class="tl__btn">
+                    <button class="tl__btn popup__selector">
                         <p>Узнать больше</p>
                         <span class="tl__btn-arrow">
                     <svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -939,28 +945,38 @@ PULSEPRO обеспечивает полную поддержку,включая
         </div>
     </section>
 
-	 
-		
-				<div class="block__content">
-					<div class="pop-up">
-						<div class="pop-up__bg"><img src="<?php echo get_template_directory_uri() ?>/assets/images/background-wave.jpg" alt="wave"></div>
-						<div class="pop-up__cross"><svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M3.17275 3.17278L26.3271 26.3271" stroke="white" stroke-width="5" stroke-linecap="round"/>
-<path d="M26.3271 3.17274L3.17278 26.3271" stroke="white" stroke-width="5" stroke-linecap="round"/>
-</svg>
+
+<div class="popup__wrapper">
+    <div class="popup__background"></div>
+    <div class="popup__container">
+        <div class="popup__cross hover__tY">
+            <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.17275 3.17278L26.3271 26.3271" stroke="white" stroke-width="5" stroke-linecap="round"/>
+                <path d="M26.3271 3.17274L3.17278 26.3271" stroke="white" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="popup">
+            <div class="popup__bg"><img
+                        src="<?php echo get_template_directory_uri() ?>/assets/images/background-wave.jpg" alt="wave">
+            </div>
+
+            <h2 class="popup__title">Запишитесь на демонстрацию нашего продукта</h2>
+            <p class="popup__subtitle">Оставьте заявку и наши менеджеры вам перезвонят</p>
+            <div class="popup__form">
+                <!--                            <input type="text" class="pop-up__form-name" name="name" placeholder="Имя" required>-->
+                <!--                            <input type="tel" class="pop-up__form-phone" name="phone" placeholder="Телефон" required>-->
+                <!--                            <button class="tl__btn tl__btn_first-on-page tl__btn_first-on-page_form">-->
+                <!--                                <p>Оставить заявку</p>-->
+                <!--                            </button>-->
+                <!--                           -->
+                <?php echo do_shortcode('[contact-form-7 id="4036518" title="Контактная форма 1"]') ?>
+            </div>
+
+        </div>
+    </div>
 </div>
-						<h2 class="pop-up__title">Запишитесь на демонстрацию нашего продукта</h2>
-						<p class="pop-up__subtitle">Оставьте заявку и наши менеджеры вам перезвонят</p>
-						<form class="pop-up__form">
-							<input type="text" class="pop-up__form-name" name="name" placeholder="Имя"  required>
-							<input type="tel" class="pop-up__form-phone" name="phone" placeholder="Телефон" required>
-							<button class="tl__btn tl__btn_first-on-page tl__btn_first-on-page_form">
-										<p>Оставить заявку</p>
-									</button>
-						</form>
-					</div>
-				</div>
-		
-	 
+
+
+
 
 <?php get_footer(); ?>
