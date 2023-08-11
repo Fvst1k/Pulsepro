@@ -1558,6 +1558,11 @@ body.active {
   max-height: 500px;
   position: fixed;
 }
+@media screen and (max-width: 1199px) {
+  .popup__container {
+    padding: 0 15px;
+  }
+}
 
 .popup {
   width: 100%;
@@ -1569,12 +1574,32 @@ body.active {
   overflow: hidden;
   position: relative;
 }
+@media screen and (max-width: 991px) {
+  .popup {
+    padding: 80px 50px 40px 50px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .popup {
+    padding: 60px 40px 30px 40px;
+  }
+}
 .popup__bg {
   position: absolute;
   top: -100px;
   left: 0;
   right: 0;
   filter: blur(2.5px);
+}
+@media screen and (max-width: 767px) {
+  .popup__bg {
+    top: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .popup__bg {
+    top: 30px;
+  }
 }
 .popup__cross {
   position: absolute;
@@ -1592,6 +1617,21 @@ body.active {
   font-weight: 600;
   text-shadow: 0 -1px 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000, 0 1px 0 #000000, -1px 0 0 #000000, 1px 0 0 #000000, -1px 0 0 #000000, 1px 0 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
 }
+@media screen and (max-width: 991px) {
+  .popup__title {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .popup__title {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .popup__title {
+    font-size: 22px;
+  }
+}
 .popup__subtitle {
   margin-bottom: 40px;
   position: relative;
@@ -1601,6 +1641,16 @@ body.active {
   font-weight: 300;
   text-align: center;
 }
+@media screen and (max-width: 767px) {
+  .popup__subtitle {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .popup__subtitle {
+    font-size: 16px;
+  }
+}
 .popup__form {
   position: relative;
   display: flex;
@@ -1608,18 +1658,35 @@ body.active {
   width: 100%;
 }
 .popup__form input {
+  max-width: 262px;
+  width: 100%;
   height: 55px;
   padding-left: 15px;
 }
 .popup__form input:first-child {
   margin-right: 5px;
 }
+@media screen and (max-width: 991px) {
+  .popup__form input:first-child {
+    margin-right: 0px;
+  }
+}
 .popup__form button {
   height: 55px;
   margin-left: 5px;
 }
+@media screen and (max-width: 991px) {
+  .popup__form button {
+    margin-left: 0px;
+  }
+}
 .popup__form br {
   display: none;
+}
+@media screen and (max-width: 991px) {
+  .popup__form {
+    flex-direction: column;
+  }
 }
 .popup__form-name {
   border-radius: 30px;
@@ -1634,6 +1701,11 @@ body.active {
   font-weight: 300;
   line-height: 1.9;
 }
+@media screen and (max-width: 991px) {
+  .popup__form-name {
+    margin-bottom: 10px;
+  }
+}
 .popup__form-phone {
   border-radius: 30px;
   background: rgba(255, 255, 255, 0.69);
@@ -1646,6 +1718,11 @@ body.active {
   font-size: 22px;
   font-weight: 300;
   line-height: 1.9;
+}
+@media screen and (max-width: 991px) {
+  .popup__form-phone {
+    margin-bottom: 10px;
+  }
 }
 .popup__form-btn {
   border-radius: 30px;
@@ -1660,6 +1737,11 @@ body.active {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 991px) {
+  .tl__btn_first-on-page_form {
+    padding: 14px 45px;
+  }
+}
 
 .wpcf7 {
   width: 100%;
@@ -1669,6 +1751,28 @@ body.active {
   position: relative;
   justify-content: space-between;
   width: 100%;
+}
+@media screen and (max-width: 991px) {
+  .wpcf7 p {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.wpcf7-response-output {
+  color: white;
+  text-align: center;
+  border-radius: 30px;
+}
+@media screen and (max-width: 575px) {
+  .wpcf7-response-output {
+    font-size: 14px;
+    border-color: #FFFFFF;
+  }
+}
+
+.wpcf7 form.failed .wpcf7-response-output, .wpcf7 form.aborted {
+  border-color: red;
 }
 
 .footer {
