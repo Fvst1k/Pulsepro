@@ -22,7 +22,7 @@ Template Name: header
 
     <?php wp_head(); ?>
 </head>
-<body>
+<body class="body">
 <div class="wrapper">
     <!-- Header -->
     <header>
@@ -38,7 +38,7 @@ Template Name: header
                     <a href="/product" class="header__menu-item hover__tY">Продукция</a>
                     <a href="/blog" class="header__menu-item hover__tY">Блог</a>
                 </div>
-                <button class="header__btn">
+                <button class="header__btn popup__selector">
                     Записаться
                 </button>
             </div>

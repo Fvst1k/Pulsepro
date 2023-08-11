@@ -11,7 +11,9 @@ html, body {
 img {
   width: 100%;
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 button {
   cursor: pointer;
   border: none;
@@ -22,6 +24,12 @@ a {
   text-decoration: none;
   color: inherit;
 
+}
+
+body {
+  &.active {
+    overflow: hidden;
+  }
 }
 
 .wrapper {
@@ -41,6 +49,7 @@ a {
   width: 100%;
   padding: 0 20px;
   display: flex;
+  position: relative;
   //flex-flow: column;
   @include inner-container();
   @include before-md() {
