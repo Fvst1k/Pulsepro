@@ -944,7 +944,7 @@ Template Name: home
                     <!--                                <p>Оставить заявку</p>-->
                     <!--                            </button>-->
                     <!--                           -->
-                    <?php echo do_shortcode('[contact-form-7 id="4036518" title="Контактная форма 1"]') ?>
+                    <?php echo do_shortcode('[contact-form-7 id="4036518" title="Feedback"]') ?>
                 </div>
 
             </div>
