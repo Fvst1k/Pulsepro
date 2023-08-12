@@ -34,6 +34,7 @@ function openPopup() {
         document.querySelector('.body').classList.remove("active")
     })
 }
+
 // function openIframe() {
 //     const popup = document.querySelector('.popup__wrapper')
 //     if (!popup) return

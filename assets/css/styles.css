@@ -853,6 +853,16 @@ body.active {
 .block__content_about-us {
   flex-flow: column;
 }
+.block__content_about-us .about-us__item .about-us__item-img {
+  margin-left: 30px;
+}
+.block__content_about-us .about-us__item:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+.block__content_about-us .about-us__item:nth-child(2n) .about-us__item-img {
+  margin-left: 0;
+  margin-right: 30px;
+}
 
 .pulse-pro {
   position: relative;
@@ -895,6 +905,9 @@ body.active {
   line-height: 1.36;
   letter-spacing: 1.4px;
 }
+.pulse-pro__subtitle span {
+  font-weight: 600;
+}
 @media screen and (max-width: 1199px) {
   .pulse-pro__subtitle {
     font-size: 18px;
@@ -919,26 +932,26 @@ body.active {
     font-size: 16px;
   }
 }
-.pulse-pro__list {
+.pulse-pro ul {
   margin-bottom: 40px;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.36;
   letter-spacing: 1.4px;
 }
-.pulse-pro__list:last-child {
-  margin-bottom: 0;
-}
-.pulse-pro__list-title {
+.pulse-pro ul span {
   font-weight: 600;
 }
+.pulse-pro ul:last-child {
+  margin-bottom: 0;
+}
 @media screen and (max-width: 1199px) {
-  .pulse-pro__list-title {
+  .pulse-pro li {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 991px) {
-  .pulse-pro__list-title {
+  .pulse-pro li {
     font-size: 16px;
   }
 }
@@ -984,13 +997,15 @@ body.active {
 }
 .examples__row {
   margin-top: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
 }
 @media screen and (max-width: 767px) {
   .examples__row {
-    flex-flow: column;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .examples__row-item {
@@ -1112,41 +1127,41 @@ body.active {
   }
 }
 @media screen and (max-width: 1199px) {
-  .analize__principles-list {
+  .analize ul {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 767px) {
-  .analize__principles-list {
+  .analize ul {
     font-size: 16px;
   }
 }
-.analize__list-title {
+.analize ul span {
   display: block;
   margin-bottom: 35px;
 }
 @media screen and (max-width: 1199px) {
-  .analize__list-title {
+  .analize ul span {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 767px) {
-  .analize__list-title {
+  .analize ul span {
     font-size: 16px;
     margin-top: 10px;
   }
 }
-.analize__list-item {
+.analize ul li {
   margin-left: 35px;
   list-style-type: disc;
 }
 @media screen and (max-width: 1199px) {
-  .analize__list-item {
+  .analize ul li {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 767px) {
-  .analize__list-item {
+  .analize ul li {
     font-size: 16px;
   }
 }
@@ -1231,31 +1246,12 @@ body.active {
 .about-us__item {
   display: flex;
   justify-content: space-between;
-}
-.about-us__item img {
-  margin-left: 30px;
-}
-.about-us__item:nth-child(1) {
-  margin-bottom: 60px;
-}
-.about-us__item:nth-child(2) {
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 @media screen and (max-width: 991px) {
-  .about-us__item:nth-child(1) {
+  .about-us__item {
     margin-bottom: 30px;
   }
-  .about-us__item:nth-child(2) {
-    margin-bottom: 60px;
-  }
-}
-.about-us__item_reverse {
-  flex-direction: row-reverse;
-  align-items: center;
-}
-.about-us__item_reverse img {
-  margin-left: 0;
-  margin-right: 30px;
 }
 .about-us__item-content {
   padding-top: 55px;
@@ -1299,9 +1295,6 @@ body.active {
     font-size: 16px;
     margin-bottom: 25px;
   }
-}
-.about-us__item-img {
-  margin-right: 30px;
 }
 @media screen and (max-width: 1199px) {
   .about-us__item-img {
@@ -1768,10 +1761,6 @@ body.active {
   .wpcf7-response-output {
     font-size: 14px;
     border-color: #FFFFFF;
-  }
-  .wpcf7-response-output .popup__rebase {
-    position: absolute;
-    z-index: -200;
   }
 }
 
