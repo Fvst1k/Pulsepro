@@ -779,6 +779,8 @@ Template Name: home
 
                         <div class="reviews__slider-item">
                             <?php the_sub_field('reviews_link_2');?>
+                            <div class="reviews__slider-bg"></div>
+                            <div class="ytp-large-play-button .ytp-button .ytp-large-play-button-red-bg"></div>
                         </div>
                     <?php endwhile;
 
@@ -837,6 +839,8 @@ Template Name: home
     </section>
 
 
+
+
     <div class="popup__wrapper">
         <div class="popup__background"></div>
         <div class="popup__container">
@@ -867,6 +871,7 @@ Template Name: home
             </div>
         </div>
     </div>
+
 
 
 <?php get_footer(); ?>

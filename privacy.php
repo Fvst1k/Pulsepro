@@ -1,4 +1,9 @@
-<?php ?>
+<?php
+/*
+Template Name: privacy
+*/
+?>
+
 
 
 <?php get_header() ?>

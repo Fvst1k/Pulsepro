@@ -50,9 +50,7 @@ Template Name: footer
             </div>
             <div class="footer__contacts-wrapper b-line">
                 <div class="header__menu footer__menu ">
-                    <a href="/#" class="header__menu-item hover__tY">Услуги</a>
-                    <a href="/product" class="header__menu-item hover__tY">Продукция</a>
-                    <a href="/blog" class="header__menu-item hover__tY">Блог</a>
+                    <?php wp_nav_menu() ?>
                 </div>
             </div>
             <div class="footer__contacts-wrapper b-line">
@@ -103,8 +101,10 @@ Template Name: footer
                     </a>
                 </div>
             </div>
-            <div class="footer__contacts-wrapper b-line footer__contacts-wrapper_mt">
-                <a class="footer__contacts-politic hover__tY" href="">Политика конфиденциальности</a>
+            <div class="footer__contacts-wrapper b-line footer__contacts-wrapper_mt ">
+                <div class="hover__tY footer__contacts-politic-wrapper">
+                <a class="footer__contacts-politic" href="/privacy">Политика конфиденциальности</a>
+                </div>
             </div>
         </div>
 
