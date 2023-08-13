@@ -1889,6 +1889,9 @@ body.active {
 .footer__contact-group_email {
   max-width: 340px;
 }
+.footer__contact-group_email p:last-child {
+  padding-left: 7px;
+}
 
 .footer__contact-group_vk {
   max-width: 230px;
