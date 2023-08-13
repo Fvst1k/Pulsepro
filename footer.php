@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: footer
+*/
+?>
+<?php $front_id = get_option( 'page_on_front' ); ?>
 <!-- Footer -->
 <footer class="footer">
 
@@ -35,18 +41,12 @@
             </div>
 
             <div class="footer__company-info b-line mobile-dn">
-                <p>ИП Скорнякова Любовь Владимировна</p>
-                <p>Дата регистрации 09.06.2023О</p>
-                <p>ГРН 323784700188084 ИНН 471911241791</p>
-                <p>р/с 40802810555000431123 </p>
-                <p>СЕВЕРО-ЗАПАДНЫЙ БАНК ПАО СБЕРБАНК</p>
-                <p>к/с 30101810500000000653 БИК 044030653</p>
+                <p><?php  the_field('footer_info', $front_id); ?></p>
             </div>
         </div>
         <div class="footer__column footer__column_right">
             <div class="footer__contacts-wrapper b-line mobile-dn">
-                <h4 class="footer__subtitle ">Современная домашняя IT-технология для удобного управления своим
-                    здоровьем</h4>
+                <h4 class="footer__subtitle "><?php  the_field('footer_subtitle', $front_id); ?>
             </div>
             <div class="footer__contacts-wrapper b-line">
                 <div class="header__menu footer__menu ">
@@ -58,7 +58,7 @@
             <div class="footer__contacts-wrapper b-line">
                 <div class="footer__contacts ">
                     <h6 class="footer__contacts-subtitle">Контакты</h6>
-                    <a class="footer__contact-group footer__contact-group_phone hover__tY">
+                    <a href="tel:<?php  the_field('phone', $front_id); ?>" class="footer__contact-group footer__contact-group_phone hover__tY">
                         <div class="footer__contact-icon">
                             <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -66,13 +66,13 @@
                                       fill="white" fill-opacity="0.85"/>
                             </svg>
                         </div>
-                        <p>+7(995) 911 75 35</p>
+                        <p><?php  the_field('phone', $front_id); ?></p>
                     </a>
-                    <a class="footer__contact-group footer__contact-group_email hover__tY">
+                    <a href="mailto:<?php  the_field('email', $front_id); ?>" class="footer__contact-group footer__contact-group_email hover__tY">
                         <p>E-mail:</p>
-                        <p>alexchunin@gmail.com</p>
+                        <p><?php  the_field('email', $front_id); ?></p>
                     </a>
-                    <a class="footer__contact-group footer__contact-group_vk hover__tY">
+                    <a href="<?php  the_field('vk', $front_id); ?>" class="footer__contact-group footer__contact-group_vk hover__tY">
                         <div class="footer__contact-icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -89,7 +89,7 @@
                         </div>
                         <p>Лаборатория жизни</p>
                     </a>
-                    <a class="footer__contact-group footer__contact-group_tg hover__tY">
+                    <a href="<?php  the_field('tg', $front_id); ?>" class="footer__contact-group footer__contact-group_tg hover__tY">
                         <div class="footer__contact-icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -99,12 +99,12 @@
                                       fill="white" fill-opacity="0.85"/>
                             </svg>
                         </div>
-                        <p>Telegram</p>
+                        <p><?php  the_field('tg-label', $front_id); ?></p>
                     </a>
                 </div>
             </div>
             <div class="footer__contacts-wrapper b-line footer__contacts-wrapper_mt">
-                <div class="footer__contacts-politic hover__tY" href="">Политика конфиденциальности</div>
+                <a class="footer__contacts-politic hover__tY" href="">Политика конфиденциальности</a>
             </div>
         </div>
 

@@ -11,15 +11,15 @@ Template Name: home
             <div class="first-on-page__bg">
                 <?php
                 $image = get_field('main_image');
-                if( !empty($image) ): ?>
-                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                if (!empty($image)): ?>
+                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"/>
                 <?php endif; ?>
             </div>
             <div class="first-on-page__group">
                 <h1 class="first-on-page__title">
-                    <?php the_field('main_title');?></h1>
+                    <?php the_field('main_title'); ?></h1>
                 <div class="first-on-page__text">
-                    <?php the_field('main_subtitle');?>
+                    <?php the_field('main_subtitle'); ?>
                 </div>
                 <button class="tl__btn tl__btn_first-on-page popup__selector">
                     <p>Партнерство с нами</p>
@@ -588,27 +588,26 @@ Template Name: home
                 <?php
 
                 // проверяем есть ли в повторителе данные
-                if( have_rows('create_cards') ):
+                if (have_rows('create_cards')):
 
                     // перебираем данные
-                    while ( have_rows('create_cards') ) : the_row(); ?>
+                    while (have_rows('create_cards')) : the_row(); ?>
                         <div class="cards__tablet-item">
-                        <div class="cards__item-img">
+                            <div class="cards__item-img">
 
 
                                 <img src="<?php the_sub_field('card_image'); ?>"/>
 
 
+                            </div>
+                            <div class="cards__item-text-group">
+                                <h5 class="cards__item-title"><?php the_sub_field('card_title'); ?></h5>
+                                <p class="cards__item-subtitle"><?php the_sub_field('card_text_1'); ?></p>
+                                <p class="cards__item-text"><?php the_sub_field('card_text_2'); ?></p>
+                            </div>
+                        </div>
 
-                    </div>
-                    <div class="cards__item-text-group">
-                        <h5 class="cards__item-title"><?php the_sub_field('card_title');?></h5>
-                        <p class="cards__item-subtitle"><?php the_sub_field('card_text_1');?></p>
-                        <p class="cards__item-text"><?php the_sub_field('card_text_2');?></p>
-                    </div>
-                </div>
-
-                  <?php  endwhile;
+                    <?php endwhile;
 
                 else :
 
@@ -622,57 +621,38 @@ Template Name: home
 
     <section class="demonstration-plus">
         <div class="block__content block__content_demonstration-plus">
-            <h2 class="demonstration-plus__title">После демонстрации работы прибора,вы узнаете, как с помощью
-                PulsePro:</h2>
+            <h2 class="demonstration-plus__title"><?php the_field('demo_title'); ?></h2>
             <div class="demonstration-plus__table">
-                <div class="demonstration-plus__table-item">
-                    <div class="demonstration-plus__table-img">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/plus-1.png" alt="">
-                    </div>
-                    <h6 class="demonstration-plus__table-title"> Производить мониторинг организма</h6>
-                    <div class="demonstration-plus__table-text">Многие серьезные заболевания развиваются бессимптомно и
-                        незаметно для человека. Если раз в год проходить диагностику, это поможет обнаружить, или
-                        предотвратить нарушения и вылечить их с минимальными затратами.
-                    </div>
-                </div>
-                <div class="demonstration-plus__table-item">
-                    <div class="demonstration-plus__table-img">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/plus-2.png" alt="">
-                    </div>
-                    <h6 class="demonstration-plus__table-title">Проводить диагностику после болезни
-                    </h6>
-                    <div class="demonstration-plus__table-text">Помогает вовремя заметить осложнения после перенесенной
-                        коронавирусной инфекции.
-                    </div>
-                </div>
-                <div class="demonstration-plus__table-item">
-                    <div class="demonstration-plus__table-img">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/plus-3.png" alt="">
-                    </div>
-                    <h6 class="demonstration-plus__table-title">Следить за сердцем
-                    </h6>
-                    <div class="demonstration-plus__table-text">Проверка напряжения сердечной мышцы и вегетативной
-                        системы. 31% смертей во всём мире — от сердечно-сосудистых заболеваний. 28,9% смертей в России —
-                        от ишемической болезни сердца.
-                    </div>
-                </div>
-                <div class="demonstration-plus__table-item">
-                    <div class="demonstration-plus__table-img">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/plus-4.png" alt="">
-                    </div>
-                    <h6 class="demonstration-plus__table-title">Узнать свой биологический возраст
-                    </h6>
-                    <div class="demonstration-plus__table-text">Узнаете на сколько вы отстаете или опережаете свой
-                        возраст по биологическим характеристикам организма.
-                    </div>
-                </div>
+                <?php
+
+                // проверяем есть ли в повторителе данные
+                if (have_rows('create_demo')):
+
+                    // перебираем данные
+                    while (have_rows('create_demo')) : the_row(); ?>
+
+
+                        <div class="demonstration-plus__table-item">
+                            <div class="demonstration-plus__table-img">
+                                <img src="<?php the_sub_field('demo_card_img'); ?>"/>
+                            </div>
+                            <h6 class="demonstration-plus__table-title"><?php the_sub_field('demo_card_title'); ?></h6>
+                            <div class="demonstration-plus__table-text">
+                                <?php the_sub_field('demo_card_text'); ?>
+                            </div>
+                        </div>
+
+
+                    <?php endwhile;
+                else :
+                endif;
+
+                ?>
+
+
             </div>
             <h3 class="demonstration-plus__subtitle">
-                PULSEPRO представляет собой прибор для ежедневного чек апа организма.С профессиональными математическими
-                алгоритмами.
-                <br><br>
-                Для испытания прибора проведено 500000 измерений:грудных детей,людей среднего и преклонного
-                возраста,подростков,людей с легкими и тяжелыми заболеваниями.
+                <?php the_field('demo_text'); ?>
 
             </h3>
             <button class="tl__btn popup__selector tl__btn_demonstration-plus">
@@ -690,40 +670,19 @@ Template Name: home
     <section class="pulse-pro">
         <div class="block__content block__content_pulse-pro">
             <div class="pulse-pro__img">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/device.png" alt="device">
+                <?php
+                $image = get_field('pulse_img');
+                if (!empty($image)): ?>
+                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"/>
+                <?php endif; ?>
             </div>
             <div class="pulse-pro__content">
-                <h2 class="pulse-pro__title">PULSEPRO</h2>
+                <h2 class="pulse-pro__title"><?php the_field('pulse_title'); ?></h2>
                 <p class="pulse-pro__subtitle">
-                    <?php the_field('text');?>
+                    <?php the_field('pulse_subtitle'); ?>
                 </p>
                 <div class="pulse-pro__description">
-                    <ul class="pulse-pro__list">
-					<span class="pulse-pro__list-title"
-                    >Самые точные измерения:</span>
-                        <li class="pulse-pro__list-item">
-                            показателей ритмов сердца
-                        </li>
-                        <li class="pulse-pro__list-item">
-                            степень напряженности организма
-                        </li>
-                        <li class="pulse-pro__list-item">свойства нервной системы</li>
-                        <li class="pulse-pro__list-item">показатели стресса</li>
-                        <li class="pulse-pro__list-item">энергетическую емкость организма</li>
-                        <li class="pulse-pro__list-item">биоритмы</li>
-                        <li class="pulse-pro__list-item">биологический возраст</li>
-                    </ul>
-
-                    <ul class="pulse-pro__list">
-                        <span class="pulse-pro__list-title">Комплектация прибора:</span>
-                        <li class="pulse-pro__list-item">
-                            Устройство
-                        </li>
-                        <li class="pulse-pro__list-item">Клеммы для ЭКГ</li>
-                        <li class="pulse-pro__list-item">
-                            ПО в  3-х вариантах
-                        </li>
-                    </ul>
+                    <?php the_field('pulse_text'); ?>
                 </div>
                 <button class="tl__btn popup__selector">
                     <p>Записаться на демонстрацию</p>
@@ -740,23 +699,30 @@ Template Name: home
 
     <section class="examples">
         <div class="block__content block__content_examples">
-            <h3 class="examples__title">Примеры использования</h3>
+            <h3 class="examples__title"><?php the_field('exampl_title'); ?></h3>
             <div class="examples__row">
-                <div class="examples__row-item">
-                    <div class="examples__item-img"><img
-                                src="<?php echo get_template_directory_uri() ?>/assets/images/examples1.png"
-                                alt="error"></div>
-                    <p class="examples__item-text">Профессиональная деятельность</p></div>
-                <div class="examples__row-item">
-                    <div class="examples__item-img"><img
-                                src="<?php echo get_template_directory_uri() ?>/assets/images/examples2.png"
-                                alt="error"></div>
-                    <p class="examples__item-text">Клинические исследования</p></div>
-                <div class="examples__row-item">
-                    <div class="examples__item-img"><img
-                                src="<?php echo get_template_directory_uri() ?>/assets/images/examples3.png"
-                                alt="error"></div>
-                    <p class="examples__item-text">Оптимизация здоровья</p></div>
+
+                <?php
+
+                // проверяем есть ли в повторителе данные
+                if (have_rows('create_exampl')):
+
+                    // перебираем данные
+                    while (have_rows('create_exampl')) : the_row(); ?>
+
+                        <div class="examples__row-item">
+                            <div class="examples__item-img">
+                                <img src="<?php the_sub_field('exampl_img'); ?>"/>
+                            </div>
+                            <p class="examples__item-text"><?php the_sub_field('exampl_text'); ?></p>
+                        </div>
+
+
+                    <?php endwhile;
+                else :
+                endif;
+
+                ?>
             </div>
         </div>
     </section>
@@ -764,27 +730,26 @@ Template Name: home
     <section class="analize">
         <div class="block__content block__content_analize">
             <div class="analize__img-box">
-                <div class="analize__img"><img
-                            src="<?php echo get_template_directory_uri() ?>/assets/images/analize1.png"
-                            alt="pulsprophoto"></div>
-                <div class="analize__img"><img
-                            src="<?php echo get_template_directory_uri() ?>/assets/images/analize2.png"
-                            alt="pulsprophoto"></div>
+                <div class="analize__img">
+                    <?php
+                    $image = get_field('analize_img_1');
+                    if (!empty($image)): ?>
+                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"/>
+                    <?php endif; ?>
+                </div>
+                <div class="analize__img">
+                    <?php
+                    $image = get_field('analize_img_2');
+                    if (!empty($image)): ?>
+                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"/>
+                    <?php endif; ?>
+                </div>
             </div>
             <div class="analize__principles">
-                <h2 class="analize__principles-title">Комплексный анализ 4-х главных<br> систем организма за 5
-                    минут.<br>
-                    Принцип действия состоит в <br> измерении электрокардиограммы <br> и анализе вариабельности <br>
-                    сердечного ритма.</h2>
-                <p class="analize__principles-subtitle">Исследования в этой области на протяжении уже более двадцати лет
-                    позволяют нам с высокой точностью определять отклонения в функциональном состоянии организма.</p>
-                <ul class="analize__principles-list">
-                    <span class="analize__list-title">Точность и многообразие показателей решают сразу несколько диагностических задач:</span>
-                    <li class="analize__list-item">На какой возраст чувствует себя человек?</li>
-                    <li class="analize__list-item">Перенапряжение ди его сердце?</li>
-                    <li class="analize__list-item">Имеет ли место переутомление и стресс?</li>
-                    <li class="analize__list-item">Насколько в порядке гормональная система?</li>
-                </ul>
+                <h2 class="analize__principles-title"><?php the_field('analize_title'); ?></h2>
+                <div class="analize__principles-subtitle">
+                    <?php the_field('analize_text'); ?>
+                </div>
                 <button class="tl__btn popup__selector tl__btn_analize">
                     <p>Записаться на демонстрацию</p>
                     <span class="tl__btn-arrow">
@@ -801,121 +766,73 @@ Template Name: home
 
     <section class="reviews">
         <div class="block__content block__content_reviews">
-            <h3 class="reviews__title">Видео-отзывы пользователей прибора</h3>
+            <h3 class="reviews__title"><?php the_field('reviews_title'); ?></h3>
             <div class="reviews__slider">
-                <div class="reviews__slider-item">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4xDzrJKXOOY"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                </div>
-                <div class="reviews__slider-item">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4xDzrJKXOOY"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                </div>
-                <div class="reviews__slider-item">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4xDzrJKXOOY"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                </div>
-                <div class="reviews__slider-item">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4xDzrJKXOOY"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                </div>
-                <div class="reviews__slider-item">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4xDzrJKXOOY"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                </div>
-                <div class="reviews__slider-item">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4xDzrJKXOOY"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                </div>
+
+                <?php
+
+                // проверяем есть ли в повторителе данные
+                if (have_rows('create_reviews')):
+
+                    // перебираем данные
+                    while (have_rows('create_reviews')) : the_row(); ?>
+
+                        <div class="reviews__slider-item">
+                            <?php the_sub_field('reviews_link_2');?>
+                        </div>
+                    <?php endwhile;
+
+                else :
+
+                endif;
+
+                ?>
+
             </div>
         </div>
     </section>
 
     <section class="about-us">
         <div class="block__content block__content_about-us">
-            <div class="about-us__item">
-                <div class="about-us__item-content">
-                    <h2 class="about-us__item-title">Исследования</h2>
-                    <p class="about-us__item-text">
-                        PULSEPRO предоставляет исследователям и исследовательским организациям наши инструменты для
-                        преобразования и сбора точных данных о состоянии здоровья и клинических исследований.
-                        PULSEPRO обеспечивает полную поддержку,включая разработку индивидуальных решений,брендировани
-                        приборов под каждого клиента.
-                        В настоящее время устройства PULSEPRO используют по всему миру.
-                    </p>
-                    <button class="tl__btn popup__selector">
-                        <p>Узнать больше</p>
-                        <span class="tl__btn-arrow">
+            <?php
+
+            // проверяем есть ли в повторителе данные
+            if (have_rows('create_about')):
+
+                // перебираем данные
+                while (have_rows('create_about')) : the_row(); ?>
+
+
+                    <div class="about-us__item">
+                        <div class="about-us__item-content">
+                            <h2 class="about-us__item-title"><?php the_sub_field('about_title'); ?></h2>
+                            <p class="about-us__item-text">
+                                <?php the_sub_field('about_text'); ?>
+                            </p>
+                            <button class="tl__btn popup__selector">
+                                <p>Узнать больше</p>
+                                <span class="tl__btn-arrow">
                     <svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M26.7211 8.70711C27.1117 8.31658 27.1117 7.68342 26.7211 7.29289L20.3572 0.928932C19.9667 0.538408 19.3335 0.538408 18.943 0.928932C18.5524 1.31946 18.5524 1.95262 18.943 2.34315L24.5998 8L18.943 13.6569C18.5524 14.0474 18.5524 14.6805 18.943 15.0711C19.3335 15.4616 19.9667 15.4616 20.3572 15.0711L26.7211 8.70711ZM0 9L26.014 9V7L0 7L0 9Z"
       fill="black"/>
 </svg>
 </span>
-                    </button>
-                </div>
-                <div class="about-us__item-img">
-                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/Scientist.png" alt="Scientists">
-                </div>
-            </div>
-            <div class="about-us__item about-us__item_reverse">
-                <div class="about-us__item-content">
-                    <h2 class="about-us__item-title">PulsePro</h2>
-                    <p class="about-us__item-text">
-                        PULSEPRO предоставлят данные,чтобы пользователи могли обеспечить себе здоровое и полноценное
-                        старение.
-                    </p>
-                    <p class="about-us__item-text">
-                        Мы за превентивный подход к долголетию.
-                    </p>
-                    <button class="tl__btn popup__selector">
-                        <p>Узнать больше</p>
-                        <span class="tl__btn-arrow">
-                    <svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M26.7211 8.70711C27.1117 8.31658 27.1117 7.68342 26.7211 7.29289L20.3572 0.928932C19.9667 0.538408 19.3335 0.538408 18.943 0.928932C18.5524 1.31946 18.5524 1.95262 18.943 2.34315L24.5998 8L18.943 13.6569C18.5524 14.0474 18.5524 14.6805 18.943 15.0711C19.3335 15.4616 19.9667 15.4616 20.3572 15.0711L26.7211 8.70711ZM0 9L26.014 9V7L0 7L0 9Z"
-      fill="black"/>
-</svg>
-</span>
-                    </button>
-                </div>
-                <div class="about-us__item-img">
-                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/family.png" alt="family">
-                </div>
-            </div>
-            <div class="about-us__item">
-                <div class="about-us__item-content about-us__item-content_vr">
-                    <h2 class="about-us__item-title">PulsePro Labs</h2>
-                    <p class="about-us__item-text">
-                        PULSEPRO предоставляет научно обоснованный ресурс компаниям, занимающимся вопросами здоровья и
-                        хорошего самочувствия, которые хотят легко и недорого подтверждать заявления о продуктах с
-                        привлеченной пользовательской базой. PULSEPRO помогает  исследованиям от разработки протокола до
-                        публикации.
-                    </p>
-                    <button class="tl__btn popup__selector">
-                        <p>Узнать больше</p>
-                        <span class="tl__btn-arrow">
-                    <svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M26.7211 8.70711C27.1117 8.31658 27.1117 7.68342 26.7211 7.29289L20.3572 0.928932C19.9667 0.538408 19.3335 0.538408 18.943 0.928932C18.5524 1.31946 18.5524 1.95262 18.943 2.34315L24.5998 8L18.943 13.6569C18.5524 14.0474 18.5524 14.6805 18.943 15.0711C19.3335 15.4616 19.9667 15.4616 20.3572 15.0711L26.7211 8.70711ZM0 9L26.014 9V7L0 7L0 9Z"
-      fill="black"/>
-</svg>
-</span>
-                    </button
-                </div>
-            </div>
-            <div class="about-us__item-img about-us__item-img_vr">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/vr.png" alt="vrglasses">
-            </div>
+                            </button>
+                        </div>
+                        <div class="about-us__item-img">
+                            <img src="<?php the_sub_field('about_img'); ?>"/>
+                        </div>
+                    </div>
+
+                <?php endwhile;
+
+            else :
+
+            endif;
+
+            ?>
+
+
         </div>
     </section>
 
@@ -950,24 +867,6 @@ Template Name: home
             </div>
         </div>
     </div>
-<!--    <div class="popup__rebase">-->
-<!--        <div class="popup__bg"><img-->
-<!--                    src="--><?php //echo get_template_directory_uri() ?><!--/assets/images/background-wave.jpg" alt="wave">-->
-<!--        </div>-->
-<!---->
-<!--        <h2 class="popup__title">Запишитесь на демонстрацию нашего продукта</h2>-->
-<!--        <p class="popup__subtitle">Оставьте заявку и наши менеджеры вам перезвонят</p>-->
-<!--        <div class="popup__form">-->
-<!--            <!--                            <input type="text" class="pop-up__form-name" name="name" placeholder="Имя" required>-->-->
-<!--            <!--                            <input type="tel" class="pop-up__form-phone" name="phone" placeholder="Телефон" required>-->-->
-<!--            <!--                            <button class="tl__btn tl__btn_first-on-page tl__btn_first-on-page_form">-->-->
-<!--            <!--                                <p>Оставить заявку</p>-->-->
-<!--            <!--                            </button>-->-->
-<!--            <!--                           -->-->
-<!--            --><?php //echo do_shortcode('[contact-form-7 id="4036518" title="Контактная форма 1"]') ?>
-<!--        </div>-->
-<!---->
-<!--    </div>-->
 
 
 <?php get_footer(); ?>
