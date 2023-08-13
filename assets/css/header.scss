@@ -73,7 +73,8 @@
   @include before-sm() {
     position: absolute;
     bottom: 10px;
-    left: calc((100% - 240px) / 2);
+    left: 50%;
+    transform: translateX(-50%);
     margin: 0;
     max-width: 240px;
     a {
