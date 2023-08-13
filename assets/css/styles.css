@@ -1878,6 +1878,7 @@ body.active {
   display: none;
 }
 
+
 .block__content_single-product {
   flex-flow: column;
   padding-bottom: 70px;
@@ -1910,6 +1911,7 @@ body.active {
 .single-product__content {
   margin-top: 72px;
 }
+
 
 .footer {
   background: #000000;

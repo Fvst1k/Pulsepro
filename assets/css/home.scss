@@ -1414,7 +1414,10 @@
 
   &__form-btn {
     width: 100%;
-    cursor: pointer;
+
+ 
+cursor: pointer;
+
     border-radius: 30px;
 
   }
@@ -1479,6 +1482,16 @@
 .wpcf7-spinner{
   display: none;
 }
+
+.wpcf7 form.sent .wpcf7-response-output{
+  border-color: #46b450;
+  color: white;
+  border-radius: 30px;
+}
+.wpcf7-spinner{
+  display: none;
+}
+
 
 // =========/POP-UP=========//
 
