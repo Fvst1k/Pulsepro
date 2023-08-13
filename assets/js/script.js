@@ -28,10 +28,16 @@ function openPopup() {
     document.querySelector('.popup__background').addEventListener("click", evt => {
         document.querySelector('.popup__wrapper').classList.remove("active")
         document.querySelector('.body').classList.remove("active")
+        setTimeout(() => {
+            document.querySelector(".wpcf7-form").reset()
+        }, 1000)
     })
     document.querySelector('.popup__cross').addEventListener("click", evt => {
         document.querySelector('.popup__wrapper').classList.remove("active")
         document.querySelector('.body').classList.remove("active")
+        setTimeout(() => {
+            document.querySelector(".wpcf7-form").reset()
+        }, 1000)
     })
 }
 

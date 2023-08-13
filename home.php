@@ -779,6 +779,8 @@ Template Name: home
 
                         <div class="reviews__slider-item">
                             <?php the_sub_field('reviews_link_2');?>
+                            <div class="reviews__slider-bg"></div>
+                            <div class="ytp-large-play-button .ytp-button .ytp-large-play-button-red-bg"></div>
                         </div>
                     <?php endwhile;
 
@@ -837,36 +839,6 @@ Template Name: home
     </section>
 
 
-    <div class="popup__wrapper">
-        <div class="popup__background"></div>
-        <div class="popup__container">
-            <div class="popup__cross hover__tY">
-                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.17275 3.17278L26.3271 26.3271" stroke="white" stroke-width="5" stroke-linecap="round"/>
-                    <path d="M26.3271 3.17274L3.17278 26.3271" stroke="white" stroke-width="5" stroke-linecap="round"/>
-                </svg>
-            </div>
-            <div class="popup">
-                <div class="popup__bg"><img
-                            src="<?php echo get_template_directory_uri() ?>/assets/images/background-wave.jpg"
-                            alt="wave">
-                </div>
-
-                <h2 class="popup__title">Запишитесь на демонстрацию нашего продукта</h2>
-                <p class="popup__subtitle">Оставьте заявку и наши менеджеры вам перезвонят</p>
-                <div class="popup__form">
-                    <!--                            <input type="text" class="pop-up__form-name" name="name" placeholder="Имя" required>-->
-                    <!--                            <input type="tel" class="pop-up__form-phone" name="phone" placeholder="Телефон" required>-->
-                    <!--                            <button class="tl__btn tl__btn_first-on-page tl__btn_first-on-page_form">-->
-                    <!--                                <p>Оставить заявку</p>-->
-                    <!--                            </button>-->
-                    <!--                           -->
-                    <?php echo do_shortcode('[contact-form-7 id="4036518" title="Контактная форма 1"]') ?>
-                </div>
-
-            </div>
-        </div>
-    </div>
 
 
 <?php get_footer(); ?>

@@ -16,4 +16,16 @@ add_theme_support('title-tag');
 add_theme_support('custom-logo');
 add_theme_support('post-thumbnails');
 
+function wpshout_longer_excerpts( $length ) {
+
+    if ( is_admin() ) {
+        return $length;
+    }
+
+    return 25;
+}
+
+add_filter( 'excerpt_length', 'wpshout_longer_excerpts', 999 );
+
 ?>
+
