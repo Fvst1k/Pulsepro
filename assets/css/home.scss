@@ -1271,7 +1271,8 @@
     }
   }
 
-  &__form {
+  &__form  {
+
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -1311,7 +1312,9 @@
     }
   }
 
-  &__form-name {
+  &__form-name  {
+
+
     border-radius: 30px;
     background: rgba(255, 255, 255, 0.69);
 
@@ -1332,7 +1335,9 @@
     }
   }
 
-  &__form-phone {
+  &__form-phone  {
+    width: 100%;
+
     border-radius: 30px;
     background: rgba(255, 255, 255, 0.69);
 
@@ -1354,11 +1359,15 @@
   }
 
   &__form-btn {
+    width: 100%;
+cursor: pointer;
     border-radius: 30px;
+
   }
 }
 
 .tl__btn_first-on-page_form {
+
   margin: 0;
   padding: 14px 30px;
 
@@ -1406,5 +1415,15 @@
 .wpcf7 form.failed .wpcf7-response-output, .wpcf7 form.aborted {
   border-color: red;
 }
+
+.wpcf7 form.sent .wpcf7-response-output{
+  border-color: #46b450;
+  color: white;
+  border-radius: 30px;
+}
+.wpcf7-spinner{
+  display: none;
+}
+
 
 // =========/POP-UP=========//
