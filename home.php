@@ -779,8 +779,7 @@ Template Name: home
 
                         <div class="reviews__slider-item">
                             <?php the_sub_field('reviews_link_2');?>
-                            <div class="reviews__slider-bg"></div>
-                            <div class="ytp-large-play-button .ytp-button .ytp-large-play-button-red-bg"></div>
+
                         </div>
                     <?php endwhile;
 
