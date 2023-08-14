@@ -485,16 +485,32 @@ body.active {
 
 .first-on-page__text {
   color: #ffffff;
-  font-size: 24px;
   letter-spacing: 1.68px;
   font-weight: 300;
-  line-height: 1.5;
-  margin-top: 50px;
 }
 @media screen and (max-width: 767px) {
   .first-on-page__text {
     font-size: 16px;
   }
+}
+
+p, span, strong, ul, li {
+  font-size: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+em {
+  font-size: inherit;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
 }
 
 .tl__btn_first-on-page {

@@ -8,6 +8,7 @@ Template Name: home
 
     <section class="first-on-page">
         <div class="block__content block__content_first-on-page">
+            <?php the_content(); ?>
             <div class="first-on-page__bg">
                 <?php
                 $image = get_field('main_image');
@@ -16,9 +17,11 @@ Template Name: home
                 <?php endif; ?>
             </div>
             <div class="first-on-page__group">
-                <h1 class="first-on-page__title">
+                <h1 class="first-on-page__title"
+                    style="font-size:<?php the_field('main_title_font'); ?>px; margin-top:<?php the_field('main_title_mt'); ?>px; margin-bottom:<?php the_field('main_title_bm'); ?>px; line-height:<?php the_field('main_title_lh'); ?>;">
                     <?php the_field('main_title'); ?></h1>
-                <div class="first-on-page__text">
+                <div class="first-on-page__text"
+                     style="font-size:<?php the_field('main_subtitle_font'); ?>px; margin-top:<?php the_field('main_subtitle_mt'); ?>px; margin-bottom:<?php the_field('main_subtitle_bm'); ?>px; line-height:<?php the_field('main_subtitle_lh'); ?>;">
                     <?php the_field('main_subtitle'); ?>
                 </div>
                 <button class="tl__btn tl__btn_first-on-page popup__selector">
@@ -558,6 +561,7 @@ Template Name: home
 
     <section class="cards">
         <div class="block__content block__content_cards">
+
             <div class="card__row-color">
                 <div class="card__row-color-item">
                     <div class="cards__tablet-icon">
@@ -601,7 +605,9 @@ Template Name: home
 
                             </div>
                             <div class="cards__item-text-group">
-                                <h5 class="cards__item-title"><?php the_sub_field('card_title'); ?></h5>
+                                <h5 class="cards__item-title"
+                                    style="font-size:<?php the_sub_field('card_title_fz'); ?>px; margin-top:<?php the_sub_field('card_title_mt'); ?>px; margin-bottom:<?php the_sub_field('card_title_mb'); ?>px; line-height:<?php the_sub_field('card_title_lh'); ?>;">
+                                    <?php the_sub_field('card_title'); ?></h5>
                                 <p class="cards__item-subtitle"><?php the_sub_field('card_text_1'); ?></p>
                                 <p class="cards__item-text"><?php the_sub_field('card_text_2'); ?></p>
                             </div>
@@ -778,7 +784,7 @@ Template Name: home
                     while (have_rows('create_reviews')) : the_row(); ?>
 
                         <div class="reviews__slider-item">
-                            <?php the_sub_field('reviews_link_2');?>
+                            <?php the_sub_field('reviews_link_2'); ?>
 
                         </div>
                     <?php endwhile;
@@ -838,8 +844,6 @@ Template Name: home
     </section>
 
 
-
-
     <div class="popup__wrapper">
         <div class="popup__background"></div>
         <div class="popup__container">
@@ -870,7 +874,6 @@ Template Name: home
             </div>
         </div>
     </div>
-
 
 
 <?php get_footer(); ?>
