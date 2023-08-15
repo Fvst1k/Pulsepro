@@ -40,6 +40,7 @@
   position: relative;
 }
 
+
 .first-on-page__title {
   font-size: 36px;
   line-height: 1.5;
@@ -47,10 +48,16 @@
   letter-spacing: 2.52px;
   font-weight: 600;
   margin-top: 15px;
-  @include before-md() {
-    font-size: 28px;
+
+  h1 {
+    font-size: inherit;
+    @include before-sm() {
+      font-size: 28px;
+    }
   }
+
 }
+
 
 .first-on-page__text {
   color: #ffffff;
@@ -58,27 +65,45 @@
   letter-spacing: 1.68px;
   font-weight: 300;
 
-
-
+  p {
+    font-size: inherit;
+  }
 
   @include before-md() {
     font-size: 16px;
   }
+  @include before-sm() {
+    p {
+      font-size: 16px;
+    }
+  }
 }
-p, span, strong, ul, li {
+
+
+p, span, strong, ul, li, em, h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-style: inherit;
   line-height: inherit;
   font-weight: inherit;
 }
+
 em {
   font-size: inherit;
 }
+
 strong {
   font-weight: 700;
 }
+
 em {
   font-style: italic;
+}
+
+hr {
+  margin-top: 30px;
+  @include before-md() {
+    margin-top: 20px;
+  }
 }
 
 .tl__btn_first-on-page {
@@ -158,9 +183,9 @@ em {
   justify-content: center;
   align-items: center;
   @include before-md() {
-   svg {
-     width: 60px;
-   }
+    svg {
+      width: 60px;
+    }
   }
 }
 
@@ -173,7 +198,8 @@ em {
   justify-content: center;
   flex-flow: column;
 }
-.cards__title{
+
+.cards__title {
   font-size: 36px;
   font-weight: 700;
   text-align: center;
@@ -185,7 +211,8 @@ em {
     font-size: 20px;
   }
 }
-.cards__subtitle{
+
+.cards__subtitle {
   margin-bottom: 40px;
   text-align: center;
   @include before-md() {
@@ -293,11 +320,13 @@ em {
 .cards__item-title {
   font-size: 24px;
   font-weight: 600;
-  @include before-md() {
-    font-size: 20px;
-  }
-  @include before-sm() {
-    font-size: 18px;
+
+  h5 {
+    font-size: inherit;
+    @include before-md() {
+      font-size: 20px;
+    }
+
   }
 }
 
@@ -313,28 +342,37 @@ em {
 
 .cards__item-subtitle {
   margin-top: 25px;
-  @include before-md() {
-    margin-top: 15px;
-    font-size: 16px;
-  }
-  @include before-sm() {
-    margin-top: 10px;
-    font-size: 14px;
+
+  p, em, strong, ul, li, span {
+
+
+    @include before-md() {
+      margin-top: 15px;
+      font-size: 16px;
+    }
+    @include before-sm() {
+      margin-top: 10px;
+      font-size: 14px;
+    }
   }
 }
 
 .cards__item-text {
   margin-top: 25px;
   font-style: italic;
-  @include before-md() {
-    margin-top: 15px;
-    font-size: 16px;
-    height: 100%;
+
+  p, em, strong, ul, li, span {
+    @include before-md() {
+      margin-top: 15px;
+      font-size: 16px;
+      height: 100%;
+    }
+    @include before-sm() {
+      font-size: 14px;
+      margin-top: 12px;
+    }
   }
-  @include before-sm() {
-    font-size: 14px;
-    margin-top: 12px;
-  }
+
 }
 
 // ----------- /cards -------------
@@ -347,27 +385,21 @@ em {
   align-items: center;
 }
 
-.demonstration-plus__title {
-  font-size: 32px;
-  font-weight: 600;
-  letter-spacing: 2.3px;
-  text-align: center;
-  @include before-md() {
-    font-size: 26px;
-  }
-
-}
 
 .demonstration-plus__title {
   font-size: 32px;
   text-align: center;
   font-weight: 700;
   max-width: 860px;
-  @include before-md() {
-    font-size: 24px;
-  }
-  @include before-sm() {
-    font-size: 18px;
+  letter-spacing: 2.3px;
+
+  p, em, strong, ul, li, span, h2 {
+    @include before-md() {
+      font-size: 24px;
+    }
+    @include before-sm() {
+      font-size: 18px;
+    }
   }
 }
 
@@ -424,8 +456,8 @@ em {
   width: 100%;
   max-height: 200px;
   height: 100%;
-  border-radius:30px;
-  overflow:hidden;
+  border-radius: 30px;
+  overflow: hidden;
   @include before-lg() {
     height: unset;
   }
@@ -437,8 +469,11 @@ em {
   font-weight: 600;
   text-align: center;
   @include before-lg() {
-    font-size: 14px;
-    margin-top: 15px;
+    h6 {
+      font-size: 14px;
+      margin-top: 15px;
+    }
+
   }
 }
 
@@ -449,9 +484,18 @@ em {
   text-align: center;
   line-height: 1.2;
   padding: 0 6px;
+
   @include before-lg() {
-    font-size: 12px;
-    margin-top: 10px;
+    p, em, strong, ul, li, span, h1, h2, h3, h4, h5, h6 {
+      font-size: 12px;
+      margin-top: 10px;
+    }
+
+  }
+  @include before-sm() {
+    p, em, strong, ul, li, span, h1, h2, h3, h4, h5, h6 {
+      font-size: 10px;
+    }
   }
 }
 
@@ -460,12 +504,15 @@ em {
   font-weight: 600;
   letter-spacing: 1.4px;
   text-align: center;
-  @include before-md() {
-    margin-top: 50px;
-    font-size: 18px;
-  }
-  @include before-sm() {
-    font-size: 16px;
+
+  p, em, strong, ul, li, span, h1, h2, h3, h4, h5, h6 {
+    @include before-md() {
+      margin-top: 50px;
+      font-size: 18px;
+    }
+    @include before-sm() {
+      font-size: 16px;
+    }
   }
 }
 
@@ -478,18 +525,20 @@ em {
 // ----------- about-us -----------
 .block__content_about-us {
   flex-flow: column;
+
   .about-us__item {
     .about-us__item-img {
       margin-left: 30px;
     }
+
     &:nth-child(2n) {
       flex-direction: row-reverse;
 
       .about-us__item-img {
         margin-left: 0;
         margin-right: 30px;
-        border-radius:30px;
-        overflow:hidden;
+        border-radius: 30px;
+        overflow: hidden;
       }
     }
   }
@@ -527,36 +576,28 @@ em {
     font-weight: 700;
     line-height: 1.36;
     letter-spacing: 1.96px;
-  }
 
-  &__subtitle {
-    margin-bottom: 40px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.36;
-    letter-spacing: 1.4px;
-
-    span {
-      font-weight: 600;
-    }
-
-    @include before-xl() {
-      font-size: 18px;
-    }
-    @include before-lg() {
-      font-size: 16px;
+    p, em, strong, ul, li, span, h1, h2, h3, h4, h5, h6 {
+      @include before-md() {
+        font-size: 22px;
+      }
     }
   }
+
 
   &__description {
     margin-bottom: 40px;
     row-gap: 20px;
-    @include before-xl() {
-      font-size: 18px;
+
+    p, em, strong, ul, li, span, h1, h2, h3, h4, h5, h6 {
+      @include before-xl() {
+        font-size: 18px;
+      }
+      @include before-lg() {
+        font-size: 16px;
+      }
     }
-    @include before-lg() {
-      font-size: 16px;
-    }
+
   }
 
   & ul {
@@ -623,9 +664,12 @@ em {
     line-height: 1.36;
     letter-spacing: 1.68px;
     @include before-md() {
-      font-size: 22px;
       margin-left: 0;
-      text-align: center;
+      p, em, strong, ul, li, span, h1, h2, h3, h4, h5, h6 {
+        font-size: 22px;
+        text-align: center;
+      }
+
     }
   }
 
@@ -654,8 +698,8 @@ em {
   }
 
   &__item-img {
-    border-radius:30px;
-    overflow:hidden;
+    border-radius: 30px;
+    overflow: hidden;
   }
 
   &__item-text {
@@ -674,9 +718,13 @@ em {
     line-height: 1.36;
     letter-spacing: 1.12px;
     text-align: center;
-    @include before-xl() {
-      font-size: 12px;
+
+    p, em, strong, ul, li, span, h1, h2, h3, h4, h5, h6 {
+      @include before-lg() {
+        font-size: 14px;
+      }
     }
+
   }
 }
 
@@ -707,8 +755,9 @@ em {
   }
 
   &__img {
-    border-radius:30px;
-    overflow:hidden;
+    border-radius: 30px;
+    overflow: hidden;
+
     img {
     }
 
@@ -749,24 +798,21 @@ em {
     font-weight: 700;
     line-height: 1.36;
     letter-spacing: 1.96px;
-    @include before-xl() {
-      br {
-        display: none;
-        margin-bottom: 50px;
+
+    p, em, strong, ul, li, span, h1, h2, h3, h4, h5, h6 {
+      @include before-md() {
+        font-size: 22px;
       }
     }
-    @include before-xl() {
-      font-size: 22px;
-      margin-bottom: 20px;
-    }
-    @include before-md() {
-      font-size: 18px;
-    }
+
+
   }
 
   &__principles-subtitle {
-    @include before-md() {
-      font-size: 16px;
+    p, em, strong, ul, li, span, h1, h2, h3, h4, h5, h6 {
+      @include before-md() {
+        font-size: 16px;
+      }
     }
   }
 
@@ -847,9 +893,11 @@ em {
 
 
   @include before-md() {
-    font-size: 26px;
-  }
+    p, em, strong, ul, li, span, h1, h2, h3, h4, h5, h6 {
+      font-size: 26px;
+    }
 
+  }
 
 }
 
@@ -928,9 +976,12 @@ em {
     font-size: 36px;
     font-weight: 600;
     line-height: 1.22;
-    @include before-sm() {
-      font-size: 28px;
-      margin-bottom: 25px;
+
+    p, em, strong, ul, li, span, h1, h2, h3, h4, h5, h6 {
+      @include before-sm() {
+        font-size: 24px;
+
+      }
     }
   }
 
@@ -939,9 +990,12 @@ em {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.3;
-    @include before-sm() {
-      font-size: 16px;
-      margin-bottom: 25px;
+
+    p, em, strong, ul, li, span, h1, h2, h3, h4, h5, h6 {
+      @include before-sm() {
+        font-size: 16px;
+
+      }
     }
   }
 
@@ -1036,13 +1090,13 @@ em {
   &__card-img {
     max-height: 480px;
     overflow: hidden;
-    @include before-xl(){
+    @include before-xl() {
       max-height: 382px;
-      img{
-        height:350px;
+      img {
+        height: 350px;
       }
     }
-    @include before-lg(){
+    @include before-lg() {
       max-height: unset;
     }
   }
@@ -1057,8 +1111,8 @@ em {
     @include before-sm() {
       padding: 20px 20px 28px;
       min-height: unset;
-      img{
-        height:200px;
+      img {
+        height: 200px;
       }
     }
   }
@@ -1090,7 +1144,6 @@ em {
     line-height: 1.5;
     letter-spacing: 1.4px;
   }
-
 
 
   &__description-price {
@@ -1177,6 +1230,7 @@ em {
   &__img {
     max-height: 240px;
     overflow: hidden;
+
     img {
       height: 100%;
       max-height: 240px;
@@ -1259,6 +1313,7 @@ em {
   }
 
 }
+
 .popup__background {
   background: #8D8D8D;
   opacity: 0;
@@ -1267,6 +1322,7 @@ em {
   transition: all ease-in-out 1.5s;
 
 }
+
 .popup__container {
   left: 50%;
   transform: translateX(-50%);
@@ -1284,6 +1340,7 @@ em {
 
 
 }
+
 .popup {
   width: 100%;
   height: 100%;
@@ -1301,7 +1358,6 @@ em {
   @include before-sm() {
     padding: 60px 40px 30px 40px;
   }
-
 
 
   &__bg {
@@ -1367,7 +1423,7 @@ em {
     }
   }
 
-  &__form  {
+  &__form {
 
     position: relative;
     display: flex;
@@ -1378,7 +1434,8 @@ em {
       max-width: 262px;
       width: 100%;
       height: 55px;
-      padding:0 15px;
+      padding: 0 15px;
+
       &:first-child {
         margin-right: 5px;
         @include before-lg() {
@@ -1396,16 +1453,18 @@ em {
         margin-left: 0px;
       }
     }
+
     br {
       display: none;
     }
+
     @include before-lg() {
       flex-direction: column;
 
     }
   }
 
-  &__form-name  {
+  &__form-name {
 
 
     border-radius: 30px;
@@ -1422,12 +1481,13 @@ em {
       font-weight: 300;
       line-height: 1.9;
     }
+
     @include before-lg() {
       margin-bottom: 10px;
     }
   }
 
-  &__form-phone  {
+  &__form-phone {
     width: 100%;
 
     border-radius: 30px;
@@ -1444,6 +1504,7 @@ em {
       font-weight: 300;
       line-height: 1.9;
     }
+
     @include before-lg() {
       margin-bottom: 10px;
     }
@@ -1452,8 +1513,8 @@ em {
   &__form-btn {
     width: 100%;
 
- 
-cursor: pointer;
+
+    cursor: pointer;
 
     border-radius: 30px;
 
@@ -1479,6 +1540,7 @@ cursor: pointer;
 
 .wpcf7 {
   width: 100%;
+
   p {
     display: flex;
     position: relative;
@@ -1493,7 +1555,7 @@ cursor: pointer;
 
 }
 
-.wpcf7-response-output{
+.wpcf7-response-output {
   color: white;
   text-align: center;
   border-radius: 30px;
@@ -1508,24 +1570,28 @@ cursor: pointer;
 
   }
 }
-.wpcf7 form.failed .wpcf7-response-output, .wpcf7 form.aborted{
+
+.wpcf7 form.failed .wpcf7-response-output, .wpcf7 form.aborted {
   border-color: red;
 }
-.wpcf7 form.sent .wpcf7-response-output{
+
+.wpcf7 form.sent .wpcf7-response-output {
   border-color: #46b450;
   color: white;
   border-radius: 30px;
 }
-.wpcf7-spinner{
+
+.wpcf7-spinner {
   display: none;
 }
 
-.wpcf7 form.sent .wpcf7-response-output{
+.wpcf7 form.sent .wpcf7-response-output {
   border-color: #46b450;
   color: white;
   border-radius: 30px;
 }
-.wpcf7-spinner{
+
+.wpcf7-spinner {
   display: none;
 }
 
@@ -1534,34 +1600,41 @@ cursor: pointer;
 
 .block__content_single-product {
   flex-flow: column;
-  padding-bottom: 70px  ;
+  padding-bottom: 70px;
+
   h2 {
     font-size: 26px;
     font-weight: 600;
     margin-bottom: 30px;
 
   }
+
   h3 {
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 20px;
 
   }
+
   li {
     margin-left: 25px;
+
     &:last-child {
       margin-bottom: 20px;
     }
 
   }
+
   p {
     margin-top: 10px;
   }
 }
+
 .single-product__title {
   font-size: 36px;
   font-weight: 600;
 }
+
 .single-product__content {
   margin-top: 72px;
 }

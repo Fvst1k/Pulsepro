@@ -17,9 +17,13 @@ Template Name: home
                 <?php endif; ?>
             </div>
             <div class="first-on-page__group">
-                <h1 class="first-on-page__title"
-                    style="font-size:<?php the_field('main_title_font'); ?>px; margin-top:<?php the_field('main_title_mt'); ?>px; margin-bottom:<?php the_field('main_title_bm'); ?>px; line-height:<?php the_field('main_title_lh'); ?>;">
-                    <?php the_field('main_title'); ?></h1>
+
+                <div class="first-on-page__title"
+                     style="font-size:<?php the_field('main_title_font'); ?>px; margin-top:<?php the_field('main_title_mt'); ?>px; margin-bottom:<?php the_field('main_title_bm'); ?>px; line-height:<?php the_field('main_title_lh'); ?>;">
+                    <h1>
+                        <?php the_field('main_title'); ?>
+                    </h1>
+                </div>
                 <div class="first-on-page__text"
                      style="font-size:<?php the_field('main_subtitle_font'); ?>px; margin-top:<?php the_field('main_subtitle_mt'); ?>px; margin-bottom:<?php the_field('main_subtitle_bm'); ?>px; line-height:<?php the_field('main_subtitle_lh'); ?>;">
                     <?php the_field('main_subtitle'); ?>
@@ -561,8 +565,9 @@ Template Name: home
 
     <section class="cards">
         <div class="block__content block__content_cards">
-             <h2 class="cards__title">Более богатые данные для достижения лучших результатов в здравоохранении</h2>
-            <p class="cards__subtitle">Точная медицина и спрос на носимые устройства растут, однако доступ к данным и их качество остаются проблемой. Собираемые данные должны быть обильными, богатыми и целенаправленными.</p>
+            <h2 class="cards__title">Более богатые данные для достижения лучших результатов в здравоохранении</h2>
+            <p class="cards__subtitle">Точная медицина и спрос на носимые устройства растут, однако доступ к данным и их
+                качество остаются проблемой. Собираемые данные должны быть обильными, богатыми и целенаправленными.</p>
             <div class="card__row-color">
                 <div class="card__row-color-item">
                     <div class="cards__tablet-icon">
@@ -606,11 +611,20 @@ Template Name: home
 
                             </div>
                             <div class="cards__item-text-group">
-                                <h5 class="cards__item-title"
-                                    style="font-size:<?php the_sub_field('card_title_fz'); ?>px; margin-top:<?php the_sub_field('card_title_mt'); ?>px; margin-bottom:<?php the_sub_field('card_title_mb'); ?>px; line-height:<?php the_sub_field('card_title_lh'); ?>;">
-                                    <?php the_sub_field('card_title'); ?></h5>
-                                <p class="cards__item-subtitle"><?php the_sub_field('card_text_1'); ?></p>
-                                <p class="cards__item-text"><?php the_sub_field('card_text_2'); ?></p>
+                                <div class="cards__item-title"
+                                     style="font-size:<?php the_sub_field('card_title_fz'); ?>px; margin-top:<?php the_sub_field('card_title_mt'); ?>px; margin-bottom:<?php the_sub_field('card_title_mb'); ?>px; line-height:<?php the_sub_field('card_title_lh'); ?>;">
+                                    <h5>
+                                        <?php the_sub_field('card_title'); ?>
+                                    </h5>
+                                </div>
+                                <div class="cards__item-subtitle"
+                                     style="font-size:<?php the_sub_field('card_text-1_fz'); ?>px; margin-top:<?php the_sub_field('card_text-1_mt'); ?>px; margin-bottom:<?php the_sub_field('card_text-1_mb'); ?>px; line-height:<?php the_sub_field('card_text-1_lh'); ?>">
+                                    <?php the_sub_field('card_text_1'); ?>
+                                </div>
+                                <div class="cards__item-text"
+                                     style="font-size:<?php the_sub_field('card_text-2_fz'); ?>px; margin-top:<?php the_sub_field('card_text-2_mt'); ?>px; margin-bottom:<?php the_sub_field('card_text-2_mb'); ?>px; line-height:<?php the_sub_field('card_text-2_lh'); ?>">
+                                    <?php the_sub_field('card_text_2'); ?>
+                                </div>
                             </div>
                         </div>
 
@@ -628,7 +642,12 @@ Template Name: home
 
     <section class="demonstration-plus">
         <div class="block__content block__content_demonstration-plus">
-            <h2 class="demonstration-plus__title"><?php the_field('demo_title'); ?></h2>
+            <div class="demonstration-plus__title"
+                 style="font-size:<?php the_field('demo_title_font'); ?>px; margin-top:<?php the_field('demo_title_mt'); ?>px; margin-bottom:<?php the_field('demo_title_bm'); ?>px; line-height:<?php the_field('demo_title_lh'); ?>;">
+                <h2>
+                    <?php the_field('demo_title'); ?>
+                </h2>
+            </div>
             <div class="demonstration-plus__table">
                 <?php
 
@@ -643,8 +662,14 @@ Template Name: home
                             <div class="demonstration-plus__table-img">
                                 <img src="<?php the_sub_field('demo_card_img'); ?>"/>
                             </div>
-                            <h6 class="demonstration-plus__table-title"><?php the_sub_field('demo_card_title'); ?></h6>
-                            <div class="demonstration-plus__table-text">
+                            <div class="demonstration-plus__table-title"
+                                 style="font-size:<?php the_sub_field('demo_card_title_font'); ?>px; margin-top:<?php the_sub_field('demo_card_title_mt'); ?>px; margin-bottom:<?php the_sub_field('demo_card_title_mb'); ?>px; line-height:<?php the_sub_field('demo_card_title_lh'); ?>">
+                                <h6>
+                                    <?php the_sub_field('demo_card_title'); ?>
+                                </h6>
+                            </div>
+                            <div class="demonstration-plus__table-text"
+                                 style="font-size:<?php the_sub_field('demo_card_text_font'); ?>px; margin-top:<?php the_sub_field('demo_card_text_mt'); ?>px; margin-bottom:<?php the_sub_field('demo_card_text_mb'); ?>px; line-height:<?php the_sub_field('demo_card_text_lh'); ?>">
                                 <?php the_sub_field('demo_card_text'); ?>
                             </div>
                         </div>
@@ -658,10 +683,12 @@ Template Name: home
 
 
             </div>
-            <h3 class="demonstration-plus__subtitle">
-                <?php the_field('demo_text'); ?>
-
-            </h3>
+            <div class="demonstration-plus__subtitle"
+                 style="font-size:<?php the_field('demo_text_font'); ?>px; margin-top:<?php the_field('demo_text_mt'); ?>px; margin-bottom:<?php the_field('demo_text_bm'); ?>px; line-height:<?php the_field('demo_text_lh'); ?>;">
+                <h3>
+                    <?php the_field('demo_text'); ?>
+                </h3>
+            </div>
             <button class="tl__btn popup__selector tl__btn_demonstration-plus">
                 <p>Записаться на демонстрацию</p>
                 <span class="tl__btn-arrow">
@@ -684,11 +711,15 @@ Template Name: home
                 <?php endif; ?>
             </div>
             <div class="pulse-pro__content">
-                <h2 class="pulse-pro__title"><?php the_field('pulse_title'); ?></h2>
-                <p class="pulse-pro__subtitle">
-                    <?php the_field('pulse_subtitle'); ?>
-                </p>
-                <div class="pulse-pro__description">
+                <div class="pulse-pro__title"
+                     style="font-size:<?php the_field('pulse_title_font'); ?>px; margin-top:<?php the_field('pulse_title_mt'); ?>px; margin-bottom:<?php the_field('pulse_title_bm'); ?>px; line-height:<?php the_field('pulse_title_lh'); ?>;">
+                    <h2>
+                        <?php the_field('pulse_title'); ?>
+                    </h2>
+                </div>
+
+                <div class="pulse-pro__description"
+                     style="font-size:<?php the_field('pulse_text_font'); ?>px; margin-top:<?php the_field('pulse_text_mt'); ?>px; margin-bottom:<?php the_field('pulse_text_bm'); ?>px; line-height:<?php the_field('pulse_text_lh'); ?>;">
                     <?php the_field('pulse_text'); ?>
                 </div>
                 <button class="tl__btn popup__selector">
@@ -706,7 +737,12 @@ Template Name: home
 
     <section class="examples">
         <div class="block__content block__content_examples">
-            <h3 class="examples__title"><?php the_field('exampl_title'); ?></h3>
+            <div class="examples__title"
+                 style="font-size:<?php the_field('exampl_title_font'); ?>px; margin-top:<?php the_field('exampl_title_mt'); ?>px; margin-bottom:<?php the_field('exampl_title_bm'); ?>px; line-height:<?php the_field('exampl_title_lh'); ?>;">
+                <h3>
+                    <?php the_field('exampl_title'); ?>
+                </h3>
+            </div>
             <div class="examples__row">
 
                 <?php
@@ -721,9 +757,12 @@ Template Name: home
                             <div class="examples__item-img">
                                 <img src="<?php the_sub_field('exampl_img'); ?>"/>
                             </div>
-                            <p class="examples__item-text"><?php the_sub_field('exampl_text'); ?></p>
-                        </div>
+                            <div class="examples__item-text"
+                                 style="font-size:<?php the_sub_field('exampl_text_font'); ?>px; margin-top:<?php the_sub_field('exampl_text_mt'); ?>px; margin-bottom:<?php the_sub_field('exampl_text_bm'); ?>px; line-height:<?php the_sub_field('exampl_text_lh'); ?>;">
 
+                                <?php the_sub_field('exampl_text'); ?>
+                            </div>
+                        </div>
 
                     <?php endwhile;
                 else :
@@ -753,8 +792,14 @@ Template Name: home
                 </div>
             </div>
             <div class="analize__principles">
-                <h2 class="analize__principles-title"><?php the_field('analize_title'); ?></h2>
-                <div class="analize__principles-subtitle">
+                <div class="analize__principles-title"
+                     style="font-size:<?php the_field('analize_title_font'); ?>px; margin-top:<?php the_field('analize_title_mt'); ?>px; margin-bottom:<?php the_field('analize_title_bm'); ?>px; line-height:<?php the_field('analize_title_lh'); ?>;">
+                    <h2>
+                        <?php the_field('analize_title'); ?>
+                    </h2>
+                </div>
+                <div class="analize__principles-subtitle"
+                     style="font-size:<?php the_field('analize_text_font'); ?>px; margin-top:<?php the_field('analize_text_mt'); ?>px; margin-bottom:<?php the_field('analize_text_bm'); ?>px; line-height:<?php the_field('analize_text_lh'); ?>;">
                     <?php the_field('analize_text'); ?>
                 </div>
                 <button class="tl__btn popup__selector tl__btn_analize">
@@ -773,7 +818,11 @@ Template Name: home
 
     <section class="reviews">
         <div class="block__content block__content_reviews">
-            <h3 class="reviews__title"><?php the_field('reviews_title'); ?></h3>
+            <div class="reviews__title" style="font-size:<?php the_field('reviews_title_font'); ?>px; margin-top:<?php the_field('reviews_title_mt'); ?>px; margin-bottom:<?php the_field('reviews_title_bm'); ?>px; line-height:<?php the_field('reviews_title_lh'); ?>;">
+                <h3>
+                    <?php the_field('reviews_title'); ?>
+                </h3>
+            </div>
             <div class="reviews__slider">
 
                 <?php
@@ -813,10 +862,14 @@ Template Name: home
 
                     <div class="about-us__item">
                         <div class="about-us__item-content">
-                            <h2 class="about-us__item-title"><?php the_sub_field('about_title'); ?></h2>
-                            <p class="about-us__item-text">
+                            <div class="about-us__item-title" style="font-size:<?php the_sub_field('about_title_font'); ?>px; margin-top:<?php the_sub_field('about_title_mt'); ?>px; margin-bottom:<?php the_sub_field('about_title_bm'); ?>px; line-height:<?php the_sub_field('about_title_lh'); ?>;">
+                                <h2>
+                                    <?php the_sub_field('about_title'); ?>
+                                </h2>
+                            </div>
+                            <div class="about-us__item-text"  style="font-size:<?php the_sub_field('about_text_font'); ?>px; margin-top:<?php the_sub_field('about_text_mt'); ?>px; margin-bottom:<?php the_sub_field('about_text_bm'); ?>px; line-height:<?php the_sub_field('about_text_lh'); ?>;">
                                 <?php the_sub_field('about_text'); ?>
-                            </p>
+                            </div>
                             <button class="tl__btn popup__selector">
                                 <p>Узнать больше</p>
                                 <span class="tl__btn-arrow">
@@ -844,37 +897,6 @@ Template Name: home
         </div>
     </section>
 
-
-    <div class="popup__wrapper">
-        <div class="popup__background"></div>
-        <div class="popup__container">
-            <div class="popup__cross hover__tY">
-                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.17275 3.17278L26.3271 26.3271" stroke="white" stroke-width="5" stroke-linecap="round"/>
-                    <path d="M26.3271 3.17274L3.17278 26.3271" stroke="white" stroke-width="5" stroke-linecap="round"/>
-                </svg>
-            </div>
-            <div class="popup">
-                <div class="popup__bg"><img
-                            src="<?php echo get_template_directory_uri() ?>/assets/images/background-wave.jpg"
-                            alt="wave">
-                </div>
-
-                <h2 class="popup__title">Запишитесь на демонстрацию нашего продукта</h2>
-                <p class="popup__subtitle">Оставьте заявку и наши менеджеры вам перезвонят</p>
-                <div class="popup__form">
-                    <!--                            <input type="text" class="pop-up__form-name" name="name" placeholder="Имя" required>-->
-                    <!--                            <input type="tel" class="pop-up__form-phone" name="phone" placeholder="Телефон" required>-->
-                    <!--                            <button class="tl__btn tl__btn_first-on-page tl__btn_first-on-page_form">-->
-                    <!--                                <p>Оставить заявку</p>-->
-                    <!--                            </button>-->
-                    <!--                           -->
-                    <?php echo do_shortcode('[contact-form-7 id="4036518" title="Feedback"]') ?>
-                </div>
-
-            </div>
-        </div>
-    </div>
 
 
 <?php get_footer(); ?>
