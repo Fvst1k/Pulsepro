@@ -561,7 +561,8 @@ Template Name: home
 
     <section class="cards">
         <div class="block__content block__content_cards">
-
+             <h2 class="cards__title">Более богатые данные для достижения лучших результатов в здравоохранении</h2>
+            <p class="cards__subtitle">Точная медицина и спрос на носимые устройства растут, однако доступ к данным и их качество остаются проблемой. Собираемые данные должны быть обильными, богатыми и целенаправленными.</p>
             <div class="card__row-color">
                 <div class="card__row-color-item">
                     <div class="cards__tablet-icon">
