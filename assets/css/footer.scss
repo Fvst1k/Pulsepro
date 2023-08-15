@@ -96,6 +96,12 @@
   width: 100%;
   font-size: 16px;
   font-weight: 300;
+  padding-bottom: 20px;
+  p, em, strong, ul, li, span, h1, h2, h3, h4, h5, h6 {
+    @include before-sm {
+      font-size: 14px;
+    }
+  }
 
 }
 .footer__menu {

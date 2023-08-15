@@ -1930,15 +1930,25 @@ hr {
   flex-flow: column;
   padding-bottom: 70px;
 }
+.block__content_single-product h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
 .block__content_single-product h2 {
-  font-size: 26px;
-  font-weight: 600;
+  font-size: 32px;
+  font-weight: 700;
   margin-bottom: 30px;
 }
 .block__content_single-product h3 {
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+}
+.block__content_single-product h4 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 25px;
 }
 .block__content_single-product li {
   margin-left: 25px;
@@ -2054,6 +2064,12 @@ hr {
   width: 100%;
   font-size: 16px;
   font-weight: 300;
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 575px) {
+  .footer__subtitle p, .footer__subtitle em, .footer__subtitle strong, .footer__subtitle ul, .footer__subtitle li, .footer__subtitle span, .footer__subtitle h1, .footer__subtitle h2, .footer__subtitle h3, .footer__subtitle h4, .footer__subtitle h5, .footer__subtitle h6 {
+    font-size: 14px;
+  }
 }
 
 .footer__menu {
