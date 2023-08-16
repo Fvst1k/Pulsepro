@@ -39,6 +39,7 @@
 
 /* Точки*/
 .slick-dots {
+  z-index: 5;
 
 }
 
@@ -75,14 +76,63 @@
 
 /* Стрелка */
 .slick-arrow {
+  bottom: -16%;
+  top: unset;
+
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  &::before {
+    content: "";
+  }
+  svg {
+    height: 40px;
+    width: 40px;
+    transition: ease-in-out all 0.3s;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  @include before-lg() {
+    bottom: -15.5%;
+  }
+  @include before-sm() {
+    bottom: -32%;
+  }
 }
 
 /* Стрелка влево */
 .slick-arrow.slick-prev {
+  left: 33%;
+  @include before-lg() {
+    left: 24%;
+  }
+  @include before-md() {
+    left: 15%;
+  }
+  @include before-sm() {
+   left: 9%;
+  }
+
 }
 
 /* Стрелка вправо */
 .slick-arrow.slick-next {
+  right: 33%;
+  @include before-lg() {
+    right: 24%;
+  }
+  @include before-md() {
+    right: 15%;
+  }
+  @include before-sm() {
+    right: 9%;
+  }
+
+
 }
 
 /* Стрелка не активная */

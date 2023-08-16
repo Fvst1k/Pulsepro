@@ -1935,20 +1935,60 @@ hr {
   font-weight: 700;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 575px) {
+  .block__content_single-product h1 {
+    font-size: 26px;
+  }
+}
 .block__content_single-product h2 {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 575px) {
+  .block__content_single-product h2 {
+    font-size: 24px;
+  }
 }
 .block__content_single-product h3 {
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 25px;
 }
+@media screen and (max-width: 575px) {
+  .block__content_single-product h3 {
+    font-size: 24px;
+  }
+}
 .block__content_single-product h4 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 25px;
+}
+@media screen and (max-width: 575px) {
+  .block__content_single-product h4 {
+    font-size: 22px;
+  }
+}
+.block__content_single-product h5 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 575px) {
+  .block__content_single-product h5 {
+    font-size: 22px;
+  }
+}
+.block__content_single-product h6 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 575px) {
+  .block__content_single-product h6 {
+    font-size: 20px;
+  }
 }
 .block__content_single-product li {
   margin-left: 25px;
@@ -1956,8 +1996,12 @@ hr {
 .block__content_single-product li:last-child {
   margin-bottom: 20px;
 }
+.block__content_single-product ul {
+  margin-bottom: 20px;
+}
 .block__content_single-product p {
-  margin-top: 10px;
+  margin: 10px 0;
+  font-size: 18px;
 }
 
 .single-product__title {
@@ -2385,6 +2429,10 @@ hr {
 /* Слайд основной */
 /* Слайд по центру */
 /* Точки*/
+.slick-dots {
+  z-index: 5;
+}
+
 /* Ограничевающая оболочка */
 /* Лента слайдов */
 /* Слайд */
@@ -2392,8 +2440,78 @@ hr {
 /* Слайд основной */
 /* Слайд по центру */
 /* Стрелка */
+.slick-arrow {
+  bottom: -16%;
+  top: unset;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.slick-arrow::before {
+  content: "";
+}
+.slick-arrow svg {
+  height: 40px;
+  width: 40px;
+  transition: ease-in-out all 0.3s;
+}
+.slick-arrow svg:hover {
+  transform: scale(1.05);
+}
+@media screen and (max-width: 991px) {
+  .slick-arrow {
+    bottom: -15.5%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .slick-arrow {
+    bottom: -32%;
+  }
+}
+
 /* Стрелка влево */
+.slick-arrow.slick-prev {
+  left: 33%;
+}
+@media screen and (max-width: 991px) {
+  .slick-arrow.slick-prev {
+    left: 24%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slick-arrow.slick-prev {
+    left: 15%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .slick-arrow.slick-prev {
+    left: 9%;
+  }
+}
+
 /* Стрелка вправо */
+.slick-arrow.slick-next {
+  right: 33%;
+}
+@media screen and (max-width: 991px) {
+  .slick-arrow.slick-next {
+    right: 24%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slick-arrow.slick-next {
+    right: 15%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .slick-arrow.slick-next {
+    right: 9%;
+  }
+}
+
 /* Стрелка не активная */
 /* Точки*/
 .slick-dots li.slick-active {

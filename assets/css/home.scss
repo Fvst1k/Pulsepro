@@ -1606,12 +1606,19 @@ hr {
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 30px;
+    @include before-sm {
+      font-size: 26px;
+    }
   }
 
   h2 {
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 30px;
+    @include before-sm {
+      font-size: 24px;
+
+    }
 
   }
 
@@ -1619,12 +1626,38 @@ hr {
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 25px;
+    @include before-sm {
+      font-size: 24px;
+
+    }
 
   }
   h4 {
     font-size: 26px;
     font-weight: 700;
     margin-bottom: 25px;
+    @include before-sm {
+      font-size: 22px;
+
+    }
+  }
+  h5 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    @include before-sm {
+      font-size: 22px;
+
+    }
+  }
+  h6 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    @include before-sm {
+      font-size: 20px;
+
+    }
   }
 
   li {
@@ -1635,9 +1668,13 @@ hr {
     }
 
   }
+  ul {
+    margin-bottom: 20px;
+  }
 
   p {
-    margin-top: 10px;
+    margin: 10px 0;
+    font-size: 18px;
   }
 }
 
