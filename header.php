@@ -27,6 +27,40 @@ Template Name: header
 <div class="wrapper">
     <!-- Header -->
     <header>
+        <div class="popup__wrapper">
+            <div class="popup__background"></div>
+            <div class="popup__container">
+                <div class="popup__cross hover__tY">
+                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.17275 3.17278L26.3271 26.3271" stroke="white" stroke-width="5" stroke-linecap="round"/>
+                        <path d="M26.3271 3.17274L3.17278 26.3271" stroke="white" stroke-width="5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="popup">
+                    <div class="popup__bg"><img
+                                src="<?php echo get_template_directory_uri() ?>/assets/images/background-wave.jpg"
+                                alt="wave">
+                    </div>
+
+                    <div class="popup__title" style="font-size:<?php the_field('form_title_font'); ?>px; margin-top:<?php the_field('form_title_mt'); ?>px; margin-bottom:<?php the_field('form_title_bm'); ?>px; line-height:<?php the_field('form_title_lh'); ?>;">
+                        <?php the_field('form_title', $front_id); ?>
+                    </div>
+                    <div class="popup__subtitle" style="font-size:<?php the_field('form_text_font'); ?>px; margin-top:<?php the_field('form_text_mt'); ?>px; margin-bottom:<?php the_field('form_text_bm'); ?>px; line-height:<?php the_field('form_text_lh'); ?>;">
+                        <?php the_field('form_text', $front_id); ?>
+                    </div>
+                    <div class="popup__form">
+                        <!--                            <input type="text" class="pop-up__form-name" name="name" placeholder="Имя" required>-->
+                        <!--                            <input type="tel" class="pop-up__form-phone" name="phone" placeholder="Телефон" required>-->
+                        <!--                            <button class="tl__btn tl__btn_first-on-page tl__btn_first-on-page_form">-->
+                        <!--                                <p>Оставить заявку</p>-->
+                        <!--                            </button>-->
+                        <!--                           -->
+                        <?php echo do_shortcode('[contact-form-7 id="4036518" title="Feedback"]') ?>
+                    </div>
+
+                </div>
+            </div>
+        </div>
         <div class="block__content block__content_header">
             <div class="header__main-row">
                 <a href="/#" class="header__logo">
@@ -39,43 +73,10 @@ Template Name: header
 
                 </nav>
                 <button class="header__btn popup__selector">
-                    <?php the_field('btn_header');?>
+                    <?php the_field('btn_header', $front_id);?>
                 </button>
             </div>
         </div>
     </header>
-    <div class="popup__wrapper">
-        <div class="popup__background"></div>
-        <div class="popup__container">
-            <div class="popup__cross hover__tY">
-                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.17275 3.17278L26.3271 26.3271" stroke="white" stroke-width="5" stroke-linecap="round"/>
-                    <path d="M26.3271 3.17274L3.17278 26.3271" stroke="white" stroke-width="5" stroke-linecap="round"/>
-                </svg>
-            </div>
-            <div class="popup">
-                <div class="popup__bg"><img
-                            src="<?php echo get_template_directory_uri() ?>/assets/images/background-wave.jpg"
-                            alt="wave">
-                </div>
 
-                <div class="popup__title" style="font-size:<?php the_field('form_title_font'); ?>px; margin-top:<?php the_field('form_title_mt'); ?>px; margin-bottom:<?php the_field('form_title_bm'); ?>px; line-height:<?php the_field('form_title_lh'); ?>;">
-                    <?php the_field('form_title', $front_id); ?>
-                </div>
-                <div class="popup__subtitle" style="font-size:<?php the_field('form_text_font'); ?>px; margin-top:<?php the_field('form_text_mt'); ?>px; margin-bottom:<?php the_field('form_text_bm'); ?>px; line-height:<?php the_field('form_text_lh'); ?>;">
-                    <?php the_field('form_text', $front_id); ?>
-                </div>
-                <div class="popup__form">
-                    <!--                            <input type="text" class="pop-up__form-name" name="name" placeholder="Имя" required>-->
-                    <!--                            <input type="tel" class="pop-up__form-phone" name="phone" placeholder="Телефон" required>-->
-                    <!--                            <button class="tl__btn tl__btn_first-on-page tl__btn_first-on-page_form">-->
-                    <!--                                <p>Оставить заявку</p>-->
-                    <!--                            </button>-->
-                    <!--                           -->
-                    <?php echo do_shortcode('[contact-form-7 id="4036518" title="Feedback"]') ?>
-                </div>
-
-            </div>
-        </div>
-    </div>
     <!-- /Header -->

@@ -5,8 +5,9 @@ Template Name: home
 ?>
 
 <?php get_header() ?>
+<main>
 
-    <section class="first-on-page">
+    <section class="first-on-page" style="order: <?php the_field('order-1'); ?>">
         <div class="block__content block__content_first-on-page">
             <?php the_content(); ?>
             <div class="first-on-page__bg">
@@ -42,7 +43,7 @@ Template Name: home
         </div>
     </section>
 
-    <section class="trust">
+    <section class="trust" style="order: <?php the_field('order-2'); ?>">
         <div class="block__content block__content_trust">
             <div class="trust__row">
                 <p class="trust__text">Нам доверяют</p>
@@ -563,7 +564,7 @@ Template Name: home
         </div>
     </section>
 
-    <section class="cards">
+    <section class="cards" style="order: <?php the_field('order-3'); ?>">
         <div class="block__content block__content_cards">
             <div class="cards__title" style="font-size:<?php the_field('main_card_title_font'); ?>px; margin-top:<?php the_field('main_card_title_mt'); ?>px; margin-bottom:<?php the_field('main_card_title_bm'); ?>px; line-height:<?php the_field('main_card_title_lh'); ?>;">
                     <?php the_field('main_card_title'); ?>
@@ -646,7 +647,7 @@ Template Name: home
         </div>
     </section>
 
-    <section class="demonstration-plus">
+    <section class="demonstration-plus" style="order: <?php the_field('order-4'); ?>">
         <div class="block__content block__content_demonstration-plus">
             <div class="demonstration-plus__title"
                  style="font-size:<?php the_field('demo_title_font'); ?>px; margin-top:<?php the_field('demo_title_mt'); ?>px; margin-bottom:<?php the_field('demo_title_bm'); ?>px; line-height:<?php the_field('demo_title_lh'); ?>;">
@@ -707,7 +708,7 @@ Template Name: home
         </div>
     </section>
 
-    <section class="pulse-pro">
+    <section class="pulse-pro" style="order: <?php the_field('order-5'); ?>">
         <div class="block__content block__content_pulse-pro">
             <div class="pulse-pro__img">
                 <?php
@@ -741,7 +742,7 @@ Template Name: home
         </div>
     </section>
 
-    <section class="examples">
+    <section class="examples" style="order: <?php the_field('order-6'); ?>">
         <div class="block__content block__content_examples">
             <div class="examples__title"
                  style="font-size:<?php the_field('exampl_title_font'); ?>px; margin-top:<?php the_field('exampl_title_mt'); ?>px; margin-bottom:<?php the_field('exampl_title_bm'); ?>px; line-height:<?php the_field('exampl_title_lh'); ?>;">
@@ -779,7 +780,7 @@ Template Name: home
         </div>
     </section>
 
-    <section class="analize">
+    <section class="analize" style="order: <?php the_field('order-7'); ?>">
         <div class="block__content block__content_analize">
             <div class="analize__img-box">
                 <div class="analize__img">
@@ -822,7 +823,7 @@ Template Name: home
         </div>
     </section>
 
-    <section class="reviews">
+    <section class="reviews" style="order: <?php the_field('order-8'); ?>">
         <div class="block__content block__content_reviews">
             <div class="reviews__title" style="font-size:<?php the_field('reviews_title_font'); ?>px; margin-top:<?php the_field('reviews_title_mt'); ?>px; margin-bottom:<?php the_field('reviews_title_bm'); ?>px; line-height:<?php the_field('reviews_title_lh'); ?>;">
                 <h3>
@@ -855,7 +856,7 @@ Template Name: home
         </div>
     </section>
 
-    <section class="about-us">
+    <section class="about-us" style="order: <?php the_field('order-9'); ?>">
         <div class="block__content block__content_about-us">
             <?php
 
@@ -902,7 +903,5 @@ Template Name: home
 
         </div>
     </section>
-
-
-
+</main>
 <?php get_footer(); ?>

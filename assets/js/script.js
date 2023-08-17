@@ -6,6 +6,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         variableWidth: true,
         arrows: true,
+        swipe: false,
         prevArrow: `<button type="button" class="slick-prev slider-arrow-prev">
   <svg width="41" height="44" viewBox="0 0 41 44" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -30,28 +31,38 @@ $(document).ready(function () {
 
     });
 });
-openPopup()
-function openPopup() {
+workPopup()
+
+function workPopup() {
     document.querySelectorAll('.popup__selector').forEach(currentPopup => {
         currentPopup.addEventListener("click", evt => {
-            document.querySelector('.popup__wrapper').classList.add("active")
-            document.querySelector('.body').classList.add("active")
+            openPopup()
         })
     })
     document.querySelector('.popup__background').addEventListener("click", evt => {
-        document.querySelector('.popup__wrapper').classList.remove("active")
-        document.querySelector('.body').classList.remove("active")
-        setTimeout(() => {
-            document.querySelector(".wpcf7-form").reset()
-        }, 1000)
+        closePopup()
     })
     document.querySelector('.popup__cross').addEventListener("click", evt => {
-        document.querySelector('.popup__wrapper').classList.remove("active")
-        document.querySelector('.body').classList.remove("active")
-        setTimeout(() => {
-            document.querySelector(".wpcf7-form").reset()
-        }, 1000)
+        closePopup()
     })
+    document.querySelector(".wpcf7").addEventListener('wpcf7mailsent', evt => {
+        setTimeout(closePopup, 2000)
+    })
+
+}
+
+
+function closePopup() {
+    document.querySelector('.popup__wrapper').classList.remove("active")
+    document.querySelector('.body').classList.remove("active")
+    setTimeout(() => {
+        document.querySelector(".wpcf7-form").reset()
+    }, 1000)
+}
+
+function openPopup() {
+    document.querySelector('.popup__wrapper').classList.add("active")
+    document.querySelector('.body').classList.add("active")
 }
 
 
