@@ -117,7 +117,9 @@
   background: #000000;
   color: $text-color;
   border-radius: 30px;
-  padding: 12px 45px;
+  padding: 12px 30px;
+  max-width: 250px;
+  width: 100%;
 
   font-size: 18px;
   font-weight: 700;

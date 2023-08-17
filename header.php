@@ -3,6 +3,7 @@
 Template Name: header
 */
 ?>
+<?php $front_id = get_option('page_on_front'); ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> >
 <head>
@@ -38,7 +39,7 @@ Template Name: header
 
                 </nav>
                 <button class="header__btn popup__selector">
-                    Записаться
+                    <?php the_field('btn_header');?>
                 </button>
             </div>
         </div>
@@ -58,8 +59,12 @@ Template Name: header
                             alt="wave">
                 </div>
 
-                <h2 class="popup__title">Запишитесь на демонстрацию нашего продукта</h2>
-                <p class="popup__subtitle">Оставьте заявку и наши менеджеры вам перезвонят</p>
+                <div class="popup__title" style="font-size:<?php the_field('form_title_font'); ?>px; margin-top:<?php the_field('form_title_mt'); ?>px; margin-bottom:<?php the_field('form_title_bm'); ?>px; line-height:<?php the_field('form_title_lh'); ?>;">
+                    <?php the_field('form_title', $front_id); ?>
+                </div>
+                <div class="popup__subtitle" style="font-size:<?php the_field('form_text_font'); ?>px; margin-top:<?php the_field('form_text_mt'); ?>px; margin-bottom:<?php the_field('form_text_bm'); ?>px; line-height:<?php the_field('form_text_lh'); ?>;">
+                    <?php the_field('form_text', $front_id); ?>
+                </div>
                 <div class="popup__form">
                     <!--                            <input type="text" class="pop-up__form-name" name="name" placeholder="Имя" required>-->
                     <!--                            <input type="tel" class="pop-up__form-phone" name="phone" placeholder="Телефон" required>-->

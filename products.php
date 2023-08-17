@@ -31,10 +31,10 @@ Template Name: products
                         <div class="products__card-description">
                             <h3 class="products__description-title"><?php the_field('product_title'); ?></h3>
                             <ul class="products__description-list">
-                                <div class="products__description-list-name">Общие:</div>
-                                <?php the_field('product_text'); ?>
+                                <div class="products__description-list-name"><?php the_field('product_text'); ?></div>
+
                             </ul>
-                            <p class="products__description-price"><span>Стоимость:</span> <?php the_field('product_price'); ?></p>
+                            <p class="products__description-price"><?php the_field('product_price'); ?></p>
                         </div>
                     </a>
 

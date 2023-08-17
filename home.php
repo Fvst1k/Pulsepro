@@ -29,7 +29,7 @@ Template Name: home
                     <?php the_field('main_subtitle'); ?>
                 </div>
                 <button class="tl__btn tl__btn_first-on-page popup__selector">
-                    <p>Партнерство с нами</p>
+                    <?php the_field('btn_first');?>
                     <span class="tl__btn-arrow">
                     <svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M26.7211 8.70711C27.1117 8.31658 27.1117 7.68342 26.7211 7.29289L20.3572 0.928932C19.9667 0.538408 19.3335 0.538408 18.943 0.928932C18.5524 1.31946 18.5524 1.95262 18.943 2.34315L24.5998 8L18.943 13.6569C18.5524 14.0474 18.5524 14.6805 18.943 15.0711C19.3335 15.4616 19.9667 15.4616 20.3572 15.0711L26.7211 8.70711ZM0 9L26.014 9V7L0 7L0 9Z"
@@ -565,9 +565,12 @@ Template Name: home
 
     <section class="cards">
         <div class="block__content block__content_cards">
-            <h2 class="cards__title">Более богатые данные для достижения лучших результатов в здравоохранении</h2>
-            <p class="cards__subtitle">Точная медицина и спрос на носимые устройства растут, однако доступ к данным и их
-                качество остаются проблемой. Собираемые данные должны быть обильными, богатыми и целенаправленными.</p>
+            <div class="cards__title" style="font-size:<?php the_field('main_card_title_font'); ?>px; margin-top:<?php the_field('main_card_title_mt'); ?>px; margin-bottom:<?php the_field('main_card_title_bm'); ?>px; line-height:<?php the_field('main_card_title_lh'); ?>;">
+                    <?php the_field('main_card_title'); ?>
+            </div>
+            <div class="cards__subtitle" style="font-size:<?php the_field('main_card_text_font'); ?>px; margin-top:<?php the_field('main_card_text_mt'); ?>px; margin-bottom:<?php the_field('main_card_text_bm'); ?>px; line-height:<?php the_field('main_card_text_lh'); ?>;">
+                <?php the_field('main_card_text'); ?>
+            </div>
             <div class="card__row-color">
                 <div class="card__row-color-item">
                     <div class="cards__tablet-icon">
@@ -577,8 +580,9 @@ Template Name: home
                             <path d="M15 35.4542L32.1916 48.5055L49.6916 20.0057" stroke="#21AA56" stroke-width="7"/>
                         </svg>
                     </div>
-                    <p class="cards__tablet-icon-text">То, что работает для одного человека...
-                    </p>
+                    <div class="cards__tablet-icon-text" style="font-size:<?php the_field('cards_icon-text_font'); ?>px; margin-top:<?php the_field('cards_icon-text_mt'); ?>px; margin-bottom:<?php the_field('cards_icon-text_bm'); ?>px;">
+                        <?php the_field('cards_icon-text'); ?>
+                    </div>
                 </div>
                 <div class="card__row-color-item">
                     <div class="cards__tablet-icon">
@@ -591,7 +595,9 @@ Template Name: home
                                   stroke-linecap="round"/>
                         </svg>
                     </div>
-                    <p class="cards__tablet-icon-text cards__tablet-icon-text_red">Не работает на другом!</p>
+                    <div class="cards__tablet-icon-text cards__tablet-icon-text_red" " style="font-size:<?php the_field('cards_icon-text_2_font'); ?>px; margin-top:<?php the_field('cards_icon-text_2_mt'); ?>px; margin-bottom:<?php the_field('cards_icon-text_2_bm'); ?>px;">
+                    <?php the_field('cards_icon-text_2'); ?>
+                    </div>
                 </div>
             </div>
             <div class="cards__tablet">
@@ -690,7 +696,7 @@ Template Name: home
                 </h3>
             </div>
             <button class="tl__btn popup__selector tl__btn_demonstration-plus">
-                <p>Записаться на демонстрацию</p>
+                <?php the_field('btn_demo');?>
                 <span class="tl__btn-arrow">
                     <svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M26.7211 8.70711C27.1117 8.31658 27.1117 7.68342 26.7211 7.29289L20.3572 0.928932C19.9667 0.538408 19.3335 0.538408 18.943 0.928932C18.5524 1.31946 18.5524 1.95262 18.943 2.34315L24.5998 8L18.943 13.6569C18.5524 14.0474 18.5524 14.6805 18.943 15.0711C19.3335 15.4616 19.9667 15.4616 20.3572 15.0711L26.7211 8.70711ZM0 9L26.014 9V7L0 7L0 9Z"
@@ -723,7 +729,7 @@ Template Name: home
                     <?php the_field('pulse_text'); ?>
                 </div>
                 <button class="tl__btn popup__selector">
-                    <p>Записаться на демонстрацию</p>
+                    <?php the_field('btn_pulsepro');?>
                     <span class="tl__btn-arrow">
                     <svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M26.7211 8.70711C27.1117 8.31658 27.1117 7.68342 26.7211 7.29289L20.3572 0.928932C19.9667 0.538408 19.3335 0.538408 18.943 0.928932C18.5524 1.31946 18.5524 1.95262 18.943 2.34315L24.5998 8L18.943 13.6569C18.5524 14.0474 18.5524 14.6805 18.943 15.0711C19.3335 15.4616 19.9667 15.4616 20.3572 15.0711L26.7211 8.70711ZM0 9L26.014 9V7L0 7L0 9Z"
@@ -803,7 +809,7 @@ Template Name: home
                     <?php the_field('analize_text'); ?>
                 </div>
                 <button class="tl__btn popup__selector tl__btn_analize">
-                    <p>Записаться на демонстрацию</p>
+                    <?php the_field('btn_analize');?>
                     <span class="tl__btn-arrow">
                     <svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M26.7211 8.70711C27.1117 8.31658 27.1117 7.68342 26.7211 7.29289L20.3572 0.928932C19.9667 0.538408 19.3335 0.538408 18.943 0.928932C18.5524 1.31946 18.5524 1.95262 18.943 2.34315L24.5998 8L18.943 13.6569C18.5524 14.0474 18.5524 14.6805 18.943 15.0711C19.3335 15.4616 19.9667 15.4616 20.3572 15.0711L26.7211 8.70711ZM0 9L26.014 9V7L0 7L0 9Z"
@@ -871,7 +877,7 @@ Template Name: home
                                 <?php the_sub_field('about_text'); ?>
                             </div>
                             <button class="tl__btn popup__selector">
-                                <p>Узнать больше</p>
+                                <?php the_sub_field('btn_about');?>
                                 <span class="tl__btn-arrow">
                     <svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M26.7211 8.70711C27.1117 8.31658 27.1117 7.68342 26.7211 7.29289L20.3572 0.928932C19.9667 0.538408 19.3335 0.538408 18.943 0.928932C18.5524 1.31946 18.5524 1.95262 18.943 2.34315L24.5998 8L18.943 13.6569C18.5524 14.0474 18.5524 14.6805 18.943 15.0711C19.3335 15.4616 19.9667 15.4616 20.3572 15.0711L26.7211 8.70711ZM0 9L26.014 9V7L0 7L0 9Z"

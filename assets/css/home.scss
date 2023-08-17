@@ -19,6 +19,7 @@
   right: 0;
   bottom: 0;
   left: 0;
+
   img {
 
   }
@@ -207,27 +208,35 @@ hr {
 }
 
 .cards__title {
-  font-size: 36px;
-  font-weight: 700;
+
+
   text-align: center;
   margin-bottom: 20px;
-  @include before-md() {
-    font-size: 26px;
+
+  p, em, strong, ul, li, span, h1, h2, h3, h4, h5, h6 {
+    @include before-md() {
+      font-size: 26px;
+    }
+    @include before-sm() {
+      font-size: 20px;
+    }
   }
-  @include before-sm() {
-    font-size: 20px;
-  }
+
 }
 
 .cards__subtitle {
   margin-bottom: 40px;
   text-align: center;
-  @include before-md() {
-    font-size: 17px;
+
+  p, em, strong, ul, li, span, h1, h2, h3, h4, h5, h6 {
+    @include before-md() {
+      font-size: 17px;
+    }
+    @include before-sm() {
+      font-size: 15px;
+    }
   }
-  @include before-sm() {
-    font-size: 15px;
-  }
+
 
 }
 
@@ -262,18 +271,22 @@ hr {
 }
 
 .cards__tablet-icon-text {
-  font-size: 22px;
+
   color: #21aa56;
   font-weight: 700;
   letter-spacing: 1.5px;
-  margin-top: 16px;
+
   text-align: center;
-  @include before-md() {
-    font-size: 18px;
+
+  p, em, strong, ul, li, span, h1, h2, h3, h4, h5, h6 {
+    @include before-md() {
+      font-size: 18px;
+    }
+    @include before-sm() {
+      font-size: 14px;
+    }
   }
-  @include before-sm() {
-    font-size: 14px;
-  }
+
 }
 
 .cards__tablet-icon-text_red {
@@ -556,13 +569,14 @@ hr {
   &__content {
     &_pulse-pro {
       align-items: center;
-      @include before-md(){
+      @include before-md() {
         flex-flow: column;
 
       }
     }
   }
 }
+
 .pulse-pro {
 
 
@@ -576,18 +590,18 @@ hr {
     text-align: center;
     overflow: hidden;
     border-radius: 30px;
+
     img {
       object-fit: cover;
       height: 100%;
 
     }
-    @include before-md(){
+
+    @include before-md() {
       width: 100%;
       margin-bottom: 30px;
       margin-right: 0;
     }
-
-
 
 
   }
@@ -601,7 +615,7 @@ hr {
       max-width: 520px;
 
     }
-    @include before-md(){
+    @include before-md() {
       width: 100%;
     }
   }
@@ -680,7 +694,6 @@ hr {
 }
 
 
-
 // ============EXAMPLES============//
 .examples {
   margin-bottom: 100px;
@@ -739,6 +752,7 @@ hr {
     overflow: hidden;
     max-height: 175px;
     height: 100%;
+
     img {
       object-fit: cover;
       height: 100%;
@@ -919,9 +933,11 @@ hr {
   max-width: 420px;
   width: 100%;
   margin: 50px auto;
+
   p {
     font-size: 20px;
   }
+
   @include before-md() {
     display: flex;
     align-items: center;
@@ -1173,19 +1189,21 @@ hr {
     max-height: 480px;
     height: 100%;
     overflow: hidden;
+
     img {
       object-fit: cover;
       height: 100%;
 
     }
+
     @include before-xl() {
       max-height: 382px;
 
     }
     @include before-lg() {
-      max-height:480px;
+      max-height: 480px;
     }
-    @include before-sm(){
+    @include before-sm() {
       max-height: 250px;
     }
   }
@@ -1485,15 +1503,19 @@ hr {
     1px 0 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000,
     -1px 1px 0 #000000, 1px 1px 0 #000000, -1px -1px 0 #000000,
     1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
-    @include before-lg() {
-      font-size: 32px;
+
+    p, em, strong, ul, li, span, h1, h2, h3, h4, h5, h6 {
+      @include before-lg() {
+        font-size: 32px;
+      }
+      @include before-md() {
+        font-size: 26px;
+      }
+      @include before-sm() {
+        font-size: 22px;
+      }
     }
-    @include before-md() {
-      font-size: 26px;
-    }
-    @include before-sm() {
-      font-size: 22px;
-    }
+
   }
 
   &__subtitle {
@@ -1504,12 +1526,16 @@ hr {
     font-size: 22px;
     font-weight: 300;
     text-align: center;
-    @include before-md() {
-      font-size: 18px;
+
+    p, em, strong, ul, li, span, h1, h2, h3, h4, h5, h6 {
+      @include before-md() {
+        font-size: 18px;
+      }
+      @include before-sm() {
+        font-size: 16px;
+      }
     }
-    @include before-sm() {
-      font-size: 16px;
-    }
+
   }
 
   &__form {
@@ -1721,6 +1747,7 @@ hr {
     }
 
   }
+
   h4 {
     font-size: 26px;
     font-weight: 700;
@@ -1730,6 +1757,7 @@ hr {
 
     }
   }
+
   h5 {
     font-size: 24px;
     font-weight: 700;
@@ -1739,6 +1767,7 @@ hr {
 
     }
   }
+
   h6 {
     font-size: 22px;
     font-weight: 700;
@@ -1757,6 +1786,7 @@ hr {
     }
 
   }
+
   ul {
     margin-bottom: 20px;
   }
