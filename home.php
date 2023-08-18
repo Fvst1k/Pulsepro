@@ -613,7 +613,7 @@ Template Name: home
                             <div class="cards__item-img">
 
 
-                                <img src="<?php the_sub_field('card_image'); ?>"/>
+                                <img src="<?php the_sub_field('card_image'); ?>" alt="error"/>
 
 
                             </div>
@@ -667,7 +667,7 @@ Template Name: home
 
                         <div class="demonstration-plus__table-item">
                             <div class="demonstration-plus__table-img">
-                                <img src="<?php the_sub_field('demo_card_img'); ?>"/>
+                                <img src="<?php the_sub_field('demo_card_img'); ?>" alt="error"/>
                             </div>
                             <div class="demonstration-plus__table-title"
                                  style="font-size:<?php the_sub_field('demo_card_title_font'); ?>px; margin-top:<?php the_sub_field('demo_card_title_mt'); ?>px; margin-bottom:<?php the_sub_field('demo_card_title_mb'); ?>px; line-height:<?php the_sub_field('demo_card_title_lh'); ?>">
@@ -762,7 +762,7 @@ Template Name: home
 
                         <div class="examples__row-item">
                             <div class="examples__item-img">
-                                <img src="<?php the_sub_field('exampl_img'); ?>"/>
+                                <img src="<?php the_sub_field('exampl_img'); ?>" alt="error"/>
                             </div>
                             <div class="examples__item-text"
                                  style="font-size:<?php the_sub_field('exampl_text_font'); ?>px; margin-top:<?php the_sub_field('exampl_text_mt'); ?>px; margin-bottom:<?php the_sub_field('exampl_text_bm'); ?>px; line-height:<?php the_sub_field('exampl_text_lh'); ?>;">
@@ -888,7 +888,7 @@ Template Name: home
                             </button>
                         </div>
                         <div class="about-us__item-img">
-                            <img src="<?php the_sub_field('about_img'); ?>"/>
+                            <img src="<?php the_sub_field('about_img'); ?>" alt="error"/>
                         </div>
                     </div>
 
