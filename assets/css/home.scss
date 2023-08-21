@@ -311,6 +311,12 @@ hr {
   max-height: 520px;
   border-radius: 30px;
   overflow: hidden;
+  img{
+    object-fit: contain;
+  }
+  @include before-sm(){
+    max-height: 260px;
+  }
 }
 
 .cards__item-text-group {

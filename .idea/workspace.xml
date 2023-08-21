@@ -6,15 +6,6 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select>
       <path>
@@ -25,11 +16,27 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f312fed2-d453-47d1-859c-a580912ec28a" name="Default Changelist" comment="add blog">
+    <list default="true" id="f312fed2-d453-47d1-859c-a580912ec28a" name="Default Changelist" comment="optimizate code">
+      <change afterPath="$PROJECT_DIR$/assets/css/shop.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woocommerce/cart/cart-empty.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woocommerce/cart/cart-item-data.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woocommerce/cart/cart-shipping.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woocommerce/cart/cart-totals.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woocommerce/cart/cart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woocommerce/cart/cross-sells.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woocommerce/cart/mini-cart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woocommerce/cart/proceed-to-checkout-button.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woocommerce/cart/shipping-calculator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/home.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +46,17 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="add_blog" />
+        <entry key="$PROJECT_DIR$" value="add_wp_products" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,7 +73,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../kingStone/wp-content/themes/kingstone" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="SvnConfiguration">
@@ -81,6 +96,17 @@
       <workItem from="1691542039872" duration="38000" />
       <workItem from="1691684137049" duration="644000" />
       <workItem from="1691684803373" duration="7675000" />
+      <workItem from="1692026844675" duration="2915000" />
+      <workItem from="1692042603700" duration="11036000" />
+      <workItem from="1692118823736" duration="19277000" />
+      <workItem from="1692142231417" duration="518000" />
+      <workItem from="1692143334042" duration="3019000" />
+      <workItem from="1692211902478" duration="16702000" />
+      <workItem from="1692307585549" duration="7461000" />
+      <workItem from="1692387564170" duration="2883000" />
+      <workItem from="1692391810316" duration="4407000" />
+      <workItem from="1692642575248" duration="1464000" />
+      <workItem from="1692646644181" duration="9283000" />
     </task>
     <task id="LOCAL-00001" summary="fixed bugs">
       <created>1691618516673</created>
@@ -117,7 +143,91 @@
       <option name="project" value="LOCAL" />
       <updated>1691692995052</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="end project????">
+      <created>1691939924285</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1691939924285</updated>
+    </task>
+    <task id="LOCAL-00007" summary="finaly???">
+      <created>1691947275826</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1691947275826</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add adaptive safary">
+      <created>1691949458380</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1691949458380</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix button">
+      <created>1691954211626</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1691954211626</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add text redactor 10%">
+      <created>1692055184773</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1692055184773</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add text redactor 75%">
+      <created>1692140314437</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1692140314437</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add text redactor 90%">
+      <created>1692142204599</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1692142204599</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add text redactor 98%?">
+      <created>1692145346686</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1692145346686</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fixed images">
+      <created>1692225802363</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1692225802363</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add custom field btn, single btns">
+      <created>1692234269746</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1692234269746</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add js close popup and acf order block">
+      <created>1692315929841</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1692315929841</updated>
+    </task>
+    <task id="LOCAL-00017" summary="optimizate code">
+      <created>1692391109120</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1692391109120</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,7 +265,19 @@
     <MESSAGE value="add blog and products pages" />
     <MESSAGE value="add slider(-adaptive)" />
     <MESSAGE value="add blog" />
-    <option name="LAST_COMMIT_MESSAGE" value="add blog" />
+    <MESSAGE value="end project????" />
+    <MESSAGE value="finaly???" />
+    <MESSAGE value="add adaptive safary" />
+    <MESSAGE value="fix button" />
+    <MESSAGE value="add text redactor 10%" />
+    <MESSAGE value="add text redactor 75%" />
+    <MESSAGE value="add text redactor 90%" />
+    <MESSAGE value="add text redactor 98%?" />
+    <MESSAGE value="fixed images" />
+    <MESSAGE value="add custom field btn, single btns" />
+    <MESSAGE value="add js close popup and acf order block" />
+    <MESSAGE value="optimizate code" />
+    <option name="LAST_COMMIT_MESSAGE" value="optimizate code" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1691540976307">
@@ -170,40 +292,40 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="629" y="297" key="EditFileWatcherDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1691540349391" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1691689130888">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1692644564187">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1691689130888" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1692644564187" />
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1691541150420" />
-    <state x="267" y="85" key="MergeDialog" timestamp="1691693099926">
+    <state x="267" y="85" key="MergeDialog" timestamp="1692118842932">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="267" y="85" key="MergeDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1691693099926" />
+    <state x="267" y="85" key="MergeDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1692118842932" />
     <state x="848" y="387" width="389" height="265" key="MultipleFileMergeDialog" timestamp="1691691539357">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="848" y="387" width="389" height="265" key="MultipleFileMergeDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1691691539357" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1691619143762">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1692658332256">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1691619143762" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1691684546159">
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1692658332256" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1692392229966">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1691684546159" />
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1692392229966" />
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1691541856732" />
-    <state x="710" y="235" key="VCS.ChangeListViewerDialog" timestamp="1691693038726">
+    <state x="710" y="235" key="VCS.ChangeListViewerDialog" timestamp="1691940221001">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="710" y="235" key="VCS.ChangeListViewerDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1691693038726" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1691693001344">
+    <state x="710" y="235" key="VCS.ChangeListViewerDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1691940221001" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1692391112624">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1691693001344" />
-    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1691693088678">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1692391112624" />
+    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1692392254170">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1691693088678" />
+    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1692392254170" />
     <state x="42" y="74" width="1736" height="856" key="git4idea.log.GitShowExternalLogAction" timestamp="1691541311332">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

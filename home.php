@@ -612,7 +612,6 @@ Template Name: home
                         <div class="cards__tablet-item">
                             <div class="cards__item-img">
 
-
                                 <img src="<?php the_sub_field('card_image'); ?>" alt="error"/>
 
 
