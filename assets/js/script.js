@@ -69,6 +69,7 @@ wrapper()
 function wrapper() {
     document.querySelectorAll('.woocommerce').forEach(curretnWrapper =>{
         curretnWrapper.classList.add("block__content")
+        curretnWrapper.classList.add("block__content_checkout")
     })
 
 }

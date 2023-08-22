@@ -2131,6 +2131,10 @@ hr {
   display: none;
 }
 
+.block__content_checkout {
+  flex-flow: column;
+}
+
 .block__content_catalog {
   flex-flow: column;
   align-items: center;
