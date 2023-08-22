@@ -57,6 +57,7 @@ function closePopup() {
     document.querySelector('.body').classList.remove("active")
     setTimeout(() => {
         document.querySelector(".wpcf7-form").reset()
+        console.log(1)
     }, 1000)
 }
 

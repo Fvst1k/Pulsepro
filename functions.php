@@ -29,6 +29,7 @@ add_theme_support('woocommerce');
 if ( class_exists( 'WooCommerce' ) ) {
     require_once(get_template_directory() . '/wooc.php');
 }
+
 function true_register_wp_sidebars() {
 
     /* В боковой колонке - первый сайдбар */

@@ -23,7 +23,7 @@ Template Name: header
 
     <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?> class="body ">
+<body class="body ">
 <div class="wrapper">
     <!-- Header -->
     <header>
