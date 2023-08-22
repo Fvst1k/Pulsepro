@@ -65,6 +65,13 @@ function openPopup() {
     document.querySelector('.popup__wrapper').classList.add("active")
     document.querySelector('.body').classList.add("active")
 }
+wrapper()
+function wrapper() {
+    document.querySelectorAll('.woocommerce').forEach(curretnWrapper =>{
+        curretnWrapper.classList.add("block__content")
+    })
+
+}
 
 
 
