@@ -57,7 +57,6 @@ function closePopup() {
     document.querySelector('.body').classList.remove("active")
     setTimeout(() => {
         document.querySelector(".wpcf7-form").reset()
-        console.log(1)
     }, 1000)
 }
 
@@ -72,7 +71,14 @@ function wrapper() {
         curretnWrapper.classList.add("block__content_checkout")
     })
 
-}
 
+
+}
+deleteSidebar()
+function deleteSidebar() {
+    document.querySelectorAll('.add_to_cart_button ').forEach(currentSide =>{
+        currentSide.textContent = "Оформить заказ";
+    })
+}
 
 

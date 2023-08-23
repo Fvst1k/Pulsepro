@@ -38,7 +38,7 @@ Template Name: header
                 </div>
                 <div class="popup">
                     <div class="popup__bg">
-                        <img src="<?php the_field('form_bg'); ?>" alt="error"/>
+                        <img src="<?php the_field('form_bg', $front_id); ?>" alt="error"/>
                     </div>
 
                     <div class="popup__title" style="font-size:<?php the_field('form_title_font'); ?>px; margin-top:<?php the_field('form_title_mt'); ?>px; margin-bottom:<?php the_field('form_title_bm'); ?>px; line-height:<?php the_field('form_title_lh'); ?>;">
